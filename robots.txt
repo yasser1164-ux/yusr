@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /yusr/
+Disallow: /yusr/product.html
+
+Sitemap: https://yasser1164-ux.github.io/yusr/sitemap.xml
