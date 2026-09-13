@@ -5,7 +5,7 @@
  * it shows the message with a copy button — never a dead link.
  */
 
-import { ready, lang, onLangChange, siteData, applyI18n, waLink, mailLink, waNumber, markReady } from './main.js';
+import { ready, lang, onLangChange, siteData, applyI18n, waLink, mailLink, waNumber, markReady, isDemoValue, DEMO_HREF } from './main.js';
 import { getCategories, getProduct } from './store.js';
 import { t, pick } from './i18n.js';
 import { ICON, esc } from './ui.js';
@@ -217,12 +217,17 @@ function init() {
     const message = buildMessage();
     const wa = waLink(message);
     const mail = mailLink(t('waMsg.title', lang()), message);
-    const mode = channel();
+    const waDemo = isDemoValue('contact.whatsapp');
+    const mailDemo = isDemoValue('contact.email');
+    // In demo mode nothing is ever sent: buttons become inert and the message is shown to copy.
+    const mode = (channel() === 'wa' && waDemo) || (channel() === 'mail' && mailDemo) ? 'copy' : channel();
 
     waBtn.hidden = !wa;
     mailBtn.hidden = !mail;
-    if (wa) waBtn.href = wa;
-    if (mail) mailBtn.href = mail;
+    if (wa) waBtn.href = waDemo ? DEMO_HREF : wa;
+    if (mail) mailBtn.href = mailDemo ? DEMO_HREF : mail;
+    waBtn.toggleAttribute('data-demo-link', waDemo);
+    mailBtn.toggleAttribute('data-demo-link', mailDemo);
     preview.value = message;
     preview.hidden = mode === 'wa';
     copyBtn.hidden = mode === 'wa';

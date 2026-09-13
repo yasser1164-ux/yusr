@@ -4,7 +4,7 @@
  * Results are cached for the life of the page.
  */
 
-import { CONFIG } from './config.js';
+import { CONFIG, DEMO_MODE } from './config.js';
 import { pick } from './i18n.js';
 
 const cache = new Map();
@@ -30,8 +30,57 @@ const bySort = (a, b) => (a.sort ?? 0) - (b.sort ?? 0);
 
 /* ---------------------------------------------------------------- site -- */
 
+/* -------------------------------------------------------------- demo -- */
+
+const isBlank = v => v == null || v === '' || (Array.isArray(v) && v.length === 0);
+const isPlainObject = v => v !== null && typeof v === 'object' && !Array.isArray(v);
+
+/**
+ * Deep-merge `demo` UNDER `real`: a real value always wins, demo only fills a blank.
+ * Every dotted path that was filled from demo is recorded in `filled`.
+ */
+function mergeDemo(real, demo, path, filled) {
+  const out = { ...(real || {}) };
+  Object.keys(demo || {}).forEach(key => {
+    const p = path ? `${path}.${key}` : key;
+    const r = real ? real[key] : undefined;
+    const d = demo[key];
+    if (isPlainObject(r) && isPlainObject(d)) {
+      out[key] = mergeDemo(r, d, p, filled);
+    } else if (isBlank(r) && !isBlank(d)) {
+      out[key] = d;
+      filled[p] = true;
+    } else {
+      out[key] = r;
+    }
+  });
+  return out;
+}
+
+/** True when the value at a dotted path (e.g. 'contact.whatsapp') came from demo data. */
+export function isDemo(site, path) {
+  return Boolean(site && site._demo && site._demo[path]);
+}
+
+/** Demo list used only when DEMO_MODE is on and the real list is empty. */
+async function withDemoList(name, real) {
+  if (!DEMO_MODE || real.length) return real;
+  try {
+    const demo = await load(`demo/${name}.demo`);
+    return demo.filter(visible).map(item => ({ ...item, _demo: true }));
+  } catch (_) { return real; }
+}
+
 export function getSite() {
-  return load('site');
+  if (!DEMO_MODE) return load('site');
+  return Promise.all([load('site'), load('demo/site.demo').catch(() => null)])
+    .then(([real, demo]) => {
+      if (!demo) return real;
+      const filled = {};
+      const merged = mergeDemo(real, demo, '', filled);
+      merged._demo = filled;
+      return merged;
+    });
 }
 
 /* ---------------------------------------------------------- categories -- */
@@ -172,10 +221,10 @@ export async function getFaq() {
 
 export async function getTestimonials() {
   const list = await load('testimonials');
-  return list.filter(visible);
+  return withDemoList('testimonials', list.filter(visible));
 }
 
 export async function getGallery() {
   const list = await load('gallery');
-  return list.filter(visible).sort(bySort);
+  return withDemoList('gallery', list.filter(visible).sort(bySort));
 }

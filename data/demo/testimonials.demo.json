@@ -1,0 +1,20 @@
+[
+  {
+    "visible": true,
+    "text": { "ar": "رأي تجريبي: الخزانة جاءت مضبوطة على مقاس الغرفة والتركيب كان نظيفًا.", "en": "Demo review: the wardrobe fit the room exactly and the installation was tidy." },
+    "name": { "ar": "عميل تجريبي / Demo customer", "en": "عميل تجريبي / Demo customer" },
+    "city": { "ar": "الرياض", "en": "Riyadh" }
+  },
+  {
+    "visible": true,
+    "text": { "ar": "رأي تجريبي: صور التقدم في كل مرحلة طمّنتني قبل التسليم.", "en": "Demo review: the progress photos at every stage kept me reassured before delivery." },
+    "name": { "ar": "عميل تجريبي / Demo customer", "en": "عميل تجريبي / Demo customer" },
+    "city": { "ar": "جدة", "en": "Jeddah" }
+  },
+  {
+    "visible": true,
+    "text": { "ar": "رأي تجريبي: السعر كان كما اتفقنا بدون أي إضافات.", "en": "Demo review: the price was exactly as agreed, with nothing added later." },
+    "name": { "ar": "عميل تجريبي / Demo customer", "en": "عميل تجريبي / Demo customer" },
+    "city": { "ar": "الدمام", "en": "Dammam" }
+  }
+]

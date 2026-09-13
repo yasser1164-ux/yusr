@@ -7,7 +7,7 @@
 import { CONFIG } from './config.js';
 import { t, pick, formatPrice, formatNumber } from './i18n.js';
 import { getProducts, getCategories } from './store.js';
-import { ICON, esc, picture, trapFocus, lockScroll } from './ui.js';
+import { ICON, esc, picture, trapFocus, lockScroll, demoImage } from './ui.js';
 
 export function mountSearch({ lang, onLangChange, applyI18n }) {
   const opener = document.getElementById('search-open');
@@ -71,7 +71,7 @@ export function mountSearch({ lang, onLangChange, applyI18n }) {
     return `
       <li>
         <a class="sres" href="product.html?id=${encodeURIComponent(p.id)}">
-          ${picture(p.images && p.images[0], { lang: l, ratio: '1 / 1', className: 'sres__img' })}
+          ${picture(p.images && p.images[0], { lang: l, ratio: '1 / 1', className: 'sres__img', demoSrc: demoImage(p.category) })}
           <span class="sres__body">
             <span class="sres__name">${esc(pick(p.name, l))}</span>
             <span class="sres__price">${esc(t('common.from', l))} ${formatPrice(p.priceFrom, l)}</span>

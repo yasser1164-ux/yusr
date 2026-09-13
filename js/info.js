@@ -3,7 +3,7 @@
  * Every block hides itself when its data is empty.
  */
 
-import { ready, lang, onLangChange, siteData, applyI18n, waLink, markReady } from './main.js';
+import { ready, lang, onLangChange, siteData, applyI18n, waLink, markReady, demoHref, isDemoValue, DEMO_HREF } from './main.js';
 import { t, pick } from './i18n.js';
 import { ICON, esc, picture, revealWithin } from './ui.js';
 
@@ -81,10 +81,12 @@ function renderContact(l) {
   const cards = $('contact-cards');
   if (cards) {
     const wa = waLink(t('waMsg.greeting', l));
+    const waDemo = isDemoValue('contact.whatsapp');
+    const demoAttr = path => (isDemoValue(path) ? ' data-demo-link' : '');
     const items = [
-      wa ? card('whatsapp', 'contact.waTitle', `<p>${esc(t('contact.waText', l))}</p><p><a href="${esc(wa)}" target="_blank" rel="noopener">${esc(t('contact.waCta', l))}</a></p>`) : '',
-      c.phone ? card('phone', 'contact.phoneTitle', `<p><a href="tel:${esc(String(c.phone).replace(/\s/g, ''))}"><span dir="ltr">${esc(c.phone)}</span></a></p>`) : '',
-      c.email ? card('mail', 'contact.emailTitle', `<p><a href="mailto:${esc(c.email)}"><span dir="ltr">${esc(c.email)}</span></a></p>`) : ''
+      wa ? card('whatsapp', 'contact.waTitle', `<p>${esc(t('contact.waText', l))}</p><p><a href="${waDemo ? DEMO_HREF : esc(wa)}" target="_blank" rel="noopener"${waDemo ? ' data-demo-link' : ''}>${esc(t('contact.waCta', l))}</a></p>`) : '',
+      c.phone ? card('phone', 'contact.phoneTitle', `<p><a href="${demoHref(`tel:${String(c.phone).replace(/\s/g, '')}`, 'contact.phone')}"${demoAttr('contact.phone')}><span dir="ltr">${esc(c.phone)}</span></a></p>`) : '',
+      c.email ? card('mail', 'contact.emailTitle', `<p><a href="${demoHref(`mailto:${c.email}`, 'contact.email')}"${demoAttr('contact.email')}><span dir="ltr">${esc(c.email)}</span></a></p>`) : ''
     ].filter(Boolean);
     cards.innerHTML = items.join('');
     cards.hidden = items.length === 0;

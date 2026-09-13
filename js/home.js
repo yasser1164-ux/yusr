@@ -8,7 +8,7 @@ import { CONFIG } from './config.js';
 import { ready, lang, onLangChange, siteData, applyI18n, initAccordions, markReady } from './main.js';
 import { getCategories, getProducts, getCollections, getFaq, getGallery, getTestimonials } from './store.js';
 import { t, pick } from './i18n.js';
-import { ICON, esc, picture, productCard, sectionHead, revealWithin, icon } from './ui.js';
+import { ICON, esc, picture, productCard, sectionHead, revealWithin, icon, demoImage } from './ui.js';
 import { galleryMarkup, bindGallery } from './gallery.js';
 
 await ready;
@@ -60,7 +60,7 @@ async function renderCategories(l) {
       <div class="tiles">
         ${cats.map((c, i) => `
           <a class="tile reveal${i === 0 ? ' tile--wide' : ''}" href="products.html?cat=${encodeURIComponent(c.id)}">
-            ${picture(c.image, { lang: l, ratio: i === 0 ? '16 / 10' : '1 / 1', className: 'tile__img', sizes: i === 0 ? '(min-width: 1024px) 400px, 100vw' : '(min-width: 1024px) 400px, 50vw' })}
+            ${picture(c.image, { lang: l, ratio: i === 0 ? '16 / 10' : '1 / 1', className: 'tile__img', sizes: i === 0 ? '(min-width: 1024px) 400px, 100vw' : '(min-width: 1024px) 400px, 50vw', demoSrc: demoImage(c.id) })}
             <span class="tile__body">
               <span class="tile__icon">${icon(c.icon)}</span>
               <span class="tile__name">${esc(pick(c.name, l))}</span>

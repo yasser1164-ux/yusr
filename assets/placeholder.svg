@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img" aria-label="">
-  <rect width="1600" height="1200" fill="#E9DCC9"/>
-  <g fill="none" stroke="#4A3728" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".22">
+  <rect width="1600" height="1200" fill="#F2E9DC"/>
+  <g fill="none" stroke="#7A5C43" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".22">
     <path d="M660 610 800 490l140 120"/>
     <path d="M700 620v90a12 12 0 0 0 12 12h176a12 12 0 0 0 12-12v-90" opacity=".6"/>
   </g>
-  <g fill="none" stroke="#4A3728" stroke-width="2" opacity=".07">
+  <g fill="none" stroke="#7A5C43" stroke-width="2" opacity=".07">
     <path d="M-200 1000c300-140 500-140 800 0s500 140 800 0s500-140 800 0"/>
     <path d="M-200 1090c300-140 500-140 800 0s500 140 800 0s500-140 800 0"/>
     <path d="M-200 910c300-140 500-140 800 0s500 140 800 0s500-140 800 0"/>

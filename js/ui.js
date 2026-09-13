@@ -3,7 +3,7 @@
  * focus trapping, scroll-reveal and body scroll locking.
  */
 
-import { CONFIG } from './config.js';
+import { CONFIG, DEMO_MODE } from './config.js';
 import { t, pick, formatPrice, formatDays } from './i18n.js';
 
 /* ---------------------------------------------------------------- text -- */
@@ -60,6 +60,11 @@ export function icon(name) {
   return ICON[name] || '';
 }
 
+/** Demo-mode illustration for a category id, or '' when demo mode is off. */
+export function demoImage(category) {
+  return DEMO_MODE && category ? `assets/demo/${category}.svg` : '';
+}
+
 /* ------------------------------------------------------- image component -- */
 
 /**
@@ -69,22 +74,31 @@ export function icon(name) {
  * @param {object} img  { src, webp?, alt } — alt may be a string or { ar, en }
  * @param {object} opts { lang, ratio: '4 / 3', className, eager, sizes }
  */
-export function picture(img, { lang = 'ar', ratio = '4 / 3', className = '', eager = false, priority = false, sizes = '' } = {}) {
+export function picture(img, { lang = 'ar', ratio = '4 / 3', className = '', eager = false, priority = false, sizes = '', demoSrc = '' } = {}) {
   const src = img && img.src;
   const alt = esc(pick(img && img.alt, lang));
   const loading = eager ? 'eager' : 'lazy';
   const priorityAttr = priority ? ' fetchpriority="high"' : '';
   const sizesAttr = sizes ? ` sizes="${esc(sizes)}"` : '';
+  // Demo mode: a blank src shows the category illustration outright; a real src that
+  // fails to load falls back to it (see the error listener below). Both get the corner tag.
+  const demo = DEMO_MODE ? demoSrc : '';
 
   if (!src) {
+    if (demo) {
+      return `<span class="img-box ${className}" style="--ratio:${ratio}" data-placeholder data-demo>
+        <img src="${esc(demo)}" alt="${alt}" width="1600" height="1200" loading="${loading}" decoding="async">
+      </span>`;
+    }
     return `<span class="img-box ${className}" style="--ratio:${ratio}" data-placeholder>
       <img src="${CONFIG.placeholderImage}" alt="" width="1600" height="1200" loading="${loading}" decoding="async">
     </span>`;
   }
 
+  const isDemoFile = DEMO_MODE && /^assets\/demo\//.test(src);
   const webp = img.webp ? `<source srcset="${esc(img.webp)}" type="image/webp"${sizesAttr}>` : '';
-  return `<span class="img-box ${className}" style="--ratio:${ratio}">
-    <picture>${webp}<img src="${esc(src)}" alt="${alt}" width="1600" height="1200" loading="${loading}" decoding="async"${priorityAttr}${sizesAttr} data-fallback></picture>
+  return `<span class="img-box ${className}" style="--ratio:${ratio}"${isDemoFile ? ' data-demo' : ''}>
+    <picture>${webp}<img src="${esc(src)}" alt="${alt}" width="1600" height="1200" loading="${loading}" decoding="async"${priorityAttr}${sizesAttr} data-fallback${demo ? ` data-demo-src="${esc(demo)}"` : ''}></picture>
   </span>`;
 }
 
@@ -95,10 +109,14 @@ document.addEventListener('error', e => {
   img.removeAttribute('data-fallback');
   const source = img.parentElement && img.parentElement.querySelector('source');
   if (source) source.remove();
-  img.src = CONFIG.placeholderImage;
-  img.alt = '';
+  const demo = img.getAttribute('data-demo-src');
+  img.src = demo || CONFIG.placeholderImage;
+  if (!demo) img.alt = '';
   const box = img.closest('.img-box');
-  if (box) box.setAttribute('data-placeholder', '');
+  if (box) {
+    box.setAttribute('data-placeholder', '');
+    if (demo) box.setAttribute('data-demo', '');
+  }
 }, true);
 
 /* ---------------------------------------------------------------- chips -- */
@@ -128,7 +146,7 @@ export function productCard(p, { lang, badges = {}, categoryName = '', eager = f
   const first = (p.images && p.images[0]) || null;
   return `
   <a class="pcard reveal" href="${href}">
-    ${picture(first, { lang, ratio: '4 / 3', className: 'pcard__media', eager, priority, sizes: '(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw' })}
+    ${picture(first, { lang, ratio: '4 / 3', className: 'pcard__media', eager, priority, sizes: '(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw', demoSrc: demoImage(p.category) })}
     <span class="pcard__body">
       ${categoryName ? `<span class="pcard__cat">${esc(categoryName)}</span>` : ''}
       <span class="pcard__name">${esc(pick(p.name, lang))}</span>

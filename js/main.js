@@ -4,9 +4,9 @@
  * `await ready` before rendering.
  */
 
-import { CONFIG } from './config.js';
+import { CONFIG, DEMO_MODE } from './config.js';
 import { DICT, LANGS, getLang, storeLang, t, pick } from './i18n.js';
-import { getSite } from './store.js';
+import { getSite, isDemo } from './store.js';
 import { ICON, esc, trapFocus, lockScroll, initReveal, revealWithin } from './ui.js';
 import { mountSearch } from './search.js';
 
@@ -159,6 +159,7 @@ function initHeaderScroll() {
     } else if (y < lastY - 4) {
       header.classList.remove('hdr--hidden');
     }
+    header.classList.toggle('hdr--scrolled', y > 8);
     lastY = y;
     ticking = false;
   };
@@ -198,6 +199,80 @@ function mountStickyWa() {
   update();
 }
 
+/* ---------------------------------------------------------------- demo -- */
+
+/** Inert target for demo phone / WhatsApp / e-mail links — never a real number. */
+export const DEMO_HREF = '#demo';
+const DEMO_TOAST = 'رقم تجريبي — لن يتم الإرسال / Demo number — nothing will be sent';
+const DEMO_BANNER = 'وضع تجريبي — البيانات والصور غير حقيقية · Demo mode — data and images are not real';
+const DEMO_DISMISS_KEY = 'yusr.demoDismissed';
+
+/** href for a contact link: the real one, or the inert demo target when the value is demo-filled. */
+export function demoHref(realHref, sitePath) {
+  return isDemo(site, sitePath) ? DEMO_HREF : esc(realHref);
+}
+
+/** True when the value at `sitePath` is demo-filled (for callers that build their own links). */
+export function isDemoValue(sitePath) {
+  return isDemo(site, sitePath);
+}
+
+let toastEl = null;
+let toastTimer = null;
+export function showToast(text) {
+  if (!toastEl) {
+    toastEl = document.createElement('div');
+    toastEl.className = 'toast';
+    toastEl.setAttribute('role', 'status');
+    toastEl.setAttribute('aria-live', 'polite');
+    document.body.appendChild(toastEl);
+  }
+  toastEl.textContent = text;
+  toastEl.classList.add('is-on');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('is-on'), 2600);
+}
+
+function mountDemoBanner() {
+  if (!DEMO_MODE) return;
+
+  // Every demo link is inert: swallow the click and explain why.
+  document.addEventListener('click', e => {
+    const link = e.target.closest('[data-demo-link]');
+    if (!link) return;
+    e.preventDefault();
+    e.stopPropagation();
+    showToast(DEMO_TOAST);
+  }, true);
+
+  let dismissed = false;
+  try { dismissed = sessionStorage.getItem(DEMO_DISMISS_KEY) === '1'; } catch (_) { /* private mode */ }
+  if (dismissed) return;
+
+  const banner = document.createElement('div');
+  banner.className = 'demo-banner';
+  banner.id = 'demo-banner';
+  banner.setAttribute('role', 'status');
+  banner.innerHTML = `<span>${DEMO_BANNER}</span>
+    <button type="button" class="demo-banner__x" id="demo-banner-x" aria-label="${esc(t('nav.close', currentLang))}">${ICON.close}</button>`;
+  document.body.appendChild(banner);
+
+  const setOffset = () => {
+    document.documentElement.style.setProperty('--demo-offset', `${banner.offsetHeight}px`);
+    document.body.classList.add('demo-banner-on');
+  };
+  setOffset();
+  window.addEventListener('resize', setOffset, { passive: true });
+
+  banner.querySelector('#demo-banner-x').addEventListener('click', () => {
+    try { sessionStorage.setItem(DEMO_DISMISS_KEY, '1'); } catch (_) { /* private mode */ }
+    banner.remove();
+    document.documentElement.style.removeProperty('--demo-offset');
+    document.body.classList.remove('demo-banner-on');
+    window.removeEventListener('resize', setOffset);
+  });
+}
+
 /* -------------------------------------------------------------- footer -- */
 
 function socialMarkup() {
@@ -219,8 +294,8 @@ function buildFooter() {
 
   const contactItems = [
     waNumber() ? `<li><a class="with-icon" id="footer-wa" href="#" target="_blank" rel="noopener" data-wa-greeting>${ICON.whatsapp}<span data-i18n="nav.whatsapp"></span></a></li>` : '',
-    c.phone ? `<li><a class="with-icon" href="tel:${esc(String(c.phone).replace(/\s/g, ''))}">${ICON.phone}<span dir="ltr">${esc(c.phone)}</span></a></li>` : '',
-    c.email ? `<li><a class="with-icon" href="mailto:${esc(c.email)}">${ICON.mail}<span dir="ltr">${esc(c.email)}</span></a></li>` : ''
+    c.phone ? `<li><a class="with-icon" href="${demoHref(`tel:${String(c.phone).replace(/\s/g, '')}`, 'contact.phone')}"${isDemo(site, 'contact.phone') ? ' data-demo-link' : ''}>${ICON.phone}<span dir="ltr">${esc(c.phone)}</span></a></li>` : '',
+    c.email ? `<li><a class="with-icon" href="${demoHref(`mailto:${c.email}`, 'contact.email')}"${isDemo(site, 'contact.email') ? ' data-demo-link' : ''}>${ICON.mail}<span dir="ltr">${esc(c.email)}</span></a></li>` : ''
   ].join('');
 
   const legalItems = [
@@ -349,9 +424,11 @@ export function setLang(next, { persist = true } = {}) {
 
 function refreshWaLinks() {
   const link = greetingLink();
+  const demo = isDemo(site, 'contact.whatsapp');
   document.querySelectorAll('[data-wa-greeting]').forEach(el => {
-    el.href = link || '#';
+    el.href = demo ? DEMO_HREF : (link || '#');
     el.hidden = !link;
+    el.toggleAttribute('data-demo-link', demo);
   });
 }
 
@@ -384,6 +461,14 @@ export function markReady() {
 async function init() {
   initReveal();
   setTimeout(markReady, 3000);
+
+  if (DEMO_MODE) {
+    // A demo build must never be indexed.
+    const robots = document.createElement('meta');
+    robots.name = 'robots';
+    robots.content = 'noindex';
+    document.head.appendChild(robots);
+  }
 
   // The header depends only on the dictionary, so it renders before any fetch —
   // into space the stylesheet already reserved — and never shifts the page.
@@ -420,6 +505,7 @@ async function init() {
   applyMeta();
   refreshWaLinks();
   revealWithin(document);
+  mountDemoBanner();
   // Pages with a data-driven module (body[data-async]) reveal themselves after their first render.
   if (!document.body.hasAttribute('data-async')) markReady();
   return site;

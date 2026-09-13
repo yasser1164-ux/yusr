@@ -1,0 +1,62 @@
+{
+  "_readme": "DEMO values — obviously fake. Only used while DEMO_MODE is true in js/config.js, and only for fields that are EMPTY in data/site.json. Never edit this file with real data; put real data in data/site.json.",
+
+  "hero": {
+    "image": { "src": "assets/demo/majlis.svg", "alt": { "ar": "رسم توضيحي تجريبي لمجلس", "en": "Demo illustration of a majlis" } }
+  },
+
+  "about": {
+    "image": { "src": "assets/demo/kitchens.svg", "alt": { "ar": "رسم توضيحي تجريبي لورشة", "en": "Demo illustration of a workshop" } }
+  },
+
+  "contact": {
+    "whatsapp": "966500000000",
+    "phone": "+966 50 000 0000",
+    "email": "demo@yusr.sa",
+    "address": { "ar": "عنوان تجريبي — الرياض", "en": "Demo address — Riyadh" }
+  },
+
+  "hours": [
+    { "days": { "ar": "الأحد – الخميس", "en": "Sunday – Thursday" }, "time": { "ar": "9 ص – 6 م", "en": "9am – 6pm" } },
+    { "days": { "ar": "السبت", "en": "Saturday" }, "time": { "ar": "10 ص – 4 م", "en": "10am – 4pm" } }
+  ],
+
+  "social": {
+    "instagram": "https://instagram.com/yusr.demo",
+    "x": "https://x.com/yusr_demo",
+    "tiktok": "https://tiktok.com/@yusr.demo",
+    "snapchat": "https://snapchat.com/add/yusr.demo"
+  },
+
+  "legal": {
+    "cr": "1010000000",
+    "maroof": "0000000"
+  },
+
+  "partners": [
+    {
+      "name": { "ar": "ورشة تجريبية للأثاث", "en": "Demo Furniture Workshop" },
+      "role": { "ar": "أثاث خشبي وتنجيد", "en": "Wooden furniture and upholstery" },
+      "text": { "ar": "ورشة تجريبية — الاسم والوصف غير حقيقيين.", "en": "Demo workshop — name and description are not real." },
+      "image": { "src": "assets/demo/living.svg", "alt": { "ar": "رسم تجريبي", "en": "Demo illustration" } }
+    },
+    {
+      "name": { "ar": "مصنع تجريبي للخزائن والمطابخ", "en": "Demo Cabinet & Kitchen Factory" },
+      "role": { "ar": "خزائن ومطابخ", "en": "Wardrobes and kitchens" },
+      "text": { "ar": "ورشة تجريبية — الاسم والوصف غير حقيقيين.", "en": "Demo workshop — name and description are not real." },
+      "image": { "src": "assets/demo/kitchens.svg", "alt": { "ar": "رسم تجريبي", "en": "Demo illustration" } }
+    },
+    {
+      "name": { "ar": "ورشة تجريبية للأبواب", "en": "Demo Door Workshop" },
+      "role": { "ar": "أبواب وأعمال خشبية", "en": "Doors and woodwork" },
+      "text": { "ar": "ورشة تجريبية — الاسم والوصف غير حقيقيين.", "en": "Demo workshop — name and description are not real." },
+      "image": { "src": "assets/demo/doors.svg", "alt": { "ar": "رسم تجريبي", "en": "Demo illustration" } }
+    }
+  ],
+
+  "stats": [
+    { "value": "000", "label": { "ar": "طلب منفّذ (تجريبي)", "en": "orders delivered (demo)" } },
+    { "value": "0", "label": { "ar": "ورش شريكة (تجريبي)", "en": "partner workshops (demo)" } },
+    { "value": "0", "label": { "ar": "مدينة نغطيها (تجريبي)", "en": "cities covered (demo)" } }
+  ]
+}

@@ -4,6 +4,14 @@
  * lives in data/site.json. Do not put content here.
  */
 
+/**
+ * Demo mode: fills every EMPTY value with obviously-fake content from data/demo/
+ * (contact details, hours, partners, gallery, reviews, furniture illustrations),
+ * shows a "demo" banner, makes every demo phone/WhatsApp/e-mail link inert and
+ * marks the pages noindex. Real values in data/*.json always win over demo ones.
+ */
+export const DEMO_MODE = true;   // set to false before launch
+
 export const CONFIG = {
   /* Where the JSON content files live, relative to the HTML pages. */
   dataDir: 'data',

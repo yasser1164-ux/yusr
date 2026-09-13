@@ -1,5 +1,8 @@
 # ما يحتاجه الموقع منك / What the site needs from you
 
+> **وضع تجريبي / Demo mode:** الموقع الآن يعمل بوضع تجريبي (`DEMO_MODE = true` في `js/config.js`) يملأ الحقول الفارغة ببيانات ورسوم تجريبية واضحة، ويجعل روابط الاتصال التجريبية معطّلة. كل قيمة حقيقية تكتبها في `data/site.json` تظهر فورًا بدل التجريبية. **يوم الإطلاق:** غيّر السطر إلى `DEMO_MODE = false`.
+> The site currently runs in demo mode (`DEMO_MODE = true` in `js/config.js`), which fills empty fields with obviously-fake data and illustrations and makes demo contact links inert. Any real value you enter in `data/site.json` replaces the demo one immediately. **On launch day:** change that line to `DEMO_MODE = false`.
+
 الموقع مكتمل تقنيًا لكنه **لا يعرض أي بيانات وهمية**. كل عنصر أدناه فارغ الآن ويظهر تلقائيًا بمجرد تعبئته — لا تحتاج مطوّرًا.
 The site is technically complete but shows **no invented data**. Each item below is empty today and appears automatically once filled — no developer needed.
 

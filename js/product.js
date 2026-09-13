@@ -8,7 +8,7 @@ import { CONFIG } from './config.js';
 import { ready, lang, onLangChange, siteData, applyI18n, applyMeta, markReady } from './main.js';
 import { getProduct, getProducts, getCategory, getCategories } from './store.js';
 import { t, pick, formatPrice, formatDays, formatNumber } from './i18n.js';
-import { ICON, esc, picture, productCard, leadChip, badgeChips, revealWithin } from './ui.js';
+import { ICON, esc, picture, productCard, leadChip, badgeChips, revealWithin, demoImage } from './ui.js';
 import { openLightbox } from './gallery.js';
 
 await ready;
@@ -70,14 +70,14 @@ async function render() {
       <div class="detail__gallery">
         <figure class="pgal" aria-label="${esc(t('product.gallery', l))}">
           <button type="button" class="pgal__main" id="pgal-main" aria-label="${esc(t('gallery.open', l))}" ${images.length ? '' : 'disabled'}>
-            ${picture(images[0], { lang: l, ratio: '4 / 3', eager: true, sizes: '(min-width: 900px) 55vw, 100vw' })}
+            ${picture(images[0], { lang: l, ratio: '4 / 3', eager: true, sizes: '(min-width: 900px) 55vw, 100vw', demoSrc: demoImage(p.category) })}
             ${images.length ? `<span class="pgal__zoom">${ICON.zoom}</span>` : ''}
           </button>
           ${images.length > 1 ? `
           <div class="pgal__thumbs">
             ${images.map((img, i) => `
               <button type="button" class="pgal__thumb" data-index="${i}" aria-pressed="${i === 0}" aria-label="${esc(t('product.thumbAlt', l))} ${formatNumber(i + 1, l)}">
-                ${picture(img, { lang: l, ratio: '4 / 3' })}
+                ${picture(img, { lang: l, ratio: '4 / 3', demoSrc: demoImage(p.category) })}
               </button>`).join('')}
           </div>` : ''}
         </figure>
@@ -134,7 +134,7 @@ async function render() {
   root.querySelectorAll('.pgal__thumb').forEach(btn => {
     btn.addEventListener('click', () => {
       current = Number(btn.dataset.index);
-      main.querySelector('.img-box').outerHTML = picture(images[current], { lang: l, ratio: '4 / 3', eager: true });
+      main.querySelector('.img-box').outerHTML = picture(images[current], { lang: l, ratio: '4 / 3', eager: true, demoSrc: demoImage(p.category) });
       root.querySelectorAll('.pgal__thumb').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
     });
   });
