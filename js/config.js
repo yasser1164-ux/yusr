@@ -1,54 +1,33 @@
 /**
- * Yusr — single source of truth for business contact details.
- * Change values here only; every page reads from this file.
+ * Yusr — technical constants only.
+ * Business content (contact details, WhatsApp number, cities, hours, legal numbers)
+ * lives in data/site.json. Do not put content here.
  */
 
 export const CONFIG = {
-  /* WhatsApp number in international format, digits only, no "+".
-     TODO: confirm — replace with the real business number. */
-  whatsapp: '9665XXXXXXXX',
+  /* Where the JSON content files live, relative to the HTML pages. */
+  dataDir: 'data',
 
-  /* How the phone number is shown to visitors. TODO: confirm */
-  phoneDisplay: '+966 5X XXX XXXX',
+  /* Branded image shown whenever a photo is missing or fails to load. */
+  placeholderImage: 'assets/placeholder.svg',
 
-  /* Fallback contact e-mail. TODO: confirm */
-  email: 'hello@yusr.sa',
+  /* localStorage key for the chosen language. */
+  storageKey: 'yusr.lang',
+  defaultLang: 'ar',
 
-  /* Maroof (موثوق) registration number. TODO: confirm */
-  maroof: '0000000',
+  /* true → Arabic UI shows Eastern Arabic digits (٢٬٩٠٠); false → Western digits (2,900). */
+  arabicNumerals: true,
 
-  /* Commercial Registration (السجل التجاري). TODO: confirm */
-  cr: '10100000000',
+  /* Rendering limits. */
+  featuredLimit: 6,
+  faqLimit: 5,
+  relatedLimit: 3,
+  searchResultLimit: 8,
+  searchDebounceMs: 120,
 
-  /* Social profiles. Leave a value empty to hide that icon. TODO: confirm */
-  social: {
-    instagram: 'https://instagram.com/',
-    x: 'https://x.com/',
-    tiktok: 'https://tiktok.com/',
-    snapchat: ''
-  }
+  /* Sticky WhatsApp button appears after this fraction of the page has been scrolled. */
+  stickyWaThreshold: 0.3,
+
+  /* Header hides on scroll-down only after this many pixels. */
+  headerHideAfter: 80
 };
-
-/** Digits-only WhatsApp number, safe for wa.me links. */
-export const waNumber = CONFIG.whatsapp.replace(/\D/g, '');
-
-if (/[xX]/.test(CONFIG.whatsapp)) {
-  console.warn('[yusr] WhatsApp number is still the placeholder — set CONFIG.whatsapp in js/config.js.');
-}
-
-/**
- * Build a wa.me deep link with a pre-filled message.
- * @param {string} text plain message text (not yet encoded)
- */
-export function waLink(text) {
-  return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
-}
-
-/**
- * Build a mailto: fallback link with the same message.
- * @param {string} subject
- * @param {string} body
- */
-export function mailLink(subject, body) {
-  return `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}

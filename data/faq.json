@@ -1,0 +1,38 @@
+[
+  {
+    "visible": true,
+    "sort": 1,
+    "q": { "ar": "كم يستغرق تنفيذ الطلب؟", "en": "How long does an order take?" },
+    "a": { "ar": "من 7 إلى 15 يوم عمل حسب القطعة والخامة. الخزائن والمطابخ الكبيرة قد تصل إلى 21 يومًا، ونخبرك بالمدة الدقيقة قبل التأكيد.", "en": "7 to 15 working days depending on the piece and material. Large wardrobes and kitchens can reach 21 days, and we confirm the exact timeline before you approve." }
+  },
+  {
+    "visible": true,
+    "sort": 2,
+    "q": { "ar": "هل السعر يشمل التوصيل والتركيب؟", "en": "Does the price include delivery and installation?" },
+    "a": { "ar": "نعم في المدن الرئيسية المذكورة في صفحة التواصل. باقي المدن يضاف رسم شحن نوضحه لك قبل الطلب.", "en": "Yes in the major cities listed on the contact page. Other cities have a shipping fee that we state before you order." }
+  },
+  {
+    "visible": true,
+    "sort": 3,
+    "q": { "ar": "كيف تتم عملية الدفع؟", "en": "How does payment work?" },
+    "a": { "ar": "دفعة أولى 50% لبدء التصنيع، والباقي عند التسليم. نرسل لك فاتورة مكتوبة بالتفاصيل.", "en": "50% deposit to start production, the balance on delivery. You get a written invoice with the full breakdown." }
+  },
+  {
+    "visible": true,
+    "sort": 4,
+    "q": { "ar": "هل أقدر أغيّر القياس أو اللون بعد الطلب؟", "en": "Can I change the size or colour after ordering?" },
+    "a": { "ar": "تقدر خلال 48 ساعة من تأكيد الطلب وقبل قص الخامة. بعد ذلك يصعب التغيير لأن القطعة تدخل خط التنفيذ.", "en": "Yes, within 48 hours of confirmation and before the material is cut. After that the piece is already in production." }
+  },
+  {
+    "visible": true,
+    "sort": 5,
+    "q": { "ar": "هل تنفذون طلبات بتصميم من عندي؟", "en": "Can you build from my own design?" },
+    "a": { "ar": "نعم. أرسل الرسم أو صورة مرجعية ومقاس المكان، ونرد عليك بالإمكانية والسعر خلال 24 ساعة.", "en": "Yes. Send the drawing or a reference photo plus the space measurements, and we reply with feasibility and price within 24 hours." }
+  },
+  {
+    "visible": true,
+    "sort": 6,
+    "q": { "ar": "ما هو الضمان؟", "en": "What is the warranty?" },
+    "a": { "ar": "سنتان على التصنيع والهيكل، وسنة على الأجزاء المتحركة مثل المفصلات والمجاري. الاستخدام الخاطئ غير مشمول.", "en": "Two years on build and structure, one year on moving parts such as hinges and runners. Misuse is not covered." }
+  }
+]

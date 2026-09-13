@@ -1,0 +1,74 @@
+{
+  "_readme": "Business details for the whole site. Empty values are simply not shown — never invent a number. See TODO-OWNER.md.",
+
+  "brand": {
+    "name": { "ar": "يسر", "en": "Yusr" },
+    "tagline": { "ar": "بيتك على راحتك", "en": "Your home, your way." }
+  },
+
+  "hero": {
+    "image": { "src": "", "alt": { "ar": "مجلس مفصّل من تنفيذ يسر", "en": "A made-to-measure majlis by Yusr" } },
+    "eyebrow": { "ar": "صُنع في السعودية · على مقاسك", "en": "Made in Saudi Arabia · built to your size" },
+    "title": { "ar": "أثاث بيتك، على مقاسك بالضبط", "en": "Furniture built to your exact measurements" },
+    "subtitle": { "ar": "مجالس وكنب وغرف نوم ومطابخ وأبواب، تُصنع بعد طلبك في ورش سعودية وتُركّب في بيتك.", "en": "Majlis, sofas, bedrooms, kitchens and doors — built after you order in Saudi workshops and installed in your home." }
+  },
+
+  "contact": {
+    "whatsapp": "",
+    "phone": "",
+    "email": "",
+    "address": { "ar": "", "en": "" },
+    "mapEmbedUrl": ""
+  },
+
+  "hours": [],
+
+  "social": {
+    "instagram": "",
+    "x": "",
+    "tiktok": "",
+    "snapchat": ""
+  },
+
+  "legal": {
+    "cr": "",
+    "maroof": "",
+    "vat": ""
+  },
+
+  "cities": [
+    { "id": "riyadh",  "name": { "ar": "الرياض", "en": "Riyadh" },           "install": true },
+    { "id": "jeddah",  "name": { "ar": "جدة", "en": "Jeddah" },              "install": true },
+    { "id": "dammam",  "name": { "ar": "الدمام", "en": "Dammam" },           "install": true },
+    { "id": "khobar",  "name": { "ar": "الخبر", "en": "Khobar" },            "install": true },
+    { "id": "makkah",  "name": { "ar": "مكة المكرمة", "en": "Makkah" },      "install": false },
+    { "id": "madinah", "name": { "ar": "المدينة المنورة", "en": "Madinah" }, "install": false },
+    { "id": "qassim",  "name": { "ar": "القصيم", "en": "Qassim" },           "install": false },
+    { "id": "abha",    "name": { "ar": "أبها", "en": "Abha" },               "install": false },
+    { "id": "tabuk",   "name": { "ar": "تبوك", "en": "Tabuk" },              "install": false },
+    { "id": "hail",    "name": { "ar": "حائل", "en": "Hail" },               "install": false },
+    { "id": "jazan",   "name": { "ar": "جازان", "en": "Jazan" },             "install": false },
+    { "id": "taif",    "name": { "ar": "الطائف", "en": "Taif" },             "install": false }
+  ],
+
+  "badges": {
+    "made-in-saudi": { "label": { "ar": "صناعة سعودية", "en": "Saudi made" }, "icon": "check" },
+    "warranty-2y":   { "label": { "ar": "ضمان سنتين", "en": "2-year warranty" }, "icon": "shield" },
+    "warranty-3y":   { "label": { "ar": "ضمان 3 سنوات", "en": "3-year warranty" }, "icon": "shield" },
+    "free-install":  { "label": { "ar": "تركيب مجاني", "en": "Free installation" }, "icon": "truck" },
+    "fast":          { "label": { "ar": "تنفيذ سريع", "en": "Fast build" }, "icon": "clock" }
+  },
+
+  "about": {
+    "image": { "src": "", "alt": { "ar": "داخل إحدى الورش الشريكة", "en": "Inside one of our partner workshops" } }
+  },
+
+  "partners": [],
+
+  "stats": [],
+
+  "seo": {
+    "baseUrl": "https://yasser1164-ux.github.io/yusr/",
+    "ogImage": ""
+  }
+}

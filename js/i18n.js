@@ -1,13 +1,17 @@
 /**
- * Yusr — all visible strings live here. Nothing user-facing is hard-coded in HTML.
- * Usage in markup: <h1 data-i18n="home.hero.title"></h1>
- *                  <input data-i18n-attr="placeholder:form.name.ph">
+ * Yusr — UI strings in both languages, plus language and number helpers.
+ * Business content (products, categories, contact details, FAQ) lives in data/*.json;
+ * this file holds only interface wording and static page copy.
+ *
+ * Usage in markup: <h1 data-i18n="how.title"></h1>
+ *                  <input data-i18n-attr="placeholder:form.namePh">
  */
+
+import { CONFIG } from './config.js';
 
 export const DICT = {
   ar: {
     dir: 'rtl',
-    lang: 'ar',
     htmlLang: 'ar',
     currency: 'ر.س',
     brand: { name: 'يسر', tagline: 'بيتك على راحتك' },
@@ -15,16 +19,17 @@ export const DICT = {
     nav: {
       home: 'الرئيسية',
       products: 'المنتجات',
-      custom: 'اطلب تفصيل',
+      custom: 'اطلب على مقاسك',
       how: 'كيف نعمل',
       about: 'عن يسر',
       contact: 'تواصل',
       menu: 'القائمة',
-      close: 'إغلاق القائمة',
+      close: 'إغلاق',
       skip: 'تخطّي إلى المحتوى',
       langToggle: 'English',
       langToggleLabel: 'تغيير اللغة إلى الإنجليزية',
-      whatsapp: 'واتساب'
+      whatsapp: 'واتساب',
+      search: 'بحث'
     },
 
     common: {
@@ -33,98 +38,64 @@ export const DICT = {
       orderNow: 'اطلب الآن',
       orderThis: 'اطلب هذا المنتج',
       viewAll: 'عرض كل المنتجات',
+      browse: 'تصفّح المنتجات',
+      customCta: 'اطلب على مقاسك',
       details: 'التفاصيل',
-      days: 'يوم',
+      day: 'يوم',
       years: 'سنوات',
-      leadTime: 'مدة التنفيذ',
-      material: 'الخامة',
+      readyIn: 'جاهز خلال',
       loading: 'جاري التحميل…',
       backToProducts: 'رجوع إلى المنتجات',
-      required: 'مطلوب',
-      sample: 'نموذج توضيحي'
-    },
-
-    cat: {
       all: 'الكل',
-      furniture: 'أثاث',
-      wardrobes: 'خزائن وغرف ملابس',
-      kitchens: 'مطابخ',
-      doors: 'أبواب',
-      essentials: 'مستلزمات منزلية',
-      furnitureDesc: 'كنب وأسِرّة وطاولات ومجالس على مقاسك.',
-      wardrobesDesc: 'خزائن وغرف ملابس تستغل كل سنتيمتر في الغرفة.',
-      kitchensDesc: 'مطابخ مفصّلة بخامات تتحمل الاستخدام اليومي.',
-      doorsDesc: 'أبواب داخلية ومداخل بخشب صلب وتشطيب نظيف.',
-      essentialsDesc: 'رفوف وطاولات وقطع صغيرة تكمل البيت.'
+      clear: 'مسح',
+      copy: 'نسخ الرسالة',
+      copied: 'تم النسخ',
+      product: 'منتج',
+      products: 'منتج',
+      noResults: 'لا توجد نتائج',
+      madeIn: 'صُنع في السعودية',
+      loadError: 'تعذّر تحميل المحتوى.',
+      loadErrorHint: 'إذا فتحت الملف مباشرة من جهازك، شغّل خادمًا محليًا: python3 -m http.server'
     },
 
-    home: {
-      hero: {
-        eyebrow: 'صُنع في السعودية',
-        title: 'أثاث بيتك، على مقاسك بالضبط',
-        text: 'يسر يصنع لك أثاثك وخزائنك ومطبخك وأبوابك مع ورش سعودية مختارة، بسعر مباشر من المصنع وتوصيل لكل المملكة.',
-        ctaPrimary: 'تصفّح المنتجات',
-        ctaSecondary: 'اطلب قطعة على مقاسك',
-        imageAlt: 'مجلس بألوان دافئة من تنفيذ يسر'
-      },
-      categories: { title: 'أقسامنا', text: 'اختر القسم وشوف الأمثلة، أو اطلب قطعة من الصفر.' },
-      values: {
-        title: 'لماذا يسر',
-        a: { t: 'صُنع في السعودية', d: 'كل قطعة تُصنع في ورش سعودية شريكة نزورها ونتابع جودتها.' },
-        b: { t: 'على مقاسك', d: 'نأخذ قياسات بيتك الفعلية، فتجي القطعة مضبوطة من أول مرة.' },
-        c: { t: 'سعر مباشر من المصنع', d: 'بدون معارض ولا وسطاء. تدفع قيمة الخامة والتنفيذ فقط.' },
-        d: { t: 'توصيل لكل المملكة', d: 'نوصل ونركّب في المدن الرئيسية، ونشحن لبقية المناطق.' }
-      },
-      featured: { title: 'قطع مختارة', text: 'أكثر ما يطلبه عملاؤنا هذا الموسم.' },
-      process: {
-        title: 'كيف نعمل',
-        text: 'أربع خطوات واضحة من أول رسالة إلى تركيب القطعة في بيتك.',
-        s1: { t: 'اختر أو صف ما تريد', d: 'أرسل لنا صورة أو وصف بسيط، وحدد المكان المخصص للقطعة.' },
-        s2: { t: 'نؤكد القياسات والسعر', d: 'نزورك أو نرسل لك دليل قياس، ثم نعطيك سعرًا نهائيًا مكتوبًا.' },
-        s3: { t: 'التصنيع (7–15 يوم)', d: 'تبدأ الورشة بالتنفيذ ونرسل لك صور التقدم في كل مرحلة.' },
-        s4: { t: 'التوصيل والتركيب', d: 'نوصل القطعة ونركّبها وننظف المكان قبل ما نمشي.' },
-        cta: 'اقرأ التفاصيل كاملة'
-      },
-      testimonials: {
-        title: 'آراء العملاء',
-        note: 'نماذج توضيحية إلى حين نشر آراء العملاء الحقيقية.',
-        a: { q: 'طلبنا خزانة لغرفة صغيرة وشكلها صار أوسع من قبل. القياس مضبوط والتركيب كان نظيف.', n: 'أم فيصل', c: 'الرياض' },
-        b: { q: 'المطبخ تأخر يومين عن الموعد لكن الجودة تستاهل. الخامة أثقل من اللي توقعت.', n: 'عبدالله ا.', c: 'جدة' },
-        c: { q: 'أول مرة أطلب أثاث بدون ما أزور معرض. الصور في كل مرحلة طمّنتني.', n: 'نوف س.', c: 'الدمام' }
-      },
-      trust: {
-        title: 'موثوقية وتعامل واضح',
-        maroof: 'موثوق (معروف)',
-        cr: 'السجل التجاري',
-        payments: 'قريبًا: تابي / تمارا',
-        paymentsNote: 'التقسيط غير مفعّل حاليًا. الدفع اليوم عبر تحويل بنكي أو نقدًا عند التسليم.'
-      },
-      faq: {
-        title: 'أسئلة متكررة',
-        q1: { q: 'كم يستغرق تنفيذ الطلب؟', a: 'من 7 إلى 15 يوم عمل حسب القطعة والخامة. الخزائن والمطابخ الكبيرة قد تصل إلى 21 يومًا، ونخبرك بالمدة الدقيقة قبل التأكيد.' },
-        q2: { q: 'هل السعر يشمل التوصيل والتركيب؟', a: 'نعم داخل الرياض وجدة والدمام. باقي المدن يضاف رسم شحن نوضحه لك قبل الطلب.' },
-        q3: { q: 'كيف تتم عملية الدفع؟', a: 'دفعة أولى 50% لبدء التصنيع، والباقي عند التسليم. نرسل لك فاتورة مكتوبة بالتفاصيل.' },
-        q4: { q: 'هل أقدر أغيّر القياس أو اللون بعد الطلب؟', a: 'تقدر خلال 48 ساعة من تأكيد الطلب وقبل قص الخامة. بعد ذلك يصعب التغيير لأن القطعة تدخل خط التنفيذ.' },
-        q5: { q: 'ما هو الضمان؟', a: 'سنتان على التصنيع والهيكل، وسنة على الأجزاء المتحركة مثل المفصلات والمجاري. الاستخدام الخاطئ غير مشمول.' },
-        q6: { q: 'هل تنفذون طلبات بتصميم من عندي؟', a: 'نعم. أرسل الرسم أو صورة مرجعية ومقاس المكان، ونرد عليك بالإمكانية والسعر خلال 24 ساعة.' }
-      }
+    search: {
+      title: 'ابحث عن قطعة',
+      placeholder: 'مثال: خزانة، مجلس، طاولة طعام…',
+      hint: 'اكتب اسم القطعة أو نوعها',
+      results: 'نتيجة',
+      noResults: 'ما لقينا شيئًا بهذا الاسم. جرّب كلمة أخرى أو تصفّح الأقسام.',
+      seeAll: 'عرض كل النتائج',
+      quick: 'تصفّح سريع',
+      close: 'إغلاق البحث'
+    },
+
+    sort: {
+      label: 'ترتيب',
+      newest: 'الأحدث',
+      priceAsc: 'السعر: من الأقل',
+      priceDesc: 'السعر: من الأعلى',
+      fastest: 'الأسرع تنفيذًا'
+    },
+
+    filters: {
+      category: 'القسم',
+      subtype: 'النوع',
+      collection: 'مجموعة',
+      searchLabel: 'ابحث في المنتجات',
+      searchPh: 'ابحث باسم القطعة…',
+      clearAll: 'إلغاء التصفية'
     },
 
     products: {
       title: 'المنتجات',
-      lead: 'أمثلة جاهزة نصنعها على مقاسك. غيّر الخامة أو اللون أو الأبعاد كما تحب.',
-      searchLabel: 'ابحث في المنتجات',
-      searchPh: 'ابحث باسم القطعة أو الخامة…',
-      filterLabel: 'تصفية حسب القسم',
-      count: 'نتيجة',
-      empty: 'ما لقينا نتائج مطابقة. جرّب كلمة أخرى أو اطلب تفصيل خاص.',
-      emptyCta: 'اطلب قطعة على مقاسك',
-      loadError: 'تعذّر تحميل قائمة المنتجات.',
-      loadErrorHint: 'إذا فتحت الملف مباشرة من جهازك، شغّل خادمًا محليًا: python3 -m http.server'
+      lead: 'كل قطعة تُصنع بعد طلبك، على مقاس مكانك، بالخامة واللون اللي تختارهم.',
+      empty: 'ما لقينا قطعة مطابقة. غيّر التصفية، أو اطلبها على مقاسك وبنصنعها لك.',
+      emptyCta: 'اطلب على مقاسك'
     },
 
     product: {
-      notFound: 'هذا المنتج غير موجود.',
+      notFound: 'هذا المنتج غير موجود أو تم إخفاؤه.',
+      sku: 'رقم المنتج',
       specs: 'المواصفات',
       dimensions: 'الأبعاد',
       material: 'الخامة',
@@ -135,23 +106,61 @@ export const DICT = {
       size: 'المقاس',
       color: 'اللون',
       materialOpt: 'الخامة',
-      priceNote: 'السعر يختلف حسب المقاس والخامة النهائية. نؤكد السعر قبل بدء التصنيع.',
+      priceNote: 'السعر يختلف حسب المقاس والخامة النهائية، ونؤكده قبل بدء التصنيع.',
       gallery: 'صور المنتج',
-      thumbAlt: 'صورة مصغّرة'
+      thumbAlt: 'صورة',
+      related: 'قد يناسبك أيضًا',
+      breadcrumb: 'مسار الصفحة'
+    },
+
+    home: {
+      categories: { eyebrow: 'الأقسام', title: 'اختر القسم وابدأ', text: 'ستة أقسام تغطي البيت كله، وكل قطعة فيها تُصنع على مقاسك.' },
+      values: {
+        eyebrow: 'لماذا يسر',
+        title: 'أثاث يُصنع لبيتك، لا لمعرض',
+        a: { t: 'صُنع في السعودية', d: 'ورش سعودية نزورها ونتابع جودتها.' },
+        b: { t: 'على مقاسك', d: 'نقيس مكانك ونصنع القطعة له بالسنتيمتر.' },
+        c: { t: 'سعر مباشر من المصنع', d: 'بدون معارض ولا وسطاء. تدفع للخامة والصنعة.' },
+        d: { t: 'توصيل وتركيب', d: 'نوصل ونركّب في المدن الرئيسية ونشحن للبقية.' }
+      },
+      featured: { eyebrow: 'مختارات', title: 'قطع يطلبها عملاؤنا كثيرًا', text: 'ابدأ من هنا، وغيّر المقاس والخامة كما تحب.' },
+      gallery: { eyebrow: 'أعمالنا', title: 'قطع سلّمناها لبيوت حقيقية', text: 'صور من التركيب في بيوت عملائنا.' },
+      testimonials: { eyebrow: 'آراء العملاء', title: 'ماذا يقول من طلب قبلك' },
+      process: {
+        eyebrow: 'كيف نعمل',
+        title: 'أربع خطوات من الرسالة إلى التركيب',
+        s1: { t: 'اختر أو صف ما تريد', d: 'أرسل صورة أو وصفًا بسيطًا وحدد المكان المخصص للقطعة.' },
+        s2: { t: 'نؤكد القياسات والسعر', d: 'نزورك أو نرسل دليل قياس، ثم نعطيك سعرًا نهائيًا مكتوبًا.' },
+        s3: { t: 'التصنيع', d: 'تبدأ الورشة بالتنفيذ ونرسل لك صور التقدم في كل مرحلة.' },
+        s4: { t: 'التوصيل والتركيب', d: 'نوصل القطعة ونركّبها وننظف المكان قبل ما نمشي.' },
+        cta: 'التفاصيل كاملة'
+      },
+      faq: { eyebrow: 'أسئلة', title: 'أسئلة متكررة' },
+      cta: { title: 'جاهز تبدأ؟', text: 'أرسل لنا تفاصيل قطعتك ونرد عليك بالسعر خلال 24 ساعة عمل.' }
+    },
+
+    gallery: {
+      open: 'تكبير الصورة',
+      close: 'إغلاق الصورة',
+      prev: 'الصورة السابقة',
+      next: 'الصورة التالية',
+      counter: 'من'
     },
 
     custom: {
       title: 'اطلب قطعة على مقاسك',
-      lead: 'عبّي النموذج وبنرسل لك السعر المبدئي على واتساب خلال 24 ساعة عمل.',
+      lead: 'عبّي النموذج وبنرسل لك السعر المبدئي خلال 24 ساعة عمل.',
       prefilled: 'تم تجهيز الطلب لهذا المنتج:',
       section1: 'معلومات التواصل',
       section2: 'تفاصيل القطعة',
       submit: 'أرسل الطلب عبر واتساب',
-      submitting: 'جاري فتح واتساب…',
-      successTitle: 'تم تجهيز رسالتك',
-      successText: 'فتحنا لك واتساب برسالة جاهزة. إذا ما فتح تلقائيًا، استخدم أحد الخيارين:',
+      submitMail: 'أرسل الطلب بالبريد',
+      submitCopy: 'جهّز الرسالة',
+      successTitle: 'رسالتك جاهزة',
+      successWa: 'فتحنا لك واتساب برسالة جاهزة. إذا ما فتح تلقائيًا، استخدم أحد الخيارين:',
+      successCopy: 'انسخ الرسالة وأرسلها لنا بالطريقة التي تناسبك:',
       openWa: 'افتح واتساب',
-      openMail: 'أرسل بالبريد بدلًا من ذلك',
+      openMail: 'أرسل بالبريد',
       again: 'إرسال طلب آخر',
       errorSummary: 'راجع الحقول المطلوبة بالأسفل.'
     },
@@ -162,6 +171,7 @@ export const DICT = {
       nameErr: 'اكتب اسمك من فضلك.',
       city: 'المدينة',
       cityPh: 'اختر مدينتك',
+      cityOther: 'مدينة أخرى',
       cityErr: 'اختر المدينة.',
       phone: 'رقم الجوال',
       phonePh: '05XXXXXXXX',
@@ -170,7 +180,6 @@ export const DICT = {
       category: 'القسم',
       categoryPh: 'اختر القسم',
       categoryErr: 'اختر القسم.',
-      product: 'المنتج المرجعي',
       description: 'وصف ما تريد',
       descriptionPh: 'مثال: خزانة بأربعة أبواب سحب ومرآة في الوسط، للغرفة الرئيسية.',
       descriptionErr: 'اكتب وصفًا قصيرًا (10 أحرف على الأقل).',
@@ -193,14 +202,13 @@ export const DICT = {
         b: '2,000 – 5,000 ر.س',
         c: '5,000 – 10,000 ر.س',
         d: '10,000 – 20,000 ر.س',
-        e: 'أكثر من 20,000 ر.س',
-        unknown: 'غير محدد'
-      },
-      optional: 'اختياري'
+        e: 'أكثر من 20,000 ر.س'
+      }
     },
 
     waMsg: {
       title: 'طلب جديد من موقع يسر',
+      greeting: 'السلام عليكم، عندي استفسار عن منتجات يسر.',
       name: 'الاسم',
       city: 'المدينة',
       phone: 'الجوال',
@@ -220,7 +228,7 @@ export const DICT = {
       title: 'كيف نعمل',
       lead: 'من أول رسالة إلى تركيب القطعة، هذه كل خطوة بالتفصيل.',
       deliveryTitle: 'التوصيل والتركيب',
-      deliveryText: 'نوصل ونركّب مجانًا داخل الرياض وجدة والدمام. في بقية المدن نشحن عبر شركة شحن ونضيف رسمًا نوضحه قبل تأكيد الطلب. فريق التركيب يفك الكرتون ويأخذه معه، ويترك المكان نظيفًا.',
+      deliveryText: 'نوصل ونركّب مجانًا في المدن الرئيسية. في بقية المدن نشحن عبر شركة شحن ونضيف رسمًا نوضحه قبل تأكيد الطلب. فريق التركيب يفك الكرتون ويأخذه معه، ويترك المكان نظيفًا.',
       deliveryList: {
         a: 'نتفق على موعد التركيب قبلها بيومين.',
         b: 'التركيب في الأدوار العليا بدون مصعد قد يضاف له رسم رفع.',
@@ -236,24 +244,18 @@ export const DICT = {
         c: 'إذا تأخر التسليم أكثر من 7 أيام عن الموعد بسببنا، تختار بين خصم 10% أو إلغاء كامل.'
       },
       paymentTitle: 'الدفع',
-      paymentText: 'دفعة أولى 50% عند تأكيد القياسات، والباقي عند التسليم. الدفع بتحويل بنكي أو نقدًا عند الاستلام. خدمات التقسيط غير مفعّلة حاليًا.',
-      cta: 'جاهز تبدأ؟',
-      ctaText: 'أرسل لنا تفاصيل قطعتك ونرد عليك بالسعر خلال 24 ساعة عمل.'
+      paymentText: 'دفعة أولى 50% عند تأكيد القياسات، والباقي عند التسليم. الدفع بتحويل بنكي أو نقدًا عند الاستلام.'
     },
 
     about: {
       title: 'عن يسر',
       lead: 'بدأنا بسؤال بسيط: ليش أثاث البيت غالي ومو على المقاس؟',
       storyTitle: 'قصتنا',
-      storyP1: 'يسر بدأ سنة 2023 بعد تجربة شخصية: غرفة بمساحة غريبة، وخزانة جاهزة ما دخلت فيها. بحثنا عن ورشة تنفذ القياس المطلوب، ولقينا ورشًا سعودية ممتازة لكن ما عندها طريقة واضحة توصل فيها للناس.',
+      storyP1: 'يسر بدأ بعد تجربة شخصية: غرفة بمساحة غريبة، وخزانة جاهزة ما دخلت فيها. بحثنا عن ورشة تنفذ القياس المطلوب، ولقينا ورشًا سعودية ممتازة لكن ما عندها طريقة واضحة توصل فيها للناس.',
       storyP2: 'اليوم نشتغل وسيطًا واضحًا: نستقبل طلبك، نأخذ القياس، نتفق على السعر، ونسلّم الطلب لورشة تناسب نوع القطعة. نتابع التنفيذ مرحلة بمرحلة ونرسل لك الصور، وتبقى مسؤولية الجودة والضمان علينا لا على الورشة.',
       storyP3: 'ما عندنا معارض ولا مخزون جاهز. كل قطعة تُصنع بعد الطلب، وهذا اللي يخلي السعر أقل والقياس مضبوط.',
       partnersTitle: 'ورش نعمل معها',
       partnersText: 'ورش سعودية مختارة، كل واحدة متخصصة في نوع مختلف من التنفيذ.',
-      p1: { n: 'ورشة الحرفة — الرياض', s: 'أثاث خشبي وتنجيد', d: 'متخصصة في الكنب والمجالس والأسِرّة المبطنة، وفيها قسم تنجيد داخلي.' },
-      p2: { n: 'مصنع المدى — الدمام', s: 'خزائن ومطابخ', d: 'خطوط قص CNC للألواح، مناسبة للخزائن والمطابخ بقياسات دقيقة.' },
-      p3: { n: 'ورشة نجد للأخشاب — القصيم', s: 'أبواب وخشب صلب', d: 'تنفيذ الأبواب الداخلية والمداخل بالخشب الصلب والتشطيب اليدوي.' },
-      partnersNote: 'أسماء الورش أدناه أمثلة توضيحية.',
       promiseTitle: 'وعد الجودة',
       promiseList: {
         a: 'نفحص كل قطعة في الورشة قبل الشحن ونرسل لك صور الفحص.',
@@ -261,11 +263,7 @@ export const DICT = {
         c: 'أي عيب تصنيع خلال فترة الضمان نصلحه على حسابنا.',
         d: 'السعر الذي نؤكده هو السعر النهائي، بدون رسوم تظهر لاحقًا.'
       },
-      statsTitle: 'بالأرقام',
-      stat1: 'طلب منفّذ',
-      stat2: 'ورش شريكة',
-      stat3: 'مدينة نغطيها',
-      statsNote: 'أرقام توضيحية إلى حين تحديثها.'
+      statsTitle: 'بالأرقام'
     },
 
     contact: {
@@ -277,21 +275,13 @@ export const DICT = {
       phoneTitle: 'اتصال',
       emailTitle: 'البريد الإلكتروني',
       hoursTitle: 'ساعات العمل',
-      hours: 'الأحد – الخميس: 9 صباحًا – 6 مساءً · السبت: 10 صباحًا – 4 عصرًا · الجمعة: إجازة',
       coverageTitle: 'المدن التي نغطيها',
-      coverageText: 'توصيل وتركيب مجاني في المدن الرئيسية، وشحن لبقية المناطق.',
-      mapTitle: 'موقع الإدارة',
-      mapPlaceholder: 'مكان الخريطة — تُضاف بعد اعتماد العنوان.',
-      address: 'الرياض، المملكة العربية السعودية',
+      coverageText: 'توصيل وتركيب مجاني في المدن المعلّمة، وشحن لبقية المناطق.',
+      installBadge: 'توصيل وتركيب',
+      mapTitle: 'موقعنا',
       formTitle: 'تفضّل ترسل نموذجًا؟',
       formText: 'استخدم نموذج الطلب وبيوصلنا كل التفاصيل مرتبة.',
       formCta: 'افتح نموذج الطلب'
-    },
-
-    cities: {
-      riyadh: 'الرياض', jeddah: 'جدة', dammam: 'الدمام', khobar: 'الخبر', makkah: 'مكة المكرمة',
-      madinah: 'المدينة المنورة', qassim: 'القصيم', abha: 'أبها', tabuk: 'تبوك', hail: 'حائل',
-      jazan: 'جازان', taif: 'الطائف', other: 'مدينة أخرى'
     },
 
     footer: {
@@ -300,15 +290,19 @@ export const DICT = {
       contact: 'تواصل',
       social: 'تابعنا',
       rights: 'جميع الحقوق محفوظة.',
-      builtIn: 'صُنع في السعودية',
+      maroof: 'موثوق (معروف)',
+      cr: 'السجل التجاري',
+      vat: 'الرقم الضريبي',
       instagram: 'إنستقرام', x: 'إكس', tiktok: 'تيك توك', snapchat: 'سناب شات'
     },
 
+    sticky: { cta: 'اطلب عبر واتساب' },
+
     meta: {
-      home: { t: 'يسر | أثاث وخزائن ومطابخ على مقاسك في السعودية', d: 'يسر يصنع أثاثك وخزائنك ومطبخك وأبوابك على مقاسك مع ورش سعودية، بسعر مباشر من المصنع وتوصيل لكل المملكة.' },
-      products: { t: 'المنتجات | يسر', d: 'تصفّح أمثلة الأثاث والخزائن والمطابخ والأبواب التي ننفذها على المقاس، مع أسعار البداية ومدة التنفيذ.' },
+      home: { t: 'يسر | أثاث ومجالس وخزائن ومطابخ على مقاسك في السعودية', d: 'يسر يصنع أثاثك ومجلسك وخزائنك ومطبخك وأبوابك على مقاسك مع ورش سعودية، بسعر مباشر من المصنع وتوصيل لكل المملكة.' },
+      products: { t: 'المنتجات | يسر', d: 'تصفّح المجالس والكنب وغرف النوم والمطابخ والأبواب والسفرات التي ننفذها على المقاس، مع أسعار البداية ومدة التنفيذ.' },
       product: { t: 'تفاصيل المنتج | يسر', d: 'مواصفات وخيارات القطعة مع إمكانية طلبها على مقاسك مباشرة عبر واتساب.' },
-      custom: { t: 'اطلب تفصيل | يسر', d: 'أرسل قياساتك وتفاصيل القطعة التي تريدها، ونرد عليك بالسعر خلال 24 ساعة عمل.' },
+      custom: { t: 'اطلب على مقاسك | يسر', d: 'أرسل قياساتك وتفاصيل القطعة التي تريدها، ونرد عليك بالسعر خلال 24 ساعة عمل.' },
       how: { t: 'كيف نعمل | يسر', d: 'من الطلب إلى التركيب: الخطوات والتوصيل والضمان وسياسة الإلغاء بوضوح.' },
       about: { t: 'عن يسر | صناعة سعودية على المقاس', d: 'قصة يسر، الورش الشريكة، ووعد الجودة الذي نلتزم به في كل طلب.' },
       contact: { t: 'تواصل معنا | يسر', d: 'واتساب وهاتف وبريد وساعات العمل والمدن التي نغطيها بالتوصيل والتركيب.' }
@@ -317,7 +311,6 @@ export const DICT = {
 
   en: {
     dir: 'ltr',
-    lang: 'en',
     htmlLang: 'en',
     currency: 'SAR',
     brand: { name: 'Yusr', tagline: 'Your home, your way.' },
@@ -330,11 +323,12 @@ export const DICT = {
       about: 'About',
       contact: 'Contact',
       menu: 'Menu',
-      close: 'Close menu',
+      close: 'Close',
       skip: 'Skip to content',
       langToggle: 'عربي',
       langToggleLabel: 'Switch language to Arabic',
-      whatsapp: 'WhatsApp'
+      whatsapp: 'WhatsApp',
+      search: 'Search'
     },
 
     common: {
@@ -343,98 +337,64 @@ export const DICT = {
       orderNow: 'Order now',
       orderThis: 'Order this piece',
       viewAll: 'View all products',
+      browse: 'Browse products',
+      customCta: 'Order to your size',
       details: 'Details',
-      days: 'days',
+      day: 'days',
       years: 'years',
-      leadTime: 'Lead time',
-      material: 'Material',
+      readyIn: 'Ready in',
       loading: 'Loading…',
       backToProducts: 'Back to products',
-      required: 'required',
-      sample: 'Sample content'
-    },
-
-    cat: {
       all: 'All',
-      furniture: 'Furniture',
-      wardrobes: 'Wardrobes & closets',
-      kitchens: 'Kitchens',
-      doors: 'Doors',
-      essentials: 'Home essentials',
-      furnitureDesc: 'Sofas, beds, tables and majlis seating, built to your size.',
-      wardrobesDesc: 'Wardrobes and walk-ins that use every centimetre of the room.',
-      kitchensDesc: 'Made-to-measure kitchens in materials that take daily use.',
-      doorsDesc: 'Interior and entrance doors in solid wood with a clean finish.',
-      essentialsDesc: 'Shelves, consoles and smaller pieces that finish a home.'
+      clear: 'Clear',
+      copy: 'Copy message',
+      copied: 'Copied',
+      product: 'product',
+      products: 'products',
+      noResults: 'No results',
+      madeIn: 'Made in Saudi Arabia',
+      loadError: 'Could not load the content.',
+      loadErrorHint: 'If you opened the file directly from disk, run a local server: python3 -m http.server'
     },
 
-    home: {
-      hero: {
-        eyebrow: 'Made in Saudi Arabia',
-        title: 'Furniture built to your exact measurements',
-        text: 'Yusr makes your furniture, wardrobes, kitchen and doors with selected Saudi workshops — factory-direct pricing, delivered nationwide.',
-        ctaPrimary: 'Browse products',
-        ctaSecondary: 'Request a custom piece',
-        imageAlt: 'A warm-toned majlis built by Yusr'
-      },
-      categories: { title: 'Categories', text: 'Pick a category for examples, or start a piece from scratch.' },
-      values: {
-        title: 'Why Yusr',
-        a: { t: 'Made in Saudi Arabia', d: 'Every piece is built in partner workshops we visit and inspect.' },
-        b: { t: 'Built to your size', d: 'We work from your real measurements, so it fits the first time.' },
-        c: { t: 'Factory-direct pricing', d: 'No showrooms, no middlemen. You pay for materials and craft.' },
-        d: { t: 'Nationwide delivery', d: 'Free delivery and installation in major cities, shipping elsewhere.' }
-      },
-      featured: { title: 'Selected pieces', text: 'What customers order most this season.' },
-      process: {
-        title: 'How it works',
-        text: 'Four clear steps, from your first message to installation day.',
-        s1: { t: 'Choose or describe it', d: 'Send a photo or a short description and tell us where it goes.' },
-        s2: { t: 'We confirm size and price', d: 'We measure on site or send a measuring guide, then quote in writing.' },
-        s3: { t: 'Production (7–15 days)', d: 'The workshop starts building and we send progress photos at each stage.' },
-        s4: { t: 'Delivery and installation', d: 'We deliver, install, and clean up before we leave.' },
-        cta: 'Read the full process'
-      },
-      testimonials: {
-        title: 'What customers say',
-        note: 'Sample quotes until real customer reviews are published.',
-        a: { q: 'We ordered a wardrobe for a small room and it somehow feels bigger now. The fit was exact and the install was tidy.', n: 'Umm Faisal', c: 'Riyadh' },
-        b: { q: 'The kitchen ran two days late, but the quality was worth it. The material is heavier than I expected.', n: 'Abdullah A.', c: 'Jeddah' },
-        c: { q: 'First time ordering furniture without visiting a showroom. The photos at every stage kept me relaxed.', n: 'Nouf S.', c: 'Dammam' }
-      },
-      trust: {
-        title: 'Clear, accountable dealing',
-        maroof: 'Maroof verified',
-        cr: 'Commercial Registration',
-        payments: 'Coming soon: Tabby / Tamara',
-        paymentsNote: 'Instalments are not active yet. Payment today is by bank transfer or cash on delivery.'
-      },
-      faq: {
-        title: 'Frequently asked questions',
-        q1: { q: 'How long does an order take?', a: '7 to 15 working days depending on the piece and material. Large wardrobes and kitchens can reach 21 days, and we confirm the exact timeline before you approve.' },
-        q2: { q: 'Does the price include delivery and installation?', a: 'Yes within Riyadh, Jeddah and Dammam. Other cities have a shipping fee that we state before you order.' },
-        q3: { q: 'How does payment work?', a: '50% deposit to start production, the balance on delivery. You get a written invoice with the full breakdown.' },
-        q4: { q: 'Can I change the size or colour after ordering?', a: 'Yes, within 48 hours of confirmation and before the material is cut. After that the piece is already in production.' },
-        q5: { q: 'What is the warranty?', a: 'Two years on build and structure, one year on moving parts such as hinges and runners. Misuse is not covered.' },
-        q6: { q: 'Can you build from my own design?', a: 'Yes. Send the drawing or a reference photo plus the space measurements, and we reply with feasibility and price within 24 hours.' }
-      }
+    search: {
+      title: 'Find a piece',
+      placeholder: 'e.g. wardrobe, majlis, dining table…',
+      hint: 'Type the name or kind of piece',
+      results: 'results',
+      noResults: 'Nothing by that name. Try another word, or browse the categories.',
+      seeAll: 'See all results',
+      quick: 'Quick browse',
+      close: 'Close search'
+    },
+
+    sort: {
+      label: 'Sort',
+      newest: 'Newest',
+      priceAsc: 'Price: low to high',
+      priceDesc: 'Price: high to low',
+      fastest: 'Fastest to make'
+    },
+
+    filters: {
+      category: 'Category',
+      subtype: 'Type',
+      collection: 'Collection',
+      searchLabel: 'Search products',
+      searchPh: 'Search by name…',
+      clearAll: 'Clear filters'
     },
 
     products: {
       title: 'Products',
-      lead: 'Ready examples that we build to your measurements. Change the material, colour or dimensions as you like.',
-      searchLabel: 'Search products',
-      searchPh: 'Search by name or material…',
-      filterLabel: 'Filter by category',
-      count: 'results',
-      empty: 'No matches found. Try another word, or request a custom piece.',
-      emptyCta: 'Request a custom piece',
-      loadError: 'Could not load the product list.',
-      loadErrorHint: 'If you opened the file directly from disk, run a local server: python3 -m http.server'
+      lead: 'Every piece is built after you order, to the size of your space, in the material and colour you choose.',
+      empty: 'No matching piece. Change the filters, or order it to your size and we will build it.',
+      emptyCta: 'Order to your size'
     },
 
     product: {
-      notFound: 'This product does not exist.',
+      notFound: 'This product does not exist or has been hidden.',
+      sku: 'Product no.',
       specs: 'Specifications',
       dimensions: 'Dimensions',
       material: 'Material',
@@ -445,23 +405,61 @@ export const DICT = {
       size: 'Size',
       color: 'Colour',
       materialOpt: 'Material',
-      priceNote: 'Price varies with final size and material. We confirm it before production starts.',
+      priceNote: 'Price varies with final size and material; we confirm it before production starts.',
       gallery: 'Product images',
-      thumbAlt: 'Thumbnail'
+      thumbAlt: 'Image',
+      related: 'You may also like',
+      breadcrumb: 'Breadcrumb'
+    },
+
+    home: {
+      categories: { eyebrow: 'Categories', title: 'Pick a category and start', text: 'Six categories that cover the whole home — every piece built to your size.' },
+      values: {
+        eyebrow: 'Why Yusr',
+        title: 'Furniture made for your home, not a showroom',
+        a: { t: 'Made in Saudi Arabia', d: 'Saudi workshops we visit and inspect.' },
+        b: { t: 'Built to your size', d: 'We measure your space and build to the centimetre.' },
+        c: { t: 'Factory-direct pricing', d: 'No showrooms, no middlemen. You pay for material and craft.' },
+        d: { t: 'Delivery and installation', d: 'We deliver and install in major cities, and ship elsewhere.' }
+      },
+      featured: { eyebrow: 'Selected', title: 'Pieces our customers order most', text: 'Start here, then change the size and material as you like.' },
+      gallery: { eyebrow: 'Our work', title: 'Pieces delivered to real homes', text: 'Installation photos from our customers’ homes.' },
+      testimonials: { eyebrow: 'Reviews', title: 'What customers say' },
+      process: {
+        eyebrow: 'How it works',
+        title: 'Four steps from message to installation',
+        s1: { t: 'Choose or describe it', d: 'Send a photo or a short description and tell us where it goes.' },
+        s2: { t: 'We confirm size and price', d: 'We measure on site or send a measuring guide, then quote in writing.' },
+        s3: { t: 'Production', d: 'The workshop starts building and we send progress photos at each stage.' },
+        s4: { t: 'Delivery and installation', d: 'We deliver, install, and clean up before we leave.' },
+        cta: 'Full details'
+      },
+      faq: { eyebrow: 'FAQ', title: 'Frequently asked questions' },
+      cta: { title: 'Ready to start?', text: 'Send us your piece details and we reply with a price within 24 working hours.' }
+    },
+
+    gallery: {
+      open: 'Enlarge image',
+      close: 'Close image',
+      prev: 'Previous image',
+      next: 'Next image',
+      counter: 'of'
     },
 
     custom: {
-      title: 'Request a custom piece',
-      lead: 'Fill in the form and we send you an indicative price on WhatsApp within 24 working hours.',
+      title: 'Order a piece to your size',
+      lead: 'Fill in the form and we send you an indicative price within 24 working hours.',
       prefilled: 'Request prepared for this product:',
       section1: 'Contact details',
       section2: 'Piece details',
       submit: 'Send request on WhatsApp',
-      submitting: 'Opening WhatsApp…',
+      submitMail: 'Send request by e-mail',
+      submitCopy: 'Prepare the message',
       successTitle: 'Your message is ready',
-      successText: 'We opened WhatsApp with a prepared message. If it did not open, use one of these:',
+      successWa: 'We opened WhatsApp with a prepared message. If it did not open, use one of these:',
+      successCopy: 'Copy the message and send it to us however suits you:',
       openWa: 'Open WhatsApp',
-      openMail: 'Send by e-mail instead',
+      openMail: 'Send by e-mail',
       again: 'Send another request',
       errorSummary: 'Please check the highlighted fields below.'
     },
@@ -472,6 +470,7 @@ export const DICT = {
       nameErr: 'Please enter your name.',
       city: 'City',
       cityPh: 'Select your city',
+      cityOther: 'Another city',
       cityErr: 'Please select a city.',
       phone: 'Mobile number',
       phonePh: '05XXXXXXXX',
@@ -480,7 +479,6 @@ export const DICT = {
       category: 'Category',
       categoryPh: 'Select a category',
       categoryErr: 'Please select a category.',
-      product: 'Reference product',
       description: 'Describe what you want',
       descriptionPh: 'e.g. A four-door sliding wardrobe with a mirror in the middle, for the master bedroom.',
       descriptionErr: 'Please write a short description (at least 10 characters).',
@@ -503,14 +501,13 @@ export const DICT = {
         b: '2,000 – 5,000 SAR',
         c: '5,000 – 10,000 SAR',
         d: '10,000 – 20,000 SAR',
-        e: 'Over 20,000 SAR',
-        unknown: 'Not specified'
-      },
-      optional: 'optional'
+        e: 'Over 20,000 SAR'
+      }
     },
 
     waMsg: {
       title: 'New request from the Yusr website',
+      greeting: 'Hello Yusr, I have a question about your products.',
       name: 'Name',
       city: 'City',
       phone: 'Mobile',
@@ -530,7 +527,7 @@ export const DICT = {
       title: 'How it works',
       lead: 'From the first message to installation day — every step in detail.',
       deliveryTitle: 'Delivery and installation',
-      deliveryText: 'Delivery and installation are free within Riyadh, Jeddah and Dammam. Elsewhere we ship through a courier and add a fee that we state before you confirm. The install team removes the packaging and leaves the space clean.',
+      deliveryText: 'Delivery and installation are free in the major cities we serve. Elsewhere we ship through a courier and add a fee that we state before you confirm. The install team removes the packaging and leaves the space clean.',
       deliveryList: {
         a: 'We agree on the installation slot two days in advance.',
         b: 'Upper floors without a lift may carry a carrying fee.',
@@ -546,24 +543,18 @@ export const DICT = {
         c: 'If we deliver more than 7 days late through our own fault, you choose between a 10% discount or a full cancellation.'
       },
       paymentTitle: 'Payment',
-      paymentText: '50% deposit once measurements are confirmed, the balance on delivery. Payment by bank transfer or cash on delivery. Instalment services are not active yet.',
-      cta: 'Ready to start?',
-      ctaText: 'Send us your details and we reply with a price within 24 working hours.'
+      paymentText: '50% deposit once measurements are confirmed, the balance on delivery. Payment by bank transfer or cash on delivery.'
     },
 
     about: {
       title: 'About Yusr',
       lead: 'We started with a simple question: why is home furniture expensive and never the right size?',
       storyTitle: 'Our story',
-      storyP1: 'Yusr began in 2023 after a personal problem: an oddly shaped room and a ready-made wardrobe that would not fit. We went looking for a workshop that could build to size and found excellent Saudi workshops with no clear way to reach customers.',
+      storyP1: 'Yusr began with a personal problem: an oddly shaped room and a ready-made wardrobe that would not fit. We went looking for a workshop that could build to size and found excellent Saudi workshops with no clear way to reach customers.',
       storyP2: 'Today we are a transparent middle layer: we take your request, measure the space, agree a price, and hand the job to the workshop that suits the piece. We follow production stage by stage and send you photos — and quality and warranty stay our responsibility, not the workshop’s.',
       storyP3: 'We hold no showroom and no stock. Every piece is built after it is ordered, which is what keeps the price lower and the fit exact.',
       partnersTitle: 'Workshops we partner with',
       partnersText: 'Selected Saudi workshops, each specialised in a different kind of work.',
-      p1: { n: 'Al-Hirfah Workshop — Riyadh', s: 'Wooden furniture and upholstery', d: 'Specialised in sofas, majlis seating and upholstered beds, with an in-house upholstery line.' },
-      p2: { n: 'Al-Mada Factory — Dammam', s: 'Wardrobes and kitchens', d: 'CNC panel cutting, suited to wardrobes and kitchens with tight tolerances.' },
-      p3: { n: 'Najd Timber Workshop — Qassim', s: 'Doors and solid wood', d: 'Interior and entrance doors in solid wood with hand finishing.' },
-      partnersNote: 'The workshop names below are illustrative examples.',
       promiseTitle: 'Our quality promise',
       promiseList: {
         a: 'We inspect every piece at the workshop before shipping and send you the inspection photos.',
@@ -571,11 +562,7 @@ export const DICT = {
         c: 'Any manufacturing defect within the warranty period is fixed at our cost.',
         d: 'The price we confirm is the final price. No fees appear later.'
       },
-      statsTitle: 'By the numbers',
-      stat1: 'orders delivered',
-      stat2: 'partner workshops',
-      stat3: 'cities covered',
-      statsNote: 'Illustrative figures pending update.'
+      statsTitle: 'By the numbers'
     },
 
     contact: {
@@ -587,21 +574,13 @@ export const DICT = {
       phoneTitle: 'Phone',
       emailTitle: 'E-mail',
       hoursTitle: 'Working hours',
-      hours: 'Sunday – Thursday: 9am – 6pm · Saturday: 10am – 4pm · Friday: closed',
       coverageTitle: 'Cities we cover',
-      coverageText: 'Free delivery and installation in major cities, shipping everywhere else.',
-      mapTitle: 'Office location',
-      mapPlaceholder: 'Map placeholder — added once the address is confirmed.',
-      address: 'Riyadh, Saudi Arabia',
+      coverageText: 'Free delivery and installation in the marked cities, shipping everywhere else.',
+      installBadge: 'Delivery + installation',
+      mapTitle: 'Where we are',
       formTitle: 'Prefer to send a form?',
       formText: 'Use the request form and every detail reaches us in order.',
       formCta: 'Open the request form'
-    },
-
-    cities: {
-      riyadh: 'Riyadh', jeddah: 'Jeddah', dammam: 'Dammam', khobar: 'Khobar', makkah: 'Makkah',
-      madinah: 'Madinah', qassim: 'Qassim', abha: 'Abha', tabuk: 'Tabuk', hail: 'Hail',
-      jazan: 'Jazan', taif: 'Taif', other: 'Another city'
     },
 
     footer: {
@@ -610,13 +589,17 @@ export const DICT = {
       contact: 'Contact',
       social: 'Follow us',
       rights: 'All rights reserved.',
-      builtIn: 'Made in Saudi Arabia',
+      maroof: 'Maroof verified',
+      cr: 'Commercial Registration',
+      vat: 'VAT number',
       instagram: 'Instagram', x: 'X', tiktok: 'TikTok', snapchat: 'Snapchat'
     },
 
+    sticky: { cta: 'Order on WhatsApp' },
+
     meta: {
-      home: { t: 'Yusr | Made-to-measure furniture, wardrobes and kitchens in Saudi Arabia', d: 'Yusr builds your furniture, wardrobes, kitchen and doors to your measurements with Saudi workshops — factory-direct pricing, nationwide delivery.' },
-      products: { t: 'Products | Yusr', d: 'Browse the furniture, wardrobes, kitchens and doors we build to measure, with starting prices and lead times.' },
+      home: { t: 'Yusr | Made-to-measure furniture, majlis, wardrobes and kitchens in Saudi Arabia', d: 'Yusr builds your furniture, majlis, wardrobes, kitchen and doors to your measurements with Saudi workshops — factory-direct pricing, nationwide delivery.' },
+      products: { t: 'Products | Yusr', d: 'Browse the majlis, sofas, bedrooms, kitchens, doors and dining sets we build to measure, with starting prices and lead times.' },
       product: { t: 'Product details | Yusr', d: 'Specifications and options for the piece, with a direct WhatsApp request for your own measurements.' },
       custom: { t: 'Custom order | Yusr', d: 'Send your measurements and piece details, and we reply with a price within 24 working hours.' },
       how: { t: 'How it works | Yusr', d: 'From order to installation: the steps, delivery, warranty and cancellation policy in plain language.' },
@@ -627,50 +610,57 @@ export const DICT = {
 };
 
 export const LANGS = ['ar', 'en'];
-export const DEFAULT_LANG = 'ar';
-const STORAGE_KEY = 'yusr.lang';
-
-/** Ordered category keys, used by filters and selects. */
-export const CATEGORIES = ['furniture', 'wardrobes', 'kitchens', 'doors', 'essentials'];
-
-/** Ordered city keys for the city select and the coverage list. */
-export const CITY_KEYS = [
-  'riyadh', 'jeddah', 'dammam', 'khobar', 'makkah', 'madinah',
-  'qassim', 'abha', 'tabuk', 'hail', 'jazan', 'taif', 'other'
-];
-
-/** Cities with free delivery + installation. TODO: confirm */
-export const INSTALL_CITIES = ['riyadh', 'jeddah', 'dammam', 'khobar'];
 
 /**
- * Resolve the active language: ?lang= wins, then localStorage, then Arabic.
+ * Resolve the active language: ?lang= wins, then localStorage, then the default.
  */
 export function getLang() {
   const fromUrl = new URLSearchParams(location.search).get('lang');
   if (LANGS.includes(fromUrl)) return fromUrl;
   let stored = null;
-  try { stored = localStorage.getItem(STORAGE_KEY); } catch (_) { /* private mode */ }
-  return LANGS.includes(stored) ? stored : DEFAULT_LANG;
+  try { stored = localStorage.getItem(CONFIG.storageKey); } catch (_) { /* private mode */ }
+  return LANGS.includes(stored) ? stored : CONFIG.defaultLang;
 }
 
 export function storeLang(lang) {
-  try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) { /* private mode */ }
+  try { localStorage.setItem(CONFIG.storageKey, lang); } catch (_) { /* private mode */ }
 }
 
-/** Look up a dotted key, e.g. t('home.hero.title'). Returns the key if missing. */
-export function t(key, lang = getLang()) {
+/** Look up a dotted key, e.g. t('home.faq.title'). Returns the key if missing. */
+export function t(key, lang) {
   const value = key.split('.').reduce((node, part) => (node == null ? node : node[part]), DICT[lang]);
   return value == null ? key : value;
 }
 
-/** Western Arabic numerals with thousand separators, in both languages. */
-export function formatNumber(n) {
-  return new Intl.NumberFormat('en-US').format(n);
+/** Pick the active-language value from a { ar, en } object; falls back to the other language. */
+export function pick(obj, lang) {
+  if (obj == null) return '';
+  if (typeof obj !== 'object') return String(obj);
+  return obj[lang] ?? obj[lang === 'ar' ? 'en' : 'ar'] ?? '';
 }
 
-/** "يبدأ من 2,900 ر.س" / "From 2,900 SAR" */
-export function formatPrice(amount, lang = getLang()) {
-  return lang === 'ar'
-    ? `${formatNumber(amount)} ${DICT.ar.currency}`
-    : `${formatNumber(amount)} ${DICT.en.currency}`;
+const FORMATTERS = {
+  ar: new Intl.NumberFormat(CONFIG.arabicNumerals ? 'ar-SA-u-nu-arab' : 'en-US'),
+  en: new Intl.NumberFormat('en-US')
+};
+
+/** Grouped number in the language's numerals: ٢٬٩٠٠ / 2,900. */
+export function formatNumber(n, lang) {
+  return (FORMATTERS[lang] || FORMATTERS.en).format(n);
+}
+
+/** "٢٬٩٠٠ ر.س" / "2,900 SAR" */
+export function formatPrice(amount, lang) {
+  return `${formatNumber(amount, lang)} ${DICT[lang].currency}`;
+}
+
+/** "١٢ يوم" / "12 days" */
+export function formatDays(days, lang) {
+  return `${formatNumber(days, lang)} ${t('common.day', lang)}`;
+}
+
+/** "١٢ منتج" / "12 products" */
+export function formatCount(n, lang) {
+  const noun = lang === 'en' && n === 1 ? t('common.product', lang) : t('common.products', lang);
+  return `${formatNumber(n, lang)} ${noun}`;
 }

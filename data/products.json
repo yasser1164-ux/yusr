@@ -1,543 +1,691 @@
 [
   {
-    "id": "sofa-l-01",
-    "category": "furniture",
-    "name": { "ar": "كنب زاوية قماش", "en": "L-shaped fabric sofa" },
-    "short": { "ar": "زاوية مريحة بقماش يتحمل الاستخدام اليومي.", "en": "A roomy corner sofa in hard-wearing fabric." },
+    "id": "majlis-arabic-01",
+    "sku": "YSR-MJ-001",
+    "category": "majlis",
+    "tags": ["majlis-arabic", "cushions"],
+    "visible": true,
+    "featured": true,
+    "collections": ["most-requested", "new-home"],
+    "added": "2026-09-01",
+    "_todo": "confirm price",
+    "name": { "ar": "مجلس عربي أرضي كامل", "en": "Full Arabic floor majlis" },
+    "short": { "ar": "فرشات ومساند ومخدات على شكل U أو L حسب غرفتك.", "en": "Mattresses, back rests and cushions, in a U or L to fit your room." },
     "description": {
-      "ar": "كنب زاوية بهيكل خشب زان مجفف وإسفنج عالي الكثافة يحافظ على شكله بعد سنوات. القماش الكتاني قابل للفك والغسل، ونقدر نغيّر اتجاه الزاوية يمين أو يسار حسب باب المجلس. نصنعه بطول يناسب جدارك بالسنتيمتر، ونضيف طاولة جانبية مدمجة إذا حبيت.",
-      "en": "A corner sofa on a kiln-dried beech frame with high-density foam that holds its shape for years. The linen cover is removable and washable, and the corner can face left or right depending on your room. We build it to the exact length of your wall and can add a built-in side table."
-    },
-    "priceFrom": 2900,
-    "priceTo": 4800,
-    "images": [
-      "https://picsum.photos/seed/yusr-sofa-1/1000/750",
-      "https://picsum.photos/seed/yusr-sofa-2/1000/750",
-      "https://picsum.photos/seed/yusr-sofa-3/1000/750"
-    ],
-    "specs": {
-      "dimensions": { "ar": "280 × 180 × 85 سم", "en": "280 × 180 × 85 cm" },
-      "material": { "ar": "خشب زان + قماش كتان", "en": "Beech wood + linen fabric" },
-      "colors": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "زيتي", "en": "Olive" }
-      ],
-      "leadTimeDays": 12,
-      "warrantyYears": 2
-    },
-    "options": {
-      "size": [
-        { "ar": "240 سم", "en": "240 cm" },
-        { "ar": "280 سم", "en": "280 cm" },
-        { "ar": "320 سم", "en": "320 cm" }
-      ],
-      "color": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "زيتي", "en": "Olive" }
-      ],
-      "material": [
-        { "ar": "كتان", "en": "Linen" },
-        { "ar": "مخمل", "en": "Velvet" },
-        { "ar": "جلد صناعي", "en": "Faux leather" }
-      ]
-    },
-    "featured": true
-  },
-  {
-    "id": "bed-uph-01",
-    "category": "furniture",
-    "name": { "ar": "سرير مبطن بمسند عالي", "en": "Upholstered bed with tall headboard" },
-    "short": { "ar": "مسند مبطن يريح الظهر عند القراءة.", "en": "A padded headboard that supports your back." },
-    "description": {
-      "ar": "سرير بهيكل خشبي مقوّى ومسند مبطن بارتفاع 120 سم، مناسب لمن يقرأ أو يشاهد قبل النوم. القاعدة تتحمل حتى 300 كجم وفيها فتحات تهوية للمرتبة. نضيف درجًا سفليًا للتخزين عند الطلب، وهو خيار عملي للغرف الصغيرة.",
-      "en": "A reinforced wooden bed frame with a 120 cm padded headboard, made for people who read or watch before sleeping. The base takes up to 300 kg and is ventilated for the mattress. A storage drawer can be added underneath — a practical option in smaller rooms."
-    },
-    "priceFrom": 1800,
-    "priceTo": 3400,
-    "images": [
-      "https://picsum.photos/seed/yusr-bed-1/1000/750",
-      "https://picsum.photos/seed/yusr-bed-2/1000/750",
-      "https://picsum.photos/seed/yusr-bed-3/1000/750"
-    ],
-    "specs": {
-      "dimensions": { "ar": "200 × 180 × 120 سم", "en": "200 × 180 × 120 cm" },
-      "material": { "ar": "خشب صنوبر + قماش مخمل", "en": "Pine wood + velvet fabric" },
-      "colors": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "كحلي", "en": "Navy" },
-        { "ar": "بني فاتح", "en": "Light brown" }
-      ],
-      "leadTimeDays": 10,
-      "warrantyYears": 2
-    },
-    "options": {
-      "size": [
-        { "ar": "مفرد 120 سم", "en": "Single 120 cm" },
-        { "ar": "مزدوج 160 سم", "en": "Double 160 cm" },
-        { "ar": "كينج 180 سم", "en": "King 180 cm" }
-      ],
-      "color": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "كحلي", "en": "Navy" },
-        { "ar": "بني فاتح", "en": "Light brown" }
-      ],
-      "material": [
-        { "ar": "مخمل", "en": "Velvet" },
-        { "ar": "كتان", "en": "Linen" }
-      ]
-    },
-    "featured": true
-  },
-  {
-    "id": "majlis-floor-01",
-    "category": "furniture",
-    "name": { "ar": "مجلس عربي أرضي", "en": "Arabic floor majlis" },
-    "short": { "ar": "جلسة أرضية كاملة بمساند ومخدات.", "en": "A full floor seating set with backs and cushions." },
-    "description": {
-      "ar": "مجلس أرضي متكامل: فرشات بسماكة 12 سم، مساند ظهر ثابتة، ومخدات جانبية. نفصّله على شكل حرف U أو L حسب مقاس الغرفة، ونستخدم قماشًا يتحمل التنظيف المتكرر لأنه المكان الأكثر استخدامًا في البيت.",
-      "en": "A complete floor majlis: 12 cm mattresses, fixed back rests and side cushions. We shape it as a U or an L to match the room, and use fabric that takes repeated cleaning — this is the busiest seat in the house."
+      "ar": "مجلس أرضي متكامل: فرشات بسماكة 12 سم من إسفنج عالي الكثافة، مساند ظهر ثابتة، ومخدات جانبية. نفصّله على شكل U أو L حسب مقاس الغرفة، ونستخدم قماشًا يتحمل التنظيف المتكرر لأنه المكان الأكثر استخدامًا في البيت. الأغطية قابلة للفك والغسل.",
+      "en": "A complete floor majlis: 12 cm high-density foam mattresses, fixed back rests and side cushions. We shape it as a U or an L to match the room, in fabric that takes repeated cleaning — this is the busiest seat in the house. Covers are removable and washable."
     },
     "priceFrom": 4500,
-    "priceTo": 9500,
+    "priceTo": 12000,
+    "priceNote": { "ar": "السعر حسب الطول الإجمالي ونوع القماش", "en": "Price depends on total length and fabric" },
+    "leadTimeDays": 15,
     "images": [
-      "https://picsum.photos/seed/yusr-majlis-1/1000/750",
-      "https://picsum.photos/seed/yusr-majlis-2/1000/750",
-      "https://picsum.photos/seed/yusr-majlis-3/1000/750"
+      { "src": "assets/products/majlis-arabic-01-a.jpg", "alt": { "ar": "مجلس عربي أرضي بلون بيج", "en": "Beige Arabic floor majlis" } },
+      { "src": "assets/products/majlis-arabic-01-b.jpg", "alt": { "ar": "تفاصيل المساند والمخدات", "en": "Back rest and cushion detail" } },
+      { "src": "assets/products/majlis-arabic-01-c.jpg", "alt": { "ar": "المجلس مركّبًا في غرفة", "en": "The majlis installed in a room" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب الغرفة — من 6 إلى 14 متر طولي", "en": "Room-dependent — 6 to 14 linear metres" },
       "material": { "ar": "إسفنج عالي الكثافة + قماش مقاوم للبقع", "en": "High-density foam + stain-resistant fabric" },
-      "colors": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "عنابي", "en": "Burgundy" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "leadTimeDays": 15,
+      "colors": [ { "ar": "بيج", "en": "Beige" }, { "ar": "عنابي", "en": "Burgundy" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "زيتي", "en": "Olive" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "6 متر طولي", "en": "6 linear metres" },
-        { "ar": "10 متر طولي", "en": "10 linear metres" },
-        { "ar": "14 متر طولي", "en": "14 linear metres" }
-      ],
-      "color": [
-        { "ar": "بيج", "en": "Beige" },
-        { "ar": "عنابي", "en": "Burgundy" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "material": [
-        { "ar": "قماش مقاوم للبقع", "en": "Stain-resistant fabric" },
-        { "ar": "مخمل", "en": "Velvet" }
-      ]
+      "size": [ { "ar": "6 متر طولي", "en": "6 linear metres" }, { "ar": "10 متر طولي", "en": "10 linear metres" }, { "ar": "14 متر طولي", "en": "14 linear metres" } ],
+      "color": [ { "ar": "بيج", "en": "Beige" }, { "ar": "عنابي", "en": "Burgundy" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "زيتي", "en": "Olive" } ],
+      "material": [ { "ar": "قماش مقاوم للبقع", "en": "Stain-resistant fabric" }, { "ar": "مخمل", "en": "Velvet" } ]
     },
-    "featured": true
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
   },
   {
-    "id": "table-dining-01",
-    "category": "furniture",
-    "name": { "ar": "طاولة طعام خشب صلب", "en": "Solid wood dining table" },
-    "short": { "ar": "سطح خشب صلب بقاعدة معدنية ثابتة.", "en": "A solid wood top on a steady metal base." },
+    "id": "majlis-floor-modern-01",
+    "sku": "YSR-MJ-002",
+    "category": "majlis",
+    "tags": ["floor-seating"],
+    "visible": true,
+    "featured": false,
+    "collections": ["new-home"],
+    "added": "2026-08-20",
+    "_todo": "confirm price",
+    "name": { "ar": "جلسة أرضية مودرن", "en": "Modern floor seating" },
+    "short": { "ar": "خطوط بسيطة ومساند منخفضة تناسب الصالات المفتوحة.", "en": "Clean lines and low back rests for open living spaces." },
     "description": {
-      "ar": "طاولة طعام بسطح خشب صلب بسماكة 4 سم وقاعدة حديد مطلي بالبودرة. التشطيب زيتي يبرز عروق الخشب ويسهل ترميمه لو انخدش. نصنعها بطول من 140 إلى 260 سم حسب عدد الكراسي اللي تحتاجها.",
-      "en": "A dining table with a 40 mm solid wood top on a powder-coated steel base. The oil finish shows the grain and makes scratches easy to repair. We build it from 140 to 260 cm long, depending on how many chairs you need."
+      "ar": "جلسة أرضية بتصميم حديث: فرشات بسماكة 15 سم، مساند ظهر منخفضة بزاوية مريحة، وبدون مخدات جانبية كثيرة. مناسبة للصالات المفتوحة والمساحات الصغيرة، وتُصنع بأي طول تحتاجه.",
+      "en": "Floor seating with a modern profile: 15 cm mattresses, low back rests at a relaxed angle, and no clutter of side cushions. Suited to open-plan living and smaller rooms, made in any length you need."
     },
-    "priceFrom": 2200,
-    "priceTo": 4200,
+    "priceFrom": 2800,
+    "priceTo": 6500,
+    "priceNote": { "ar": "السعر حسب الطول الإجمالي والقماش", "en": "Price depends on total length and fabric" },
+    "leadTimeDays": 12,
     "images": [
-      "https://picsum.photos/seed/yusr-table-1/1000/750",
-      "https://picsum.photos/seed/yusr-table-2/1000/750",
-      "https://picsum.photos/seed/yusr-table-3/1000/750"
+      { "src": "assets/products/majlis-floor-modern-01-a.jpg", "alt": { "ar": "جلسة أرضية مودرن رمادية", "en": "Grey modern floor seating" } },
+      { "src": "assets/products/majlis-floor-modern-01-b.jpg", "alt": { "ar": "زاوية الجلسة", "en": "Corner of the seating" } },
+      { "src": "assets/products/majlis-floor-modern-01-c.jpg", "alt": { "ar": "قماش الجلسة عن قرب", "en": "Fabric close-up" } }
     ],
     "specs": {
-      "dimensions": { "ar": "200 × 95 × 76 سم", "en": "200 × 95 × 76 cm" },
-      "material": { "ar": "خشب سنديان + قاعدة حديد", "en": "Oak wood + steel base" },
-      "colors": [
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "طبيعي", "en": "Natural" }
-      ],
-      "leadTimeDays": 14,
+      "dimensions": { "ar": "حسب الغرفة — من 4 إلى 10 متر طولي", "en": "Room-dependent — 4 to 10 linear metres" },
+      "material": { "ar": "إسفنج عالي الكثافة + كتان مخلوط", "en": "High-density foam + linen blend" },
+      "colors": [ { "ar": "رمادي فاتح", "en": "Light grey" }, { "ar": "بيج", "en": "Beige" }, { "ar": "أخضر داكن", "en": "Dark green" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "140 سم (4 أشخاص)", "en": "140 cm (seats 4)" },
-        { "ar": "200 سم (6 أشخاص)", "en": "200 cm (seats 6)" },
-        { "ar": "260 سم (8 أشخاص)", "en": "260 cm (seats 8)" }
-      ],
-      "color": [
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "طبيعي", "en": "Natural" }
-      ],
-      "material": [
-        { "ar": "خشب سنديان", "en": "Oak" },
-        { "ar": "خشب زان", "en": "Beech" }
-      ]
+      "size": [ { "ar": "4 متر طولي", "en": "4 linear metres" }, { "ar": "7 متر طولي", "en": "7 linear metres" }, { "ar": "10 متر طولي", "en": "10 linear metres" } ],
+      "color": [ { "ar": "رمادي فاتح", "en": "Light grey" }, { "ar": "بيج", "en": "Beige" }, { "ar": "أخضر داكن", "en": "Dark green" } ],
+      "material": [ { "ar": "كتان مخلوط", "en": "Linen blend" }, { "ar": "قماش مقاوم للبقع", "en": "Stain-resistant fabric" } ]
     },
-    "featured": false
+    "badges": ["made-in-saudi", "warranty-2y"]
   },
   {
-    "id": "wardrobe-slide-01",
-    "category": "wardrobes",
-    "name": { "ar": "خزانة ملابس بأبواب سحب", "en": "Sliding-door wardrobe" },
-    "short": { "ar": "أبواب سحب توفر مساحة أمام الخزانة.", "en": "Sliding doors that free up the space in front." },
+    "id": "majlis-tables-01",
+    "sku": "YSR-MJ-003",
+    "category": "majlis",
+    "tags": ["majlis-tables"],
+    "visible": true,
+    "featured": false,
+    "collections": ["fast-delivery"],
+    "added": "2026-08-10",
+    "_todo": "confirm price",
+    "name": { "ar": "طقم طاولات مجلس (3 قطع)", "en": "Majlis table set (3 pieces)" },
+    "short": { "ar": "طاولة وسط وطاولتان جانبيتان بارتفاع مناسب للجلسة الأرضية.", "en": "One centre table and two side tables at floor-seating height." },
     "description": {
-      "ar": "خزانة من الأرض إلى السقف بأبواب سحب هادئة على مجرى ألماني. التقسيم الداخلي يتغيّر حسب حاجتك: أرفف، علاقات، أدراج، ومكان للشنط فوق. مناسبة للغرف الضيقة لأن الأبواب ما تحتاج مساحة فتح.",
-      "en": "A floor-to-ceiling wardrobe with quiet sliding doors on German runners. The interior layout follows your needs: shelves, hanging rails, drawers and a bag shelf on top. Ideal for narrow rooms, since the doors need no swing space."
+      "ar": "ثلاث طاولات بارتفاع 35 سم مناسب للجلسة الأرضية: طاولة وسط 100 × 60 سم وطاولتان جانبيتان 45 × 45 سم. أسطح خشب صلب بتشطيب زيتي يسهل ترميمه، وأرجل خشب أو حديد مطلي حسب اختيارك.",
+      "en": "Three tables at 35 cm — the right height for floor seating: a 100 × 60 cm centre table and two 45 × 45 cm side tables. Solid wood tops with an oil finish that is easy to repair, on wooden or powder-coated steel legs."
     },
-    "priceFrom": 3200,
-    "priceTo": 7000,
+    "priceFrom": 900,
+    "priceTo": 2200,
+    "priceNote": { "ar": "السعر للطقم كاملًا حسب الخشب", "en": "Price for the full set, depending on the wood" },
+    "leadTimeDays": 10,
     "images": [
-      "https://picsum.photos/seed/yusr-wardrobe-1/1000/750",
-      "https://picsum.photos/seed/yusr-wardrobe-2/1000/750",
-      "https://picsum.photos/seed/yusr-wardrobe-3/1000/750"
+      { "src": "assets/products/majlis-tables-01-a.jpg", "alt": { "ar": "طقم طاولات مجلس خشب", "en": "Wooden majlis table set" } },
+      { "src": "assets/products/majlis-tables-01-b.jpg", "alt": { "ar": "طاولة الوسط", "en": "The centre table" } },
+      { "src": "assets/products/majlis-tables-01-c.jpg", "alt": { "ar": "تفاصيل السطح الخشبي", "en": "Wood top detail" } }
     ],
     "specs": {
-      "dimensions": { "ar": "240 × 60 × 270 سم", "en": "240 × 60 × 270 cm" },
-      "material": { "ar": "خشب MDF مقاوم للرطوبة + قشرة ميلامين", "en": "Moisture-resistant MDF + melamine finish" },
-      "colors": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "leadTimeDays": 15,
+      "dimensions": { "ar": "100 × 60 × 35 سم + 2 × (45 × 45 × 35 سم)", "en": "100 × 60 × 35 cm + 2 × (45 × 45 × 35 cm)" },
+      "material": { "ar": "خشب زان أو سنديان", "en": "Beech or oak wood" },
+      "colors": [ { "ar": "طبيعي", "en": "Natural" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "أسود مطفي", "en": "Matte black" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "180 سم عرض", "en": "180 cm wide" },
-        { "ar": "240 سم عرض", "en": "240 cm wide" },
-        { "ar": "300 سم عرض", "en": "300 cm wide" }
-      ],
-      "color": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "material": [
-        { "ar": "ميلامين", "en": "Melamine" },
-        { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" }
-      ]
+      "size": [ { "ar": "طقم قياسي", "en": "Standard set" }, { "ar": "طاولة وسط أطول 140 سم", "en": "Longer 140 cm centre table" } ],
+      "color": [ { "ar": "طبيعي", "en": "Natural" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "أسود مطفي", "en": "Matte black" } ],
+      "material": [ { "ar": "خشب زان", "en": "Beech" }, { "ar": "خشب سنديان", "en": "Oak" } ]
     },
-    "featured": true
+    "badges": ["made-in-saudi", "fast"]
   },
+
   {
-    "id": "walkin-closet-01",
-    "category": "wardrobes",
-    "name": { "ar": "غرفة ملابس مفتوحة", "en": "Open walk-in closet" },
-    "short": { "ar": "وحدات مفتوحة بإضاءة مدمجة.", "en": "Open units with integrated lighting." },
+    "id": "sofa-corner-01",
+    "sku": "YSR-LV-001",
+    "category": "living",
+    "tags": ["corner-sofa"],
+    "visible": true,
+    "featured": true,
+    "collections": ["most-requested", "new-home"],
+    "added": "2026-09-05",
+    "_todo": "confirm price",
+    "name": { "ar": "كنب زاوية قماش", "en": "L-shaped fabric sofa" },
+    "short": { "ar": "زاوية مريحة بقماش يتحمل الاستخدام اليومي، بأي طول يناسب جدارك.", "en": "A roomy corner sofa in hard-wearing fabric, in any length your wall needs." },
     "description": {
-      "ar": "غرفة ملابس بوحدات مفتوحة على طول الجدران، مع إضاءة LED مدمجة في الأرفف وعلاقات بارتفاعين. نقسّم المساحة بين الملابس الطويلة والقصيرة والأدراج، ونضيف جزيرة وسطية لو المساحة تسمح.",
-      "en": "A walk-in closet with open units along the walls, LED lighting built into the shelves, and hanging rails at two heights. We split the space between long and short hanging, plus drawers, and add a central island where the room allows."
+      "ar": "كنب زاوية بهيكل خشب زان مجفف وإسفنج عالي الكثافة يحافظ على شكله بعد سنوات. القماش الكتاني قابل للفك والغسل، ونقدر نغيّر اتجاه الزاوية يمين أو يسار حسب باب الغرفة. نصنعه بطول يناسب جدارك بالسنتيمتر.",
+      "en": "A corner sofa on a kiln-dried beech frame with high-density foam that holds its shape for years. The linen cover is removable and washable, and the corner can face left or right to suit the room. Built to the exact length of your wall."
     },
-    "priceFrom": 5500,
-    "priceTo": 12000,
+    "priceFrom": 2900,
+    "priceTo": 5500,
+    "priceNote": { "ar": "السعر حسب الطول والقماش", "en": "Price depends on length and fabric" },
+    "leadTimeDays": 12,
     "images": [
-      "https://picsum.photos/seed/yusr-walkin-1/1000/750",
-      "https://picsum.photos/seed/yusr-walkin-2/1000/750",
-      "https://picsum.photos/seed/yusr-walkin-3/1000/750"
+      { "src": "assets/products/sofa-corner-01-a.jpg", "alt": { "ar": "كنب زاوية بيج", "en": "Beige corner sofa" } },
+      { "src": "assets/products/sofa-corner-01-b.jpg", "alt": { "ar": "زاوية الكنب", "en": "Sofa corner detail" } },
+      { "src": "assets/products/sofa-corner-01-c.jpg", "alt": { "ar": "قماش الكنب عن قرب", "en": "Fabric close-up" } }
     ],
     "specs": {
-      "dimensions": { "ar": "حسب الغرفة — من 8 إلى 20 متر طولي", "en": "Room-dependent — 8 to 20 linear metres" },
-      "material": { "ar": "ألواح MDF + ألمنيوم للعلاقات", "en": "MDF panels + aluminium rails" },
-      "colors": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي فاتح", "en": "Light grey" }
-      ],
-      "leadTimeDays": 18,
+      "dimensions": { "ar": "280 × 180 × 85 سم", "en": "280 × 180 × 85 cm" },
+      "material": { "ar": "خشب زان + قماش كتان", "en": "Beech wood + linen fabric" },
+      "colors": [ { "ar": "بيج", "en": "Beige" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "زيتي", "en": "Olive" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "8 متر طولي", "en": "8 linear metres" },
-        { "ar": "14 متر طولي", "en": "14 linear metres" },
-        { "ar": "20 متر طولي", "en": "20 linear metres" }
-      ],
-      "color": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي فاتح", "en": "Light grey" }
-      ],
-      "material": [
-        { "ar": "ميلامين", "en": "Melamine" },
-        { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" }
-      ]
+      "size": [ { "ar": "240 سم", "en": "240 cm" }, { "ar": "280 سم", "en": "280 cm" }, { "ar": "320 سم", "en": "320 cm" } ],
+      "color": [ { "ar": "بيج", "en": "Beige" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "زيتي", "en": "Olive" } ],
+      "material": [ { "ar": "كتان", "en": "Linen" }, { "ar": "مخمل", "en": "Velvet" }, { "ar": "جلد صناعي", "en": "Faux leather" } ]
     },
-    "featured": false
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
   },
   {
-    "id": "kitchen-alum-01",
-    "category": "kitchens",
-    "name": { "ar": "مطبخ ألمنيوم", "en": "Aluminium kitchen" },
-    "short": { "ar": "خيار عملي يقاوم الرطوبة والحرارة.", "en": "A practical choice against heat and humidity." },
+    "id": "sofa-3seat-01",
+    "sku": "YSR-LV-002",
+    "category": "living",
+    "tags": ["three-seater"],
+    "visible": true,
+    "featured": false,
+    "collections": [],
+    "added": "2026-08-25",
+    "_todo": "confirm price",
+    "name": { "ar": "كنب ثلاثي بأرجل خشب", "en": "Three-seat sofa on wooden legs" },
+    "short": { "ar": "كنب ثلاثي بظهر مرتفع وأرجل خشب ظاهرة.", "en": "A high-back three-seater on exposed wooden legs." },
     "description": {
-      "ar": "مطبخ ألمنيوم بهيكل كامل مقاوم للرطوبة والحشرات، مناسب للمطابخ التي تُستخدم يوميًا وبكثرة. الأبواب بطلاء حراري لا يتقشر، والمفصلات بمكابس هيدروليكية. السعر يشمل الوحدات العلوية والسفلية بدون سطح الرخام.",
-      "en": "A fully aluminium kitchen that resists humidity and insects — built for kitchens used hard, every day. The doors carry a baked finish that does not peel, and the hinges are soft-close. The price covers upper and lower units, excluding the countertop."
+      "ar": "كنب ثلاثي بعمق جلسة 60 سم وظهر مرتفع يريح الرقبة. الأرجل خشب سنديان ظاهرة بارتفاع 15 سم تسهّل التنظيف تحته. نصنع منه مقاس ثنائي أو رباعي بنفس التصميم إذا حبيت طقمًا كاملًا.",
+      "en": "A three-seater with a 60 cm seat depth and a high back that supports the neck. Exposed oak legs at 15 cm make cleaning underneath easy. A matching two-seater or four-seater can be built in the same design for a full set."
     },
-    "priceFrom": 7000,
-    "priceTo": 16000,
+    "priceFrom": 1900,
+    "priceTo": 3800,
+    "priceNote": { "ar": "السعر حسب القماش ونوع الخشب", "en": "Price depends on fabric and wood" },
+    "leadTimeDays": 10,
     "images": [
-      "https://picsum.photos/seed/yusr-kitchen-alum-1/1000/750",
-      "https://picsum.photos/seed/yusr-kitchen-alum-2/1000/750",
-      "https://picsum.photos/seed/yusr-kitchen-alum-3/1000/750"
+      { "src": "assets/products/sofa-3seat-01-a.jpg", "alt": { "ar": "كنب ثلاثي أخضر بأرجل خشب", "en": "Green three-seater on wooden legs" } },
+      { "src": "assets/products/sofa-3seat-01-b.jpg", "alt": { "ar": "الأرجل الخشبية", "en": "The wooden legs" } },
+      { "src": "assets/products/sofa-3seat-01-c.jpg", "alt": { "ar": "الكنب من الجانب", "en": "Side view" } }
     ],
     "specs": {
-      "dimensions": { "ar": "حسب المطبخ — من 4 إلى 12 متر طولي", "en": "Kitchen-dependent — 4 to 12 linear metres" },
-      "material": { "ar": "ألمنيوم بطلاء حراري", "en": "Aluminium with baked coating" },
-      "colors": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "خشبي", "en": "Wood-effect" }
-      ],
-      "leadTimeDays": 20,
-      "warrantyYears": 3
+      "dimensions": { "ar": "220 × 90 × 88 سم", "en": "220 × 90 × 88 cm" },
+      "material": { "ar": "خشب زان + أرجل سنديان + قماش", "en": "Beech frame + oak legs + fabric" },
+      "colors": [ { "ar": "أخضر داكن", "en": "Dark green" }, { "ar": "بيج", "en": "Beige" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "كحلي", "en": "Navy" } ],
+      "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "4 متر طولي", "en": "4 linear metres" },
-        { "ar": "8 متر طولي", "en": "8 linear metres" },
-        { "ar": "12 متر طولي", "en": "12 linear metres" }
-      ],
-      "color": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "خشبي", "en": "Wood-effect" }
-      ],
-      "material": [
-        { "ar": "ألمنيوم عادي", "en": "Standard aluminium" },
-        { "ar": "ألمنيوم مقاوم للخدش", "en": "Scratch-resistant aluminium" }
-      ]
+      "size": [ { "ar": "ثنائي 160 سم", "en": "Two-seat 160 cm" }, { "ar": "ثلاثي 220 سم", "en": "Three-seat 220 cm" }, { "ar": "رباعي 280 سم", "en": "Four-seat 280 cm" } ],
+      "color": [ { "ar": "أخضر داكن", "en": "Dark green" }, { "ar": "بيج", "en": "Beige" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "كحلي", "en": "Navy" } ],
+      "material": [ { "ar": "كتان", "en": "Linen" }, { "ar": "مخمل", "en": "Velvet" } ]
     },
-    "featured": true
+    "badges": ["made-in-saudi", "warranty-2y"]
   },
   {
-    "id": "kitchen-wood-01",
-    "category": "kitchens",
-    "name": { "ar": "مطبخ خشب بقشرة طبيعية", "en": "Wood veneer kitchen" },
-    "short": { "ar": "دفء الخشب مع تشطيب مقاوم للماء.", "en": "The warmth of wood with a water-resistant finish." },
+    "id": "armchair-01",
+    "sku": "YSR-LV-003",
+    "category": "living",
+    "tags": ["armchairs"],
+    "visible": true,
+    "featured": false,
+    "collections": ["fast-delivery"],
+    "added": "2026-08-15",
+    "_todo": "confirm price",
+    "name": { "ar": "كرسي مفرد (فوتيه)", "en": "Armchair" },
+    "short": { "ar": "كرسي مريح للقراءة يكمل الكنب أو يقف وحده.", "en": "A reading chair that completes the sofa or stands on its own." },
     "description": {
-      "ar": "مطبخ بهيكل MDF مقاوم للرطوبة وأبواب بقشرة خشب طبيعي وتشطيب بولي يوريثان. يعطي دفئًا لا تعطيه الأبواب اللامعة، ويتحمل البخار والتنظيف اليومي. نضيف جزيرة أو طاولة إفطار حسب مساحة المطبخ.",
-      "en": "A kitchen on a moisture-resistant MDF carcass with natural wood veneer doors and a polyurethane finish. It brings a warmth that gloss doors do not, and stands up to steam and daily cleaning. An island or breakfast bar can be added if the space allows."
+      "ar": "كرسي مفرد بظهر مائل قليلًا ومساند ذراع مبطنة، مريح للقراءة أو القهوة. نصنعه بنفس قماش الكنب إذا طلبتهم معًا. أرجل خشب سنديان أو حديد أسود مطفي.",
+      "en": "An armchair with a gently reclined back and padded arms — comfortable for reading or coffee. Made in the same fabric as the sofa when ordered together. Oak or matte-black steel legs."
+    },
+    "priceFrom": 750,
+    "priceTo": 1600,
+    "priceNote": { "ar": "السعر للكرسي الواحد", "en": "Price per chair" },
+    "leadTimeDays": 8,
+    "images": [
+      { "src": "assets/products/armchair-01-a.jpg", "alt": { "ar": "كرسي مفرد بيج", "en": "Beige armchair" } },
+      { "src": "assets/products/armchair-01-b.jpg", "alt": { "ar": "الكرسي من الخلف", "en": "Back view" } },
+      { "src": "assets/products/armchair-01-c.jpg", "alt": { "ar": "تفاصيل مسند الذراع", "en": "Armrest detail" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "80 × 85 × 85 سم", "en": "80 × 85 × 85 cm" },
+      "material": { "ar": "خشب زان + قماش", "en": "Beech frame + fabric" },
+      "colors": [ { "ar": "بيج", "en": "Beige" }, { "ar": "عنابي", "en": "Burgundy" }, { "ar": "رمادي", "en": "Grey" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "قياسي", "en": "Standard" }, { "ar": "عريض 95 سم", "en": "Wide 95 cm" } ],
+      "color": [ { "ar": "بيج", "en": "Beige" }, { "ar": "عنابي", "en": "Burgundy" }, { "ar": "رمادي", "en": "Grey" } ],
+      "material": [ { "ar": "كتان", "en": "Linen" }, { "ar": "مخمل", "en": "Velvet" }, { "ar": "جلد صناعي", "en": "Faux leather" } ]
+    },
+    "badges": ["made-in-saudi", "fast"]
+  },
+
+  {
+    "id": "bedroom-full-01",
+    "sku": "YSR-BD-001",
+    "category": "bedrooms",
+    "tags": ["full-bedroom", "vanity"],
+    "visible": true,
+    "featured": true,
+    "collections": ["new-home"],
+    "added": "2026-09-03",
+    "_todo": "confirm price",
+    "name": { "ar": "غرفة نوم كاملة", "en": "Full bedroom set" },
+    "short": { "ar": "سرير وكمودينوهات وتسريحة وخزانة بتصميم واحد على مقاس الغرفة.", "en": "Bed, nightstands, vanity and wardrobe in one design, sized to the room." },
+    "description": {
+      "ar": "غرفة نوم متكاملة: سرير بمسند مبطن، كمودينوهان، تسريحة بمرآة وإضاءة، وخزانة تُصنع على مقاس جدار الغرفة. كل القطع بنفس اللون والتشطيب، والخزانة من الأرض إلى السقف إذا رغبت. نرسل لك رسمًا ثلاثي الأبعاد قبل التنفيذ.",
+      "en": "A complete bedroom: upholstered-headboard bed, two nightstands, a lit vanity with mirror, and a wardrobe built to the width of the wall. Every piece shares one colour and finish, and the wardrobe can run floor to ceiling. A 3D drawing is sent for approval before production."
     },
     "priceFrom": 9500,
     "priceTo": 22000,
+    "priceNote": { "ar": "السعر حسب مقاس الخزانة والخامات", "en": "Price depends on wardrobe size and materials" },
+    "leadTimeDays": 21,
     "images": [
-      "https://picsum.photos/seed/yusr-kitchen-wood-1/1000/750",
-      "https://picsum.photos/seed/yusr-kitchen-wood-2/1000/750",
-      "https://picsum.photos/seed/yusr-kitchen-wood-3/1000/750"
+      { "src": "assets/products/bedroom-full-01-a.jpg", "alt": { "ar": "غرفة نوم كاملة بلون بلوط فاتح", "en": "Full bedroom in light oak" } },
+      { "src": "assets/products/bedroom-full-01-b.jpg", "alt": { "ar": "التسريحة والمرآة", "en": "Vanity and mirror" } },
+      { "src": "assets/products/bedroom-full-01-c.jpg", "alt": { "ar": "الخزانة المدمجة", "en": "The built-in wardrobe" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "سرير 200 × 180 سم · خزانة حسب الجدار", "en": "Bed 200 × 180 cm · wardrobe to wall width" },
+      "material": { "ar": "MDF مقاوم للرطوبة + قشرة خشب + قماش للمسند", "en": "Moisture-resistant MDF + wood veneer + headboard fabric" },
+      "colors": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "أبيض", "en": "White" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "سرير 160 سم", "en": "Bed 160 cm" }, { "ar": "سرير 180 سم", "en": "Bed 180 cm" }, { "ar": "سرير 200 سم", "en": "Bed 200 cm" } ],
+      "color": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "أبيض", "en": "White" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "material": [ { "ar": "قشرة ميلامين", "en": "Melamine" }, { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
+  },
+  {
+    "id": "wardrobe-slide-01",
+    "sku": "YSR-BD-002",
+    "category": "bedrooms",
+    "tags": ["wardrobe"],
+    "visible": true,
+    "featured": true,
+    "collections": ["most-requested"],
+    "added": "2026-08-28",
+    "_todo": "confirm price",
+    "name": { "ar": "خزانة ملابس بأبواب سحب", "en": "Sliding-door wardrobe" },
+    "short": { "ar": "من الأرض إلى السقف، بأبواب سحب توفر مساحة أمام الخزانة.", "en": "Floor to ceiling, with sliding doors that free the space in front." },
+    "description": {
+      "ar": "خزانة من الأرض إلى السقف بأبواب سحب هادئة على مجرى ألماني. التقسيم الداخلي يتغيّر حسب حاجتك: أرفف، علاقات، أدراج، ومكان للشنط فوق. مناسبة للغرف الضيقة لأن الأبواب ما تحتاج مساحة فتح.",
+      "en": "A floor-to-ceiling wardrobe with quiet sliding doors on German runners. The interior follows your needs: shelves, hanging rails, drawers and a bag shelf on top. Ideal for narrow rooms, since the doors need no swing space."
+    },
+    "priceFrom": 3200,
+    "priceTo": 7000,
+    "priceNote": { "ar": "السعر حسب العرض والتقسيم الداخلي", "en": "Price depends on width and interior layout" },
+    "leadTimeDays": 15,
+    "images": [
+      { "src": "assets/products/wardrobe-slide-01-a.jpg", "alt": { "ar": "خزانة أبواب سحب بلون أبيض", "en": "White sliding-door wardrobe" } },
+      { "src": "assets/products/wardrobe-slide-01-b.jpg", "alt": { "ar": "التقسيم الداخلي", "en": "Interior layout" } },
+      { "src": "assets/products/wardrobe-slide-01-c.jpg", "alt": { "ar": "مجرى الأبواب", "en": "Door runner detail" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "240 × 60 × 270 سم", "en": "240 × 60 × 270 cm" },
+      "material": { "ar": "MDF مقاوم للرطوبة + قشرة ميلامين", "en": "Moisture-resistant MDF + melamine finish" },
+      "colors": [ { "ar": "أبيض", "en": "White" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "رمادي", "en": "Grey" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "180 سم عرض", "en": "180 cm wide" }, { "ar": "240 سم عرض", "en": "240 cm wide" }, { "ar": "300 سم عرض", "en": "300 cm wide" } ],
+      "color": [ { "ar": "أبيض", "en": "White" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "رمادي", "en": "Grey" } ],
+      "material": [ { "ar": "ميلامين", "en": "Melamine" }, { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
+  },
+  {
+    "id": "dressing-room-01",
+    "sku": "YSR-BD-003",
+    "category": "bedrooms",
+    "tags": ["dressing-room"],
+    "visible": true,
+    "featured": false,
+    "collections": [],
+    "added": "2026-08-05",
+    "_todo": "confirm price",
+    "name": { "ar": "غرفة ملابس (دريسنج)", "en": "Dressing room" },
+    "short": { "ar": "وحدات مفتوحة بإضاءة مدمجة وجزيرة وسطية إذا سمحت المساحة.", "en": "Open units with integrated lighting, plus a central island if space allows." },
+    "description": {
+      "ar": "غرفة ملابس بوحدات مفتوحة على طول الجدران، مع إضاءة LED مدمجة في الأرفف وعلاقات بارتفاعين. نقسّم المساحة بين الملابس الطويلة والقصيرة والأدراج، ونضيف جزيرة وسطية بأدراج للإكسسوارات لو المساحة تسمح.",
+      "en": "A dressing room with open units along the walls, LED lighting built into the shelves, and hanging rails at two heights. We split the space between long and short hanging plus drawers, and add a central island with accessory drawers where the room allows."
+    },
+    "priceFrom": 6500,
+    "priceTo": 16000,
+    "priceNote": { "ar": "السعر حسب الأمتار الطولية والإضاءة", "en": "Price depends on linear metres and lighting" },
+    "leadTimeDays": 18,
+    "images": [
+      { "src": "assets/products/dressing-room-01-a.jpg", "alt": { "ar": "غرفة ملابس بإضاءة مدمجة", "en": "Dressing room with integrated lighting" } },
+      { "src": "assets/products/dressing-room-01-b.jpg", "alt": { "ar": "الجزيرة الوسطية", "en": "The central island" } },
+      { "src": "assets/products/dressing-room-01-c.jpg", "alt": { "ar": "علاقات بارتفاعين", "en": "Rails at two heights" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "حسب الغرفة — من 8 إلى 20 متر طولي", "en": "Room-dependent — 8 to 20 linear metres" },
+      "material": { "ar": "ألواح MDF + ألمنيوم للعلاقات + إضاءة LED", "en": "MDF panels + aluminium rails + LED lighting" },
+      "colors": [ { "ar": "أبيض", "en": "White" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "رمادي فاتح", "en": "Light grey" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "8 متر طولي", "en": "8 linear metres" }, { "ar": "14 متر طولي", "en": "14 linear metres" }, { "ar": "20 متر طولي", "en": "20 linear metres" } ],
+      "color": [ { "ar": "أبيض", "en": "White" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "رمادي فاتح", "en": "Light grey" } ],
+      "material": [ { "ar": "ميلامين", "en": "Melamine" }, { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
+  },
+
+  {
+    "id": "kitchen-wood-01",
+    "sku": "YSR-KT-001",
+    "category": "kitchens",
+    "tags": ["wood-kitchen", "countertops"],
+    "visible": true,
+    "featured": true,
+    "collections": ["new-home"],
+    "added": "2026-09-02",
+    "_todo": "confirm price",
+    "name": { "ar": "مطبخ خشب بقشرة طبيعية", "en": "Wood veneer kitchen" },
+    "short": { "ar": "دفء الخشب مع تشطيب مقاوم للماء والبخار.", "en": "The warmth of wood with a water- and steam-resistant finish." },
+    "description": {
+      "ar": "مطبخ بهيكل MDF مقاوم للرطوبة وأبواب بقشرة خشب طبيعي وتشطيب بولي يوريثان. يعطي دفئًا لا تعطيه الأبواب اللامعة، ويتحمل البخار والتنظيف اليومي. الأدراج بمجارٍ هادئة ومكابس هيدروليكية. السعر يشمل الوحدات العلوية والسفلية بدون سطح الرخام.",
+      "en": "A kitchen on a moisture-resistant MDF carcass with natural wood veneer doors and a polyurethane finish. It brings a warmth gloss doors cannot, and stands up to steam and daily cleaning. Soft-close drawers and hydraulic lift-ups. Price covers upper and lower units, excluding the countertop."
+    },
+    "priceFrom": 9500,
+    "priceTo": 24000,
+    "priceNote": { "ar": "السعر حسب الأمتار الطولية، بدون سطح الرخام", "en": "Price by linear metre, countertop not included" },
+    "leadTimeDays": 21,
+    "images": [
+      { "src": "assets/products/kitchen-wood-01-a.jpg", "alt": { "ar": "مطبخ خشب بقشرة بلوط", "en": "Oak veneer kitchen" } },
+      { "src": "assets/products/kitchen-wood-01-b.jpg", "alt": { "ar": "الأدراج من الداخل", "en": "Drawer interiors" } },
+      { "src": "assets/products/kitchen-wood-01-c.jpg", "alt": { "ar": "الوحدات العلوية", "en": "Upper units" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب المطبخ — من 4 إلى 12 متر طولي", "en": "Kitchen-dependent — 4 to 12 linear metres" },
       "material": { "ar": "MDF مقاوم للرطوبة + قشرة خشب طبيعي", "en": "Moisture-resistant MDF + natural wood veneer" },
-      "colors": [
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي دخاني", "en": "Smoked grey" }
-      ],
-      "leadTimeDays": 21,
+      "colors": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "رمادي دخاني", "en": "Smoked grey" } ],
       "warrantyYears": 3
     },
     "options": {
-      "size": [
-        { "ar": "4 متر طولي", "en": "4 linear metres" },
-        { "ar": "8 متر طولي", "en": "8 linear metres" },
-        { "ar": "12 متر طولي", "en": "12 linear metres" }
-      ],
-      "color": [
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي دخاني", "en": "Smoked grey" }
-      ],
-      "material": [
-        { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" },
-        { "ar": "خشب صلب", "en": "Solid wood" }
-      ]
+      "size": [ { "ar": "4 متر طولي", "en": "4 linear metres" }, { "ar": "8 متر طولي", "en": "8 linear metres" }, { "ar": "12 متر طولي", "en": "12 linear metres" } ],
+      "color": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "رمادي دخاني", "en": "Smoked grey" } ],
+      "material": [ { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" }, { "ar": "خشب صلب", "en": "Solid wood" } ]
     },
-    "featured": false
+    "badges": ["made-in-saudi", "warranty-3y", "free-install"]
   },
   {
-    "id": "door-interior-01",
-    "category": "doors",
-    "name": { "ar": "باب داخلي خشب صلب", "en": "Solid wood interior door" },
-    "short": { "ar": "باب ثقيل يعزل الصوت بين الغرف.", "en": "A heavy door that keeps rooms quiet." },
+    "id": "kitchen-alum-01",
+    "sku": "YSR-KT-002",
+    "category": "kitchens",
+    "tags": ["aluminium-kitchen"],
+    "visible": true,
+    "featured": false,
+    "collections": ["most-requested"],
+    "added": "2026-08-22",
+    "_todo": "confirm price",
+    "name": { "ar": "مطبخ ألمنيوم", "en": "Aluminium kitchen" },
+    "short": { "ar": "خيار عملي يقاوم الرطوبة والحرارة والحشرات.", "en": "A practical choice against humidity, heat and insects." },
     "description": {
-      "ar": "باب داخلي بخشب صلب وحشوة خلوية تعطي ثقلًا وعزلًا للصوت. يشمل السعر الحلق والبرواز والمفصلات والمقبض والتركيب. التشطيح والدهان يتم في الورشة لا في البيت، فالنتيجة أنظف وأسرع.",
-      "en": "An interior door in solid wood with a honeycomb core that gives it weight and sound insulation. The price includes the frame, architrave, hinges, handle and installation. Sanding and finishing happen in the workshop, not in your home — cleaner and faster."
+      "ar": "مطبخ ألمنيوم بهيكل كامل مقاوم للرطوبة والحشرات، مناسب للمطابخ التي تُستخدم يوميًا وبكثرة. الأبواب بطلاء حراري لا يتقشر، والمفصلات بمكابس هيدروليكية. السعر يشمل الوحدات العلوية والسفلية بدون سطح الرخام.",
+      "en": "A fully aluminium kitchen that resists humidity and insects — built for kitchens used hard every day. The doors carry a baked finish that does not peel, and the hinges are soft-close. Price covers upper and lower units, excluding the countertop."
+    },
+    "priceFrom": 7000,
+    "priceTo": 16000,
+    "priceNote": { "ar": "السعر حسب الأمتار الطولية، بدون سطح الرخام", "en": "Price by linear metre, countertop not included" },
+    "leadTimeDays": 20,
+    "images": [
+      { "src": "assets/products/kitchen-alum-01-a.jpg", "alt": { "ar": "مطبخ ألمنيوم أبيض", "en": "White aluminium kitchen" } },
+      { "src": "assets/products/kitchen-alum-01-b.jpg", "alt": { "ar": "الأبواب والمفصلات", "en": "Doors and hinges" } },
+      { "src": "assets/products/kitchen-alum-01-c.jpg", "alt": { "ar": "الوحدات السفلية", "en": "Lower units" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "حسب المطبخ — من 4 إلى 12 متر طولي", "en": "Kitchen-dependent — 4 to 12 linear metres" },
+      "material": { "ar": "ألمنيوم بطلاء حراري", "en": "Aluminium with baked coating" },
+      "colors": [ { "ar": "أبيض", "en": "White" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "خشبي", "en": "Wood-effect" } ],
+      "warrantyYears": 3
+    },
+    "options": {
+      "size": [ { "ar": "4 متر طولي", "en": "4 linear metres" }, { "ar": "8 متر طولي", "en": "8 linear metres" }, { "ar": "12 متر طولي", "en": "12 linear metres" } ],
+      "color": [ { "ar": "أبيض", "en": "White" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "خشبي", "en": "Wood-effect" } ],
+      "material": [ { "ar": "ألمنيوم عادي", "en": "Standard aluminium" }, { "ar": "ألمنيوم مقاوم للخدش", "en": "Scratch-resistant aluminium" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-3y", "free-install"]
+  },
+  {
+    "id": "kitchen-island-01",
+    "sku": "YSR-KT-003",
+    "category": "kitchens",
+    "tags": ["island", "countertops"],
+    "visible": true,
+    "featured": false,
+    "collections": [],
+    "added": "2026-08-12",
+    "_todo": "confirm price",
+    "name": { "ar": "جزيرة مطبخ بتخزين", "en": "Kitchen island with storage" },
+    "short": { "ar": "جزيرة مستقلة بأدراج وبار إفطار من جهة.", "en": "A freestanding island with drawers and a breakfast bar on one side." },
+    "description": {
+      "ar": "جزيرة مطبخ مستقلة بأدراج من جهة وبار إفطار بارتفاع 90 سم من الجهة الأخرى. السطح رخام صناعي (كوارتز) أو خشب صلب حسب اختيارك، والهيكل بنفس تشطيب مطبخك الحالي أو بلون مختلف. نضيف مخرج كهرباء مدمجًا عند الطلب.",
+      "en": "A freestanding island with drawers on one side and a 90 cm breakfast bar on the other. Quartz or solid-wood top, with a body matching your existing kitchen finish or in a contrasting colour. A built-in power socket can be added on request."
+    },
+    "priceFrom": 2800,
+    "priceTo": 6500,
+    "priceNote": { "ar": "السعر حسب الطول ونوع السطح", "en": "Price depends on length and top material" },
+    "leadTimeDays": 14,
+    "images": [
+      { "src": "assets/products/kitchen-island-01-a.jpg", "alt": { "ar": "جزيرة مطبخ بسطح كوارتز", "en": "Kitchen island with a quartz top" } },
+      { "src": "assets/products/kitchen-island-01-b.jpg", "alt": { "ar": "جهة الأدراج", "en": "Drawer side" } },
+      { "src": "assets/products/kitchen-island-01-c.jpg", "alt": { "ar": "بار الإفطار", "en": "Breakfast bar" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "180 × 90 × 90 سم", "en": "180 × 90 × 90 cm" },
+      "material": { "ar": "MDF مقاوم للرطوبة + سطح كوارتز أو خشب صلب", "en": "Moisture-resistant MDF + quartz or solid wood top" },
+      "colors": [ { "ar": "أبيض", "en": "White" }, { "ar": "أخضر داكن", "en": "Dark green" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "warrantyYears": 3
+    },
+    "options": {
+      "size": [ { "ar": "140 سم", "en": "140 cm" }, { "ar": "180 سم", "en": "180 cm" }, { "ar": "220 سم", "en": "220 cm" } ],
+      "color": [ { "ar": "أبيض", "en": "White" }, { "ar": "أخضر داكن", "en": "Dark green" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "material": [ { "ar": "سطح كوارتز", "en": "Quartz top" }, { "ar": "سطح خشب صلب", "en": "Solid wood top" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-3y"]
+  },
+
+  {
+    "id": "door-interior-01",
+    "sku": "YSR-DR-001",
+    "category": "doors",
+    "tags": ["interior-doors"],
+    "visible": true,
+    "featured": false,
+    "collections": ["fast-delivery", "most-requested"],
+    "added": "2026-08-30",
+    "_todo": "confirm price",
+    "name": { "ar": "باب داخلي خشب صلب", "en": "Solid wood interior door" },
+    "short": { "ar": "باب ثقيل يعزل الصوت بين الغرف، مع الحلق والمقبض والتركيب.", "en": "A heavy door that keeps rooms quiet — frame, handle and fitting included." },
+    "description": {
+      "ar": "باب داخلي بخشب صلب وحشوة خلوية تعطي ثقلًا وعزلًا للصوت. يشمل السعر الحلق والبرواز والمفصلات والمقبض والتركيب. التشطيب والدهان يتم في الورشة لا في البيت، فالنتيجة أنظف وأسرع. خصم على الكمية من 5 أبواب.",
+      "en": "An interior door in solid wood with a honeycomb core that gives it weight and sound insulation. The price includes the frame, architrave, hinges, handle and installation. Sanding and finishing happen in the workshop, not in your home. Quantity discount from 5 doors."
     },
     "priceFrom": 850,
     "priceTo": 1600,
+    "priceNote": { "ar": "السعر للباب الواحد شامل التركيب", "en": "Price per door, installation included" },
+    "leadTimeDays": 8,
     "images": [
-      "https://picsum.photos/seed/yusr-door-int-1/1000/750",
-      "https://picsum.photos/seed/yusr-door-int-2/1000/750",
-      "https://picsum.photos/seed/yusr-door-int-3/1000/750"
+      { "src": "assets/products/door-interior-01-a.jpg", "alt": { "ar": "باب داخلي خشب بلون بلوط", "en": "Oak interior door" } },
+      { "src": "assets/products/door-interior-01-b.jpg", "alt": { "ar": "المقبض والمفصلات", "en": "Handle and hinges" } },
+      { "src": "assets/products/door-interior-01-c.jpg", "alt": { "ar": "الباب مركّبًا", "en": "The door installed" } }
     ],
     "specs": {
       "dimensions": { "ar": "90 × 4.5 × 210 سم", "en": "90 × 4.5 × 210 cm" },
       "material": { "ar": "خشب صلب + حشوة خلوية", "en": "Solid wood + honeycomb core" },
-      "colors": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" }
-      ],
-      "leadTimeDays": 8,
+      "colors": [ { "ar": "أبيض", "en": "White" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "80 × 210 سم", "en": "80 × 210 cm" },
-        { "ar": "90 × 210 سم", "en": "90 × 210 cm" },
-        { "ar": "100 × 220 سم", "en": "100 × 220 cm" }
-      ],
-      "color": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "بلوط فاتح", "en": "Light oak" },
-        { "ar": "جوزي", "en": "Walnut" }
-      ],
-      "material": [
-        { "ar": "خشب صلب", "en": "Solid wood" },
-        { "ar": "MDF مدهون", "en": "Painted MDF" }
-      ]
+      "size": [ { "ar": "80 × 210 سم", "en": "80 × 210 cm" }, { "ar": "90 × 210 سم", "en": "90 × 210 cm" }, { "ar": "100 × 220 سم", "en": "100 × 220 cm" } ],
+      "color": [ { "ar": "أبيض", "en": "White" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "material": [ { "ar": "خشب صلب", "en": "Solid wood" }, { "ar": "MDF مدهون", "en": "Painted MDF" } ]
     },
-    "featured": false
+    "badges": ["made-in-saudi", "fast", "free-install"]
   },
   {
     "id": "door-entry-01",
+    "sku": "YSR-DR-002",
     "category": "doors",
+    "tags": ["entrance-doors"],
+    "visible": true,
+    "featured": true,
+    "collections": [],
+    "added": "2026-08-18",
+    "_todo": "confirm price",
     "name": { "ar": "باب مدخل مصفح", "en": "Armoured entrance door" },
-    "short": { "ar": "أمان وعزل حراري لباب البيت.", "en": "Security and thermal insulation for your entrance." },
+    "short": { "ar": "أمان وعزل حراري لباب البيت، بوجه خشب أو دهان حراري.", "en": "Security and thermal insulation for your entrance, in wood veneer or baked finish." },
     "description": {
-      "ar": "باب مدخل بهيكل فولاذي مصفح وعزل داخلي يقلل دخول الحرارة والغبار. قفل متعدد النقاط وعين سحرية، ويمكن إضافة قفل ذكي. الوجه الخارجي بقشرة خشب أو دهان حراري يتحمل شمس الصيف.",
-      "en": "An entrance door on an armoured steel frame with internal insulation that cuts heat and dust. Multi-point lock and peephole, with a smart lock available. The outer face comes in wood veneer or a baked finish that survives summer sun."
+      "ar": "باب مدخل بهيكل فولاذي مصفح وعزل داخلي يقلل دخول الحرارة والغبار. قفل متعدد النقاط وعين سحرية، ويمكن إضافة قفل ذكي. الوجه الخارجي بقشرة خشب أو دهان حراري يتحمل شمس الصيف. يشمل السعر الحلق والتركيب.",
+      "en": "An entrance door on an armoured steel frame with internal insulation that cuts heat and dust. Multi-point lock and peephole, with a smart lock available. The outer face comes in wood veneer or a baked finish that survives summer sun. Frame and installation included."
     },
     "priceFrom": 2400,
-    "priceTo": 4500,
+    "priceTo": 5500,
+    "priceNote": { "ar": "السعر حسب المقاس والقفل", "en": "Price depends on size and lock" },
+    "leadTimeDays": 14,
     "images": [
-      "https://picsum.photos/seed/yusr-door-entry-1/1000/750",
-      "https://picsum.photos/seed/yusr-door-entry-2/1000/750",
-      "https://picsum.photos/seed/yusr-door-entry-3/1000/750"
+      { "src": "assets/products/door-entry-01-a.jpg", "alt": { "ar": "باب مدخل مصفح بني", "en": "Brown armoured entrance door" } },
+      { "src": "assets/products/door-entry-01-b.jpg", "alt": { "ar": "القفل متعدد النقاط", "en": "Multi-point lock" } },
+      { "src": "assets/products/door-entry-01-c.jpg", "alt": { "ar": "الباب من الداخل", "en": "Inside face" } }
     ],
     "specs": {
       "dimensions": { "ar": "100 × 7 × 220 سم", "en": "100 × 7 × 220 cm" },
-      "material": { "ar": "فولاذ مصفح + عزل داخلي", "en": "Armoured steel + internal insulation" },
-      "colors": [
-        { "ar": "بني داكن", "en": "Dark brown" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "جوزي", "en": "Walnut" }
-      ],
-      "leadTimeDays": 14,
+      "material": { "ar": "فولاذ مصفح + عزل داخلي + وجه خشب أو دهان حراري", "en": "Armoured steel + insulation + wood veneer or baked face" },
+      "colors": [ { "ar": "بني داكن", "en": "Dark brown" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "جوزي", "en": "Walnut" } ],
       "warrantyYears": 3
     },
     "options": {
-      "size": [
-        { "ar": "90 × 210 سم", "en": "90 × 210 cm" },
-        { "ar": "100 × 220 سم", "en": "100 × 220 cm" },
-        { "ar": "120 × 240 سم", "en": "120 × 240 cm" }
-      ],
-      "color": [
-        { "ar": "بني داكن", "en": "Dark brown" },
-        { "ar": "رمادي", "en": "Grey" },
-        { "ar": "جوزي", "en": "Walnut" }
-      ],
-      "material": [
-        { "ar": "قفل عادي", "en": "Standard lock" },
-        { "ar": "قفل ذكي", "en": "Smart lock" }
-      ]
+      "size": [ { "ar": "90 × 210 سم", "en": "90 × 210 cm" }, { "ar": "100 × 220 سم", "en": "100 × 220 cm" }, { "ar": "120 × 240 سم", "en": "120 × 240 cm" } ],
+      "color": [ { "ar": "بني داكن", "en": "Dark brown" }, { "ar": "رمادي", "en": "Grey" }, { "ar": "جوزي", "en": "Walnut" } ],
+      "material": [ { "ar": "قفل عادي", "en": "Standard lock" }, { "ar": "قفل ذكي", "en": "Smart lock" } ]
     },
-    "featured": true
+    "badges": ["made-in-saudi", "warranty-3y", "free-install"]
   },
   {
-    "id": "shelf-wall-01",
-    "category": "essentials",
-    "name": { "ar": "رف جداري خشب", "en": "Wooden wall shelf" },
-    "short": { "ar": "رف معلق بدون حوامل ظاهرة.", "en": "A floating shelf with no visible brackets." },
+    "id": "wall-cladding-01",
+    "sku": "YSR-DR-003",
+    "category": "doors",
+    "tags": ["wall-cladding", "shelving"],
+    "visible": true,
+    "featured": false,
+    "collections": [],
+    "added": "2026-08-02",
+    "_todo": "confirm price",
+    "name": { "ar": "تجليد جدار خشبي", "en": "Wooden wall cladding" },
+    "short": { "ar": "ألواح خشب عمودية أو أفقية خلف التلفزيون أو السرير.", "en": "Vertical or horizontal wood slats behind the TV or the bed." },
     "description": {
-      "ar": "رف خشب صلب بتثبيت مخفي يعطي شكلًا نظيفًا على الجدار. يتحمل حتى 15 كجم بالتثبيت الصحيح، ويصلح للكتب أو النباتات أو القهوة. يأتي مع مسامير مناسبة لجدران الطوب والخرسانة.",
-      "en": "A solid wood shelf with concealed fixings for a clean wall line. It holds up to 15 kg when fitted correctly — books, plants or your coffee setup. Supplied with fixings suited to brick and concrete walls."
+      "ar": "تجليد جدار بألواح خشب (شرائح عمودية أو ألواح مسطحة) يُصنع على مقاس الجدار بالسنتيمتر. يمكن دمج إضاءة LED خلفية ورف عائم ومجرى مخفي لأسلاك التلفزيون. مناسب خلف التلفزيون أو كرأس سرير على كامل الجدار.",
+      "en": "Wall cladding in wood (vertical slats or flat panels) built to the wall's exact size. Back-lit LED, a floating shelf and a hidden channel for TV cables can be integrated. Suited behind a TV or as a full-wall headboard."
     },
-    "priceFrom": 320,
-    "priceTo": 780,
+    "priceFrom": 350,
+    "priceTo": 700,
+    "priceNote": { "ar": "السعر لكل متر مربع، شامل التركيب", "en": "Price per square metre, installation included" },
+    "leadTimeDays": 12,
     "images": [
-      "https://picsum.photos/seed/yusr-shelf-1/1000/750",
-      "https://picsum.photos/seed/yusr-shelf-2/1000/750",
-      "https://picsum.photos/seed/yusr-shelf-3/1000/750"
+      { "src": "assets/products/wall-cladding-01-a.jpg", "alt": { "ar": "تجليد جدار بشرائح خشب", "en": "Slatted wood wall cladding" } },
+      { "src": "assets/products/wall-cladding-01-b.jpg", "alt": { "ar": "الإضاءة الخلفية", "en": "Back lighting" } },
+      { "src": "assets/products/wall-cladding-01-c.jpg", "alt": { "ar": "الرف العائم", "en": "The floating shelf" } }
     ],
     "specs": {
-      "dimensions": { "ar": "120 × 25 × 4 سم", "en": "120 × 25 × 4 cm" },
-      "material": { "ar": "خشب سنديان", "en": "Oak wood" },
-      "colors": [
-        { "ar": "طبيعي", "en": "Natural" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "أسود مطفي", "en": "Matte black" }
-      ],
-      "leadTimeDays": 7,
-      "warrantyYears": 1
-    },
-    "options": {
-      "size": [
-        { "ar": "60 سم", "en": "60 cm" },
-        { "ar": "90 سم", "en": "90 cm" },
-        { "ar": "120 سم", "en": "120 cm" }
-      ],
-      "color": [
-        { "ar": "طبيعي", "en": "Natural" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "أسود مطفي", "en": "Matte black" }
-      ],
-      "material": [
-        { "ar": "خشب سنديان", "en": "Oak" },
-        { "ar": "خشب صنوبر", "en": "Pine" }
-      ]
-    },
-    "featured": false
-  },
-  {
-    "id": "tv-unit-01",
-    "category": "essentials",
-    "name": { "ar": "طاولة تلفزيون معلقة", "en": "Floating TV unit" },
-    "short": { "ar": "تخفي الأسلاك وتسهّل تنظيف الأرضية.", "en": "Hides the cables, easier to clean under." },
-    "description": {
-      "ar": "وحدة تلفزيون معلقة على الجدار بأدراج مغلقة ومجرى داخلي للأسلاك. لأنها معلقة، تنظيف الأرضية تحتها أسهل والغرفة تبدو أوسع. نضبط الطول والارتفاع حسب مقاس شاشتك ومكان مخرج الكهرباء.",
-      "en": "A wall-mounted TV unit with closed drawers and an internal cable channel. Because it floats, the floor beneath stays easy to clean and the room reads larger. We set the length and height around your screen size and socket position."
-    },
-    "priceFrom": 1100,
-    "priceTo": 2300,
-    "images": [
-      "https://picsum.photos/seed/yusr-tv-1/1000/750",
-      "https://picsum.photos/seed/yusr-tv-2/1000/750",
-      "https://picsum.photos/seed/yusr-tv-3/1000/750"
-    ],
-    "specs": {
-      "dimensions": { "ar": "180 × 40 × 35 سم", "en": "180 × 40 × 35 cm" },
-      "material": { "ar": "MDF + قشرة ميلامين", "en": "MDF + melamine finish" },
-      "colors": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "leadTimeDays": 9,
+      "dimensions": { "ar": "حسب الجدار — يُحسب بالمتر المربع", "en": "Wall-dependent — priced per square metre" },
+      "material": { "ar": "شرائح خشب صلب أو MDF بقشرة خشب", "en": "Solid wood slats or veneered MDF" },
+      "colors": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "أسود مطفي", "en": "Matte black" } ],
       "warrantyYears": 2
     },
     "options": {
-      "size": [
-        { "ar": "140 سم", "en": "140 cm" },
-        { "ar": "180 سم", "en": "180 cm" },
-        { "ar": "220 سم", "en": "220 cm" }
-      ],
-      "color": [
-        { "ar": "أبيض", "en": "White" },
-        { "ar": "جوزي", "en": "Walnut" },
-        { "ar": "رمادي", "en": "Grey" }
-      ],
-      "material": [
-        { "ar": "ميلامين", "en": "Melamine" },
-        { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" }
-      ]
+      "size": [ { "ar": "حتى 5 م²", "en": "Up to 5 m²" }, { "ar": "5 – 10 م²", "en": "5 – 10 m²" }, { "ar": "أكثر من 10 م²", "en": "Over 10 m²" } ],
+      "color": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "أسود مطفي", "en": "Matte black" } ],
+      "material": [ { "ar": "شرائح خشب صلب", "en": "Solid wood slats" }, { "ar": "MDF بقشرة خشب", "en": "Veneered MDF" } ]
     },
-    "featured": false
+    "badges": ["made-in-saudi", "warranty-2y"]
+  },
+
+  {
+    "id": "dining-set-01",
+    "sku": "YSR-DN-001",
+    "category": "dining",
+    "tags": ["dining-set", "dining-chairs"],
+    "visible": true,
+    "featured": true,
+    "collections": ["new-home", "most-requested"],
+    "added": "2026-09-04",
+    "_todo": "confirm price",
+    "name": { "ar": "سفرة كاملة (طاولة + 6 كراسي)", "en": "Full dining set (table + 6 chairs)" },
+    "short": { "ar": "طاولة خشب صلب وستة كراسي مبطنة بنفس الخشب.", "en": "A solid wood table and six upholstered chairs in matching wood." },
+    "description": {
+      "ar": "سفرة متكاملة: طاولة بسطح خشب صلب بسماكة 4 سم وستة كراسي بمقعد مبطن وظهر خشبي بنفس اللون. نصنع الطاولة بطول 160 أو 200 أو 240 سم حسب عدد الأشخاص، ونضيف كراسي إضافية بنفس التصميم عند الطلب.",
+      "en": "A complete dining set: a 40 mm solid wood table and six chairs with padded seats and wooden backs in the same finish. The table comes in 160, 200 or 240 cm to suit the number of diners, and extra chairs can be added in the same design."
+    },
+    "priceFrom": 4200,
+    "priceTo": 9800,
+    "priceNote": { "ar": "السعر للطقم كاملًا حسب الخشب والقماش", "en": "Price for the full set, depending on wood and fabric" },
+    "leadTimeDays": 16,
+    "images": [
+      { "src": "assets/products/dining-set-01-a.jpg", "alt": { "ar": "سفرة خشب سنديان بستة كراسي", "en": "Oak dining set with six chairs" } },
+      { "src": "assets/products/dining-set-01-b.jpg", "alt": { "ar": "الكرسي المبطن", "en": "Upholstered chair" } },
+      { "src": "assets/products/dining-set-01-c.jpg", "alt": { "ar": "سطح الطاولة", "en": "Table top" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "طاولة 200 × 95 × 76 سم · كرسي 45 × 52 × 92 سم", "en": "Table 200 × 95 × 76 cm · chair 45 × 52 × 92 cm" },
+      "material": { "ar": "خشب سنديان + مقاعد مبطنة بقماش", "en": "Oak wood + fabric-upholstered seats" },
+      "colors": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "طبيعي", "en": "Natural" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "160 سم (4 كراسي)", "en": "160 cm (4 chairs)" }, { "ar": "200 سم (6 كراسي)", "en": "200 cm (6 chairs)" }, { "ar": "240 سم (8 كراسي)", "en": "240 cm (8 chairs)" } ],
+      "color": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "طبيعي", "en": "Natural" } ],
+      "material": [ { "ar": "خشب سنديان", "en": "Oak" }, { "ar": "خشب زان", "en": "Beech" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-2y", "free-install"]
+  },
+  {
+    "id": "dining-table-01",
+    "sku": "YSR-DN-002",
+    "category": "dining",
+    "tags": ["dining-table"],
+    "visible": true,
+    "featured": false,
+    "collections": [],
+    "added": "2026-08-14",
+    "_todo": "confirm price",
+    "name": { "ar": "طاولة طعام خشب صلب", "en": "Solid wood dining table" },
+    "short": { "ar": "سطح خشب صلب بقاعدة معدنية ثابتة، بطول من 140 إلى 260 سم.", "en": "A solid wood top on a steady metal base, 140 to 260 cm long." },
+    "description": {
+      "ar": "طاولة طعام بسطح خشب صلب بسماكة 4 سم وقاعدة حديد مطلي بالبودرة. التشطيب زيتي يبرز عروق الخشب ويسهل ترميمه لو انخدش. نصنعها بطول من 140 إلى 260 سم حسب عدد الكراسي اللي تحتاجها.",
+      "en": "A dining table with a 40 mm solid wood top on a powder-coated steel base. The oil finish shows the grain and makes scratches easy to repair. Built from 140 to 260 cm long, depending on how many chairs you need."
+    },
+    "priceFrom": 2200,
+    "priceTo": 4800,
+    "priceNote": { "ar": "السعر حسب الطول ونوع الخشب", "en": "Price depends on length and wood" },
+    "leadTimeDays": 14,
+    "images": [
+      { "src": "assets/products/dining-table-01-a.jpg", "alt": { "ar": "طاولة طعام خشب بقاعدة حديد", "en": "Wood dining table on a steel base" } },
+      { "src": "assets/products/dining-table-01-b.jpg", "alt": { "ar": "القاعدة المعدنية", "en": "The steel base" } },
+      { "src": "assets/products/dining-table-01-c.jpg", "alt": { "ar": "عروق الخشب", "en": "Wood grain" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "200 × 95 × 76 سم", "en": "200 × 95 × 76 cm" },
+      "material": { "ar": "خشب سنديان + قاعدة حديد", "en": "Oak wood + steel base" },
+      "colors": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "طبيعي", "en": "Natural" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "140 سم", "en": "140 cm" }, { "ar": "200 سم", "en": "200 cm" }, { "ar": "260 سم", "en": "260 cm" } ],
+      "color": [ { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "جوزي", "en": "Walnut" }, { "ar": "طبيعي", "en": "Natural" } ],
+      "material": [ { "ar": "خشب سنديان", "en": "Oak" }, { "ar": "خشب زان", "en": "Beech" } ]
+    },
+    "badges": ["made-in-saudi", "warranty-2y"]
+  },
+  {
+    "id": "buffet-01",
+    "sku": "YSR-DN-003",
+    "category": "dining",
+    "tags": ["buffet"],
+    "visible": true,
+    "featured": false,
+    "collections": ["fast-delivery"],
+    "added": "2026-08-08",
+    "_todo": "confirm price",
+    "name": { "ar": "بوفيه سفرة", "en": "Dining buffet" },
+    "short": { "ar": "خزانة منخفضة بأبواب وأدراج لتخزين الأطباق والضيافة.", "en": "A low cabinet with doors and drawers for tableware and hosting." },
+    "description": {
+      "ar": "بوفيه بطول 160 إلى 220 سم بأبواب وأدراج بمجارٍ هادئة، ومكان مخصص لأطقم الضيافة. السطح خشب صلب يتحمل الأواني الساخنة مع قاعدة عازلة. نصنعه بنفس خشب طاولتك إذا طلبتهما معًا.",
+      "en": "A buffet from 160 to 220 cm with doors, soft-close drawers and a dedicated space for serving sets. The solid wood top handles hot dishes on a trivet. Made in the same wood as your table when ordered together."
+    },
+    "priceFrom": 1800,
+    "priceTo": 3900,
+    "priceNote": { "ar": "السعر حسب الطول والخشب", "en": "Price depends on length and wood" },
+    "leadTimeDays": 12,
+    "images": [
+      { "src": "assets/products/buffet-01-a.jpg", "alt": { "ar": "بوفيه سفرة خشب جوزي", "en": "Walnut dining buffet" } },
+      { "src": "assets/products/buffet-01-b.jpg", "alt": { "ar": "الأدراج من الداخل", "en": "Drawer interiors" } },
+      { "src": "assets/products/buffet-01-c.jpg", "alt": { "ar": "المقابض", "en": "Handles" } }
+    ],
+    "specs": {
+      "dimensions": { "ar": "180 × 45 × 85 سم", "en": "180 × 45 × 85 cm" },
+      "material": { "ar": "MDF بقشرة خشب + سطح خشب صلب", "en": "Veneered MDF + solid wood top" },
+      "colors": [ { "ar": "جوزي", "en": "Walnut" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "أبيض", "en": "White" } ],
+      "warrantyYears": 2
+    },
+    "options": {
+      "size": [ { "ar": "160 سم", "en": "160 cm" }, { "ar": "180 سم", "en": "180 cm" }, { "ar": "220 سم", "en": "220 cm" } ],
+      "color": [ { "ar": "جوزي", "en": "Walnut" }, { "ar": "بلوط فاتح", "en": "Light oak" }, { "ar": "أبيض", "en": "White" } ],
+      "material": [ { "ar": "قشرة خشب طبيعي", "en": "Natural wood veneer" }, { "ar": "ميلامين", "en": "Melamine" } ]
+    },
+    "badges": ["made-in-saudi", "fast"]
   }
 ]

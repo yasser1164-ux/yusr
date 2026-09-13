@@ -1,222 +1,180 @@
 # يسر | Yusr
 
-موقع تعريفي وطلبات لعلامة **يسر** للأثاث المنزلي المفصّل في السعودية — موقع ثابت بدون خادم، عربي/إنجليزي.
+موقع تعريفي وطلبات لعلامة **يسر** للأثاث المنزلي المفصّل في السعودية. موقع ثابت — بدون خادم ولا خطوة بناء — عربي/إنجليزي.
 
-A bilingual (Arabic/English) marketing and ordering site for **Yusr**, a Saudi made-to-order home
-furnishing brand. Static — no build step, no backend, no npm.
+A bilingual (AR/EN) marketing and ordering site for **Yusr**, a Saudi made-to-order home furnishing brand. Static — no backend, no build step, no npm.
 
-**رابط النشر / Live URL:** https://yasser1164-ux.github.io/yusr/
+**الرابط / Live:** https://yasser1164-ux.github.io/yusr/
+
+**ما الذي يحتاجه المالك الآن؟ → [`TODO-OWNER.md`](TODO-OWNER.md)**
 
 ---
 
 ## العربية
 
-### نظرة سريعة
+### الفكرة في سطر
 
-- HTML5 + CSS حديث + JavaScript (ES modules) فقط. لا يوجد إطار عمل ولا خطوة بناء.
-- اللغة الافتراضية **العربية** (`dir="rtl"`)، والتبديل إلى الإنجليزية من زر الهيدر، ويُحفظ الاختيار في
-  `localStorage` كما يمكن تمريره في الرابط: `?lang=en`.
-- لا توجد سلة شراء ولا دفع إلكتروني. كل طلب ينتهي برسالة **واتساب** جاهزة، مع رابط بريد كبديل.
-- كل النصوص الظاهرة في ملف واحد: `js/i18n.js`.
-
-### الملفات
+كل ما قد يغيّره صاحب المتجر موجود في مجلد **`data/`** كملفات JSON. لا تحتاج تلمس HTML ولا CSS ولا JavaScript لإضافة منتج أو قسم أو صورة أو تغيير رقم واتساب.
 
 ```
-yusr/
-  index.html  products.html  product.html  custom.html  how.html  about.html  contact.html
-  css/styles.css          ← كل التنسيقات
-  js/config.js            ← رقم واتساب وبيانات التواصل  ← ابدأ من هنا
-  js/i18n.js              ← كل النصوص بالعربي والإنجليزي
-  js/main.js              ← الهيدر والفوتر وتبديل اللغة والأكورديون
-  js/products.js          ← عرض المنتجات والتصفية وصفحة التفاصيل
-  js/form.js              ← نموذج الطلب وبناء رسالة واتساب
-  data/products.json      ← بيانات المنتجات
-  assets/                 ← الشعار والأيقونة والأيقونات
-  sitemap.xml  robots.txt  README.md
+data/
+  site.json          ← العلامة، الهيرو، واتساب، الهاتف، البريد، ساعات العمل، المدن، السجل التجاري ومعروف، السوشال، الشارات
+  categories.json    ← الأقسام الستة وأنواعها الفرعية (رقائق التصفية)
+  products.json      ← المنتجات (18 حاليًا)
+  collections.json   ← مجموعات مختارة تظهر كروابط سريعة تحت «قطع مختارة»
+  faq.json           ← الأسئلة المتكررة
+  gallery.json       ← «أعمالنا» — صور القطع المنفذة (فارغ = القسم مخفي)
+  testimonials.json  ← آراء العملاء (فارغ = القسم مخفي)
 ```
 
-### 1) تغيير رقم واتساب وبيانات التواصل
+بعد أي تعديل تأكد أن الملف سليم: `python3 -m json.tool data/products.json` — لو ظهر خطأ فهناك فاصلة ناقصة أو زائدة.
 
-كل شيء في `js/config.js`:
+### الوصفات
 
-```js
-export const CONFIG = {
-  whatsapp: '9665XXXXXXXX',      // بصيغة دولية، أرقام فقط، بدون +
-  phoneDisplay: '+966 5X XXX XXXX',
-  email: 'hello@yusr.sa',
-  maroof: '0000000',             // رقم معروف (موثوق)
-  cr: '10100000000',             // السجل التجاري
-  social: { instagram: '…', x: '…', tiktok: '…', snapchat: '' }
-};
-```
+#### 1) إضافة منتج
 
-- `whatsapp`: اكتبه هكذا `966512345678` (بدون `+` وبدون صفر في البداية).
-- أي حساب تواصل اجتماعي تتركه فارغًا `''` تختفي أيقونته من الفوتر تلقائيًا.
-- ما دام الرقم يحتوي حرف `X` سيظهر تنبيه في وحدة تحكم المتصفح للتذكير بتغييره.
-
-### 2) إضافة أو تعديل منتج
-
-المنتجات في `data/products.json` — مصفوفة من الكائنات. انسخ عنصرًا موجودًا وعدّله:
+1. ضع 3 صور في `assets/products/` بأسماء `معرّف-المنتج-a.jpg` و`-b.jpg` و`-c.jpg` (التفاصيل في `assets/products/README.md`).
+2. افتح `data/products.json` وانسخ أي منتج موجود ثم عدّل الحقول:
 
 ```json
 {
-  "id": "sofa-l-01",
-  "category": "furniture",
-  "name": { "ar": "كنب زاوية قماش", "en": "L-shaped fabric sofa" },
+  "id": "wardrobe-4door-01",
+  "sku": "YSR-BD-004",
+  "category": "bedrooms",
+  "tags": ["wardrobe"],
+  "visible": true,
+  "featured": false,
+  "collections": ["fast-delivery"],
+  "added": "2026-10-01",
+  "name":  { "ar": "خزانة أربعة أبواب", "en": "Four-door wardrobe" },
   "short": { "ar": "سطر واحد للبطاقة", "en": "One line for the card" },
   "description": { "ar": "فقرة لصفحة التفاصيل", "en": "A paragraph for the detail page" },
-  "priceFrom": 2900,
-  "priceTo": 4800,
-  "images": ["https://…/1.jpg", "https://…/2.jpg", "https://…/3.jpg"],
+  "priceFrom": 3200,
+  "priceTo": 6500,
+  "priceNote": { "ar": "السعر حسب المقاس والخامة", "en": "Price varies by size and material" },
+  "leadTimeDays": 14,
+  "images": [
+    { "src": "assets/products/wardrobe-4door-01-a.jpg", "alt": { "ar": "خزانة أربعة أبواب بيضاء", "en": "White four-door wardrobe" } },
+    { "src": "assets/products/wardrobe-4door-01-b.jpg", "alt": { "ar": "من الداخل", "en": "Interior" } }
+  ],
   "specs": {
-    "dimensions": { "ar": "280 × 180 × 85 سم", "en": "280 × 180 × 85 cm" },
-    "material": { "ar": "خشب زان + قماش كتان", "en": "Beech wood + linen fabric" },
-    "colors": [{ "ar": "بيج", "en": "Beige" }],
-    "leadTimeDays": 12,
+    "dimensions": { "ar": "200 × 60 × 240 سم", "en": "200 × 60 × 240 cm" },
+    "material":   { "ar": "MDF مقاوم للرطوبة", "en": "Moisture-resistant MDF" },
+    "colors":     [ { "ar": "أبيض", "en": "White" } ],
     "warrantyYears": 2
   },
   "options": {
-    "size": [{ "ar": "240 سم", "en": "240 cm" }],
-    "color": [{ "ar": "بيج", "en": "Beige" }],
-    "material": [{ "ar": "كتان", "en": "Linen" }]
+    "size":     [ { "ar": "200 سم", "en": "200 cm" } ],
+    "color":    [ { "ar": "أبيض", "en": "White" } ],
+    "material": [ { "ar": "ميلامين", "en": "Melamine" } ]
   },
-  "featured": true
+  "badges": ["made-in-saudi", "warranty-2y"]
 }
 ```
 
-ملاحظات:
-- `id` يجب أن يكون فريدًا — هو ما يظهر في الرابط `product.html?id=…`.
-- `category` واحدة من: `furniture` · `wardrobes` · `kitchens` · `doors` · `essentials`.
-  لإضافة قسم جديد: أضف المفتاح في `CATEGORIES` داخل `js/i18n.js` وأضف له اسمًا ووصفًا في `cat` للغتين.
-- `featured: true` تظهر القطعة في الصفحة الرئيسية (تعرض أول 6 فقط).
-- الأسعار أرقام بدون فواصل؛ التنسيق والعملة يتمّان تلقائيًا (`ر.س` / `SAR`).
-- بعد التعديل تأكد أن الملف JSON سليم: `python3 -m json.tool data/products.json`.
+- `id` فريد ولا يتكرر — هو الرابط `product.html?id=…` وبداية أسماء الصور.
+- `category` أحد معرّفات `categories.json`، و`tags` من أنواع ذلك القسم الفرعية.
+- `featured: true` يُظهر القطعة في الصفحة الرئيسية (أول 6 فقط).
+- `added` تاريخ الإضافة — ترتيب «الأحدث» يعتمد عليه.
+- `badges` من المفاتيح المعرّفة في `site.json → badges`.
+- الأسعار أرقام بدون فواصل؛ العملة والتنسيق يتمّان تلقائيًا.
 
-### 3) استبدال الصور
+#### 2) إخفاء منتج مؤقتًا
 
-كل الصور حاليًا مؤقتة من `picsum.photos` ومعلّمة في الكود بتعليق `TODO: replace image`.
+غيّر `"visible": true` إلى `"visible": false`. يختفي من الموقع والبحث دون حذف بياناته. نفس الشيء يعمل للأقسام والأسئلة والمجموعات.
 
-- **صور المنتجات:** غيّر مصفوفة `images` في `data/products.json` إلى مسارات صورك، مثلًا
-  `"assets/photos/sofa-1.jpg"` بعد وضع الصور في `assets/photos/`.
-- **صور الصفحات الثابتة** (الهيرو، بطاقات الأقسام، الورش): ابحث عن `picsum.photos` في ملفات `.html`
-  واستبدل قيمة `src`. احتفظ بخاصيتي `width` و`height` حتى لا تقفز الصفحة أثناء التحميل.
-- المقاس المناسب: 1200×900 للهيرو، 800×600 لبطاقات الأقسام والمنتجات.
-- استخدم صيغة `.webp` أو `.jpg` مضغوطة (أقل من 200 كيلوبايت للصورة).
+#### 3) إضافة قسم أو إعادة ترتيبه
 
-### 4) تغيير النصوص
+في `data/categories.json`:
+- **الترتيب:** غيّر رقم `sort` (الأصغر يظهر أولًا).
+- **قسم جديد:** انسخ قسمًا موجودًا، أعطه `id` جديدًا، اسمًا ووصفًا بالعربي والإنجليزي، صورة في `assets/categories/`، وأنواعًا فرعية في `subtypes`. الأيقونة من: `majlis` `sofa` `bed` `kitchen` `door` `dining` `home`.
+- الأنواع الفرعية (`subtypes`) تظهر كرقائق تصفية في صفحة المنتجات؛ اربط المنتجات بها عبر `tags`.
 
-كل النصوص في `js/i18n.js` داخل كائنين: `ar` و`en`. غيّر القيمة في الاثنين معًا.
-في ملفات HTML لا يوجد نص ظاهر — فقط مفاتيح مثل `data-i18n="home.hero.title"`.
+#### 4) تغيير رقم واتساب / السجل التجاري / معروف
 
-### 5) النشر على GitHub Pages
+كل ذلك في `data/site.json`:
 
-هذا المستودع مخصص للموقع وحده، وملفاته في الجذر مباشرة:
+```json
+"contact": { "whatsapp": "966512345678", "phone": "+966 50 000 0000", "email": "hello@example.com" },
+"legal":   { "cr": "1010XXXXXX", "maroof": "XXXXXX", "vat": "" }
+```
+
+- واتساب بالصيغة الدولية، أرقام فقط، بدون `+` وبدون صفر البداية.
+- أي قيمة تتركها فارغة `""` لا تظهر في الموقع إطلاقًا — لا رقم وهمي ولا «قريبًا».
+- ما دام رقم واتساب فارغًا: تختفي أزرار واتساب، ونموذج الطلب يعطي الزائر الرسالة لينسخها (أو يرسلها بالبريد إن كان البريد موجودًا).
+
+في نفس الملف أيضًا: نص الهيرو وصورته (`hero`)، ساعات العمل (`hours`)، المدن ومن فيها تركيب مجاني (`cities` → `install`)، السوشال (`social`)، الورش الشريكة (`partners`)، والأرقام في صفحة «عن يسر» (`stats`).
+
+#### 5) الصور
+
+- **المنتجات:** `assets/products/` — انظر README هناك.
+- **الأقسام:** `assets/categories/<id>.jpg`.
+- **الهيرو:** ضع المسار في `site.json → hero.image.src` (مقاس 1920 × 1080 مناسب).
+- **أعمالنا:** `assets/gallery/` + عنصر لكل صورة في `data/gallery.json` — انظر README هناك.
+- إذا كان الملف غير موجود أو تعذر تحميله، يعرض الموقع صورة بديلة بألوان العلامة. **لن تظهر أيقونة صورة مكسورة أبدًا.**
+
+#### 6) النشر
 
 ```bash
 git add .
-git commit -m "Update Yusr site"
+git commit -m "Update content"
 git push
 ```
 
-مرة واحدة فقط عند أول نشر: من `Settings → Pages` اختر المصدر
-`Deploy from a branch` ثم الفرع `main` والمجلد `/ (root)` واحفظ.
-الموقع يظهر على `https://yasser1164-ux.github.io/yusr/` خلال دقيقة أو دقيقتين.
-جميع المسارات في الموقع **نسبية**، لذلك يعمل من الجذر أو من أي مجلد فرعي دون تعديل.
+GitHub Pages يعيد النشر تلقائيًا خلال دقيقة. الإعداد لمرة واحدة: `Settings → Pages → Deploy from a branch → main / (root)`.
 
-### 6) التشغيل محليًا
+#### 7) التشغيل محليًا
 
-بيانات المنتجات تُقرأ عبر `fetch` من ملف JSON، والمتصفحات تمنع ذلك عند فتح الملف مباشرة (`file://`).
-شغّل خادمًا محليًا بسيطًا:
+المحتوى يُقرأ من ملفات JSON عبر `fetch`، والمتصفحات تمنع ذلك عند فتح الملف مباشرة (`file://`):
 
 ```bash
 python3 -m http.server 8000
 # افتح http://localhost:8000
 ```
 
-بقية الصفحات (كيف نعمل، عن يسر، تواصل) تعمل حتى بالفتح المباشر.
-
 ---
 
 ## English
 
-### Overview
+### The idea in one line
 
-- Plain HTML5 + modern CSS + vanilla ES modules. No framework, no build step, no npm.
-- Default language is **Arabic** (`dir="rtl"`). The header toggle switches to English, the choice is
-  stored in `localStorage`, and it can be forced with `?lang=en`.
-- No cart, no checkout. Every request composes a pre-filled **WhatsApp** message, with a `mailto:`
-  fallback.
-- All visible strings live in `js/i18n.js`.
+Everything a shop owner would change lives in **`data/`** as JSON. Adding a product, a category, a photo or the WhatsApp number never touches HTML, CSS or JavaScript.
 
-### Change the WhatsApp number
+| File | Holds |
+|---|---|
+| `data/site.json` | brand, hero, WhatsApp, phone, e-mail, hours, cities, CR/Maroof, social links, badges, partners, stats |
+| `data/categories.json` | the six categories and their sub-types (filter chips) |
+| `data/products.json` | products (18 today) |
+| `data/collections.json` | curated groups shown as quick links under "Selected pieces" |
+| `data/faq.json` | FAQ |
+| `data/gallery.json` | "Our work" photos — empty = section hidden |
+| `data/testimonials.json` | reviews — empty = section hidden |
 
-Edit `js/config.js` — it is the single source for every contact detail on the site:
+Validate after editing: `python3 -m json.tool data/products.json`.
 
-```js
-whatsapp: '966512345678'   // international format, digits only, no "+" and no leading 0
-```
+### Recipes
 
-Also there: `phoneDisplay`, `email`, `maroof`, `cr`, and the `social` links (set one to `''` to hide
-its icon). While the number still contains an `X`, the console prints a reminder.
+**Add a product** — drop `<id>-a.jpg`, `-b.jpg`, `-c.jpg` into `assets/products/`, copy an entry in `data/products.json` and edit it (full example in the Arabic section above). `id` must be unique; `category` and `tags` come from `categories.json`; `featured: true` puts it on the home page; `added` drives the "Newest" sort; `badges` are keys from `site.json → badges`.
 
-### Add or edit a product
+**Hide a product temporarily** — set `"visible": false`. Works for categories, FAQ entries and collections too.
 
-Products live in `data/products.json`. Copy an existing entry and edit it — see the annotated
-example in the Arabic section above. Rules:
+**Add or reorder a category** — in `data/categories.json` change `sort` (lower first) or copy an entry with a new `id`, names, blurb, an image in `assets/categories/`, and `subtypes`. Icons: `majlis` `sofa` `bed` `kitchen` `door` `dining` `home`.
 
-- `id` must be unique; it is the `product.html?id=…` parameter.
-- `category` is one of `furniture`, `wardrobes`, `kitchens`, `doors`, `essentials`. To add a new
-  category, add its key to `CATEGORIES` in `js/i18n.js` and a label + description under `cat` in both
-  languages.
-- `featured: true` puts the piece on the home page (first 6 only).
-- Prices are plain numbers; currency and grouping are formatted automatically.
-- Validate after editing: `python3 -m json.tool data/products.json`.
+**Change WhatsApp / CR / Maroof** — `data/site.json` → `contact.whatsapp` (international, digits only), `legal.cr`, `legal.maroof`. Any empty value is simply not rendered. While WhatsApp is empty, WhatsApp buttons disappear and the request form hands the visitor a copyable message (or an e-mail link if `contact.email` is set).
 
-### Replace the images
+**Images** — products in `assets/products/`, categories in `assets/categories/<id>.jpg`, hero via `site.json → hero.image.src`, gallery in `assets/gallery/` + `data/gallery.json`. A missing file shows the branded placeholder, never a broken icon.
 
-Every image is a `picsum.photos` placeholder, each marked with a `TODO: replace image` comment.
+**Deploy** — `git add . && git commit -m "Update content" && git push`. Pages redeploys within a minute (one-time: Settings → Pages → Deploy from a branch → `main` / root).
 
-- **Product photos:** change the `images` array in `data/products.json` (e.g. `assets/photos/sofa-1.jpg`).
-- **Static page photos** (hero, category cards, partner cards): search the `.html` files for
-  `picsum.photos` and swap the `src`. Keep the `width`/`height` attributes to avoid layout shift.
-- Suggested sizes: 1200×900 hero, 800×600 cards. Use compressed `.webp`/`.jpg` under ~200 KB.
-
-### Deploy to GitHub Pages
-
-```bash
-git add .
-git commit -m "Update Yusr site"
-git push
-```
-
-One-time setup: in `Settings → Pages`, choose source `Deploy from a branch`, branch `main`, folder
-`/ (root)`, and save. The site is served at
-`https://yasser1164-ux.github.io/yusr/`. Every path in the site is **relative**, so it works from the
-root or from any sub-folder.
-
-### Run locally
-
-Product data is loaded with `fetch`, which browsers block on `file://`. Use a local server:
-
-```bash
-python3 -m http.server 8000   # then open http://localhost:8000
-```
-
-The content pages (how, about, contact) work even when opened directly.
+**Run locally** — `python3 -m http.server 8000` then open `http://localhost:8000` (browsers block `fetch` on `file://`).
 
 ---
 
-## Accessibility & performance notes
+## Technical notes
 
-- Semantic landmarks, a skip link, visible focus rings, labels on every input, `aria-expanded` on the
-  menu and FAQ accordion, `aria-pressed` on filter chips, and live region on the result count.
-- Colour contrast: walnut `#4A3728` on sand `#E9DCC9` ≈ 9:1; muted text `#6B5E54` on `#FAF7F2` ≈ 5.5:1.
-- Images are lazy-loaded (except the hero) and carry explicit dimensions; fonts use `font-display: swap`.
-- Only one external dependency: Google Fonts. No JS libraries.
-
-## Open TODOs for the owner
-
-Search the project for `TODO:` — the outstanding items are listed at the end of the handover summary:
-the WhatsApp number, Maroof and CR numbers, phone, e-mail, social links, working hours, the office
-address and map embed, the partner workshop names, the about-page figures, the share image, and all
-placeholder photography.
+- Plain HTML + CSS + vanilla ES modules. `js/store.js` is the only module that reads JSON; every page queries through it.
+- Arabic is the default (`dir="rtl"`); the toggle switches to English, persists in `localStorage`, and `?lang=en` forces a language. Layout uses logical CSS properties so RTL mirrors without overrides.
+- Arabic UI uses Eastern Arabic digits (٢٬٩٠٠); flip `arabicNumerals` in `js/config.js` for Western digits.
+- Accessibility: landmarks, skip link, focus rings, focus-trapped overlays (drawer, search, lightbox) with Escape to close, `aria-live` result counts, `aria-pressed` chips, `aria-expanded` accordion.
+- Colour contrast: walnut `#4A3728` on sand `#E9DCC9` ≈ 9:1; muted `#6B5E54` on `#FAF7F2` ≈ 5.5:1.
+- Only external dependency: Google Fonts (IBM Plex Sans / IBM Plex Sans Arabic, `font-display: swap`).

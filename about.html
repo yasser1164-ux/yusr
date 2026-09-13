@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="pre">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,91 +9,46 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="يسر | Yusr">
 <meta property="og:url" content="https://yasser1164-ux.github.io/yusr/about.html">
-<!-- TODO: confirm — replace with a real 1200x630 og.png share image -->
 <meta property="og:image" content="https://yasser1164-ux.github.io/yusr/assets/logo.svg">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://yasser1164-ux.github.io/yusr/about.html">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
+<noscript><style>html.pre main > * { visibility: visible; }</style></noscript>
 </head>
-<body data-page="about">
+<body data-page="about" data-async>
 <div id="header-slot"></div>
 
 <main id="main">
   <section class="section section--tight">
     <div class="container">
-      <div class="section__head">
-        <h1 data-i18n="about.title"></h1>
-        <p data-i18n="about.lead"></p>
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="nav.about"></p>
+        <h1 class="sec-head__title" data-i18n="about.title"></h1>
+        <p class="sec-head__text" data-i18n="about.lead"></p>
       </div>
-
-      <div class="hero__grid" style="align-items:start">
-        <div class="prose">
+      <div class="two-col">
+        <div class="prose reveal">
           <h2 data-i18n="about.storyTitle"></h2>
-          <!-- TODO: confirm — founding year and the founding story details -->
           <p data-i18n="about.storyP1"></p>
           <p data-i18n="about.storyP2"></p>
           <p data-i18n="about.storyP3"></p>
         </div>
-
-        <div class="hero__media">
-          <!-- TODO: replace image -->
-          <img src="https://picsum.photos/seed/yusr-workshop/1000/750" width="1000" height="750"
-               alt="" loading="lazy" decoding="async">
-        </div>
+        <div class="media-frame reveal" id="about-media"></div>
       </div>
     </div>
   </section>
 
-  <section class="section section--sand">
-    <div class="container">
-      <div class="section__head">
-        <h2 data-i18n="about.partnersTitle"></h2>
-        <p data-i18n="about.partnersText"></p>
-        <p class="note-sample" data-i18n="about.partnersNote"></p>
-      </div>
-
-      <!-- TODO: confirm — replace with the real partner workshops -->
-      <div class="grid grid--3">
-        <article class="card">
-          <div class="cat-card__media"><!-- TODO: replace image -->
-            <img src="https://picsum.photos/seed/yusr-partner-1/800/600" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
-          <div class="cat-card__body">
-            <p class="partner__role" data-i18n="about.p1.s"></p>
-            <h3 data-i18n="about.p1.n"></h3>
-            <p data-i18n="about.p1.d"></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="cat-card__media"><!-- TODO: replace image -->
-            <img src="https://picsum.photos/seed/yusr-partner-2/800/600" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
-          <div class="cat-card__body">
-            <p class="partner__role" data-i18n="about.p2.s"></p>
-            <h3 data-i18n="about.p2.n"></h3>
-            <p data-i18n="about.p2.d"></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="cat-card__media"><!-- TODO: replace image -->
-            <img src="https://picsum.photos/seed/yusr-partner-3/800/600" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
-          <div class="cat-card__body">
-            <p class="partner__role" data-i18n="about.p3.s"></p>
-            <h3 data-i18n="about.p3.n"></h3>
-            <p data-i18n="about.p3.d"></p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+  <!-- Partner workshops: data/site.json → partners (hidden while empty) -->
+  <section class="section section--sand" id="partners" hidden></section>
 
   <section class="section">
-    <div class="container">
-      <div class="panel">
+    <div class="container container--narrow">
+      <div class="panel reveal">
         <h2 data-i18n="about.promiseTitle"></h2>
         <ul>
           <li data-i18n="about.promiseList.a"></li>
@@ -102,28 +57,20 @@
           <li data-i18n="about.promiseList.d"></li>
         </ul>
       </div>
-
-      <div style="margin-block-start:32px">
-        <h2 data-i18n="about.statsTitle"></h2>
-        <!-- TODO: confirm — replace these figures with real numbers -->
-        <ul class="stats">
-          <li class="stat"><strong>350+</strong><span data-i18n="about.stat1"></span></li>
-          <li class="stat"><strong>3</strong><span data-i18n="about.stat2"></span></li>
-          <li class="stat"><strong>12</strong><span data-i18n="about.stat3"></span></li>
-        </ul>
-        <p class="note-sample" style="margin-block-start:12px" data-i18n="about.statsNote"></p>
-      </div>
     </div>
   </section>
 
+  <!-- Figures: data/site.json → stats (hidden while empty) -->
+  <section class="section section--sand section--tight" id="stats" hidden></section>
+
   <section class="section section--tight">
     <div class="container">
-      <div class="cta-band">
-        <h2 data-i18n="how.cta"></h2>
-        <p data-i18n="how.ctaText"></p>
+      <div class="cta-band reveal">
+        <h2 data-i18n="home.cta.title"></h2>
+        <p data-i18n="home.cta.text"></p>
         <div class="btn-row">
-          <a class="btn btn--secondary" href="custom.html"><span data-i18n="home.hero.ctaSecondary"></span></a>
-          <a class="btn btn--ghost" href="contact.html"><span data-i18n="nav.contact"></span></a>
+          <a class="btn btn--sand" href="custom.html"><span data-i18n="common.customCta"></span></a>
+          <a class="btn btn--ghost-light" href="contact.html"><span data-i18n="nav.contact"></span></a>
         </div>
       </div>
     </div>
@@ -133,5 +80,6 @@
 <div id="footer-slot"></div>
 
 <script type="module" src="js/main.js"></script>
+<script type="module" src="js/info.js"></script>
 </body>
 </html>

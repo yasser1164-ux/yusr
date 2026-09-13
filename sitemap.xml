@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Product URLs mirror data/products.json; regenerate this list when products are added or removed. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/?lang=ar"/>
@@ -10,7 +10,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/products.html</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/products.html?lang=ar"/>
@@ -19,7 +18,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/custom.html</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/custom.html?lang=ar"/>
@@ -28,7 +26,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/how.html</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/how.html?lang=ar"/>
@@ -37,7 +34,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/about.html</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/about.html?lang=ar"/>
@@ -46,7 +42,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://yasser1164-ux.github.io/yusr/contact.html</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/contact.html?lang=ar"/>
@@ -55,5 +50,148 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=majlis-arabic-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-arabic-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-arabic-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-arabic-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=majlis-floor-modern-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-floor-modern-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-floor-modern-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-floor-modern-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=majlis-tables-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-tables-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-tables-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=majlis-tables-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=sofa-corner-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-corner-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-corner-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-corner-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=sofa-3seat-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-3seat-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-3seat-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=sofa-3seat-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=armchair-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=armchair-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=armchair-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=armchair-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=bedroom-full-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=bedroom-full-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=bedroom-full-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=bedroom-full-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=wardrobe-slide-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=wardrobe-slide-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=wardrobe-slide-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=wardrobe-slide-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=dressing-room-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=dressing-room-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=dressing-room-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=dressing-room-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-wood-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-wood-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-wood-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-wood-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-alum-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-alum-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-alum-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-alum-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-island-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-island-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-island-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=kitchen-island-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=door-interior-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-interior-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-interior-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-interior-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=door-entry-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-entry-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-entry-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=door-entry-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=wall-cladding-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=wall-cladding-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=wall-cladding-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=wall-cladding-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=dining-set-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-set-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-set-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-set-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=dining-table-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-table-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-table-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=dining-table-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasser1164-ux.github.io/yusr/product.html?id=buffet-01</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yasser1164-ux.github.io/yusr/product.html?id=buffet-01&amp;lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasser1164-ux.github.io/yusr/product.html?id=buffet-01&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasser1164-ux.github.io/yusr/product.html?id=buffet-01"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

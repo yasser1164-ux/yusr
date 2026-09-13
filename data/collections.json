@@ -1,0 +1,23 @@
+[
+  {
+    "id": "most-requested",
+    "visible": true,
+    "sort": 1,
+    "name": { "ar": "الأكثر طلبًا", "en": "Most requested" },
+    "description": { "ar": "القطع التي يطلبها عملاؤنا أكثر من غيرها.", "en": "The pieces our customers order most." }
+  },
+  {
+    "id": "fast-delivery",
+    "visible": true,
+    "sort": 2,
+    "name": { "ar": "جاهز خلال 10 أيام", "en": "Ready within 10 days" },
+    "description": { "ar": "قطع بمدة تنفيذ قصيرة.", "en": "Pieces with a short build time." }
+  },
+  {
+    "id": "new-home",
+    "visible": true,
+    "sort": 3,
+    "name": { "ar": "تجهيز بيت جديد", "en": "Furnishing a new home" },
+    "description": { "ar": "الأساسيات التي يبدأ بها البيت الجديد.", "en": "The essentials a new home starts with." }
+  }
+]
