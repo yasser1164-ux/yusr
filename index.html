@@ -17,6 +17,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
+<!-- Hero preload: the hero is rendered by JS after data/site.json loads, so the browser
+     cannot discover it on its own. Keep this in sync with site.json → hero.image;
+     if they ever disagree the only cost is one unused fetch, never a broken image. -->
+<link rel="preload" as="image" href="assets/hero.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <noscript><style>html.pre main > * { visibility: visible; }</style></noscript>
 </head>

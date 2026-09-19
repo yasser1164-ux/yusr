@@ -466,9 +466,7 @@
     "priceNote": { "ar": "السعر للباب الواحد شامل التركيب", "en": "Price per door, installation included" },
     "leadTimeDays": 8,
     "images": [
-      { "src": "assets/products/door-interior-01-a.jpg", "alt": { "ar": "باب داخلي خشب بلون بلوط", "en": "Oak interior door" } },
-      { "src": "assets/products/door-interior-01-b.jpg", "alt": { "ar": "المقبض والمفصلات", "en": "Handle and hinges" } },
-      { "src": "assets/products/door-interior-01-c.jpg", "alt": { "ar": "الباب مركّبًا", "en": "The door installed" } }
+      { "src": "assets/products/door-interior-01-a.jpg", "webp": "assets/products/door-interior-01-a.webp", "alt": { "ar": "باب داخلي بخشب بلوط في ممر", "en": "Oak interior door in a hallway" } }
     ],
     "specs": {
       "dimensions": { "ar": "90 × 4.5 × 210 سم", "en": "90 × 4.5 × 210 cm" },
@@ -655,9 +653,7 @@
     "priceNote": { "ar": "السعر حسب الطول والخشب", "en": "Price depends on length and wood" },
     "leadTimeDays": 12,
     "images": [
-      { "src": "assets/products/buffet-01-a.jpg", "alt": { "ar": "بوفيه سفرة خشب جوزي", "en": "Walnut dining buffet" } },
-      { "src": "assets/products/buffet-01-b.jpg", "alt": { "ar": "الأدراج من الداخل", "en": "Drawer interiors" } },
-      { "src": "assets/products/buffet-01-c.jpg", "alt": { "ar": "المقابض", "en": "Handles" } }
+      { "src": "assets/products/buffet-01-a.jpg", "webp": "assets/products/buffet-01-a.webp", "alt": { "ar": "بوفيه بواجهة خشب مضلّع وسطح حجري", "en": "Buffet with a fluted wood front and stone top" } }
     ],
     "specs": {
       "dimensions": { "ar": "180 × 45 × 85 سم", "en": "180 × 45 × 85 cm" },

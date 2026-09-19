@@ -26,16 +26,16 @@ The site is technically complete but shows **no invented data**. Each item below
 
 ## 5. الصور الحقيقية / Real photography
 
-**تم ✅** — الهيرو، **كل الأقسام الستة**، و8 منتجات: كنب زاوية، كنب ثلاثي، كرسي مفرد، طقم طاولات مجلس، غرفة ملابس، مطبخ ألمنيوم، مطبخ خشب، تجليد جدار. كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
-**Done ✅** — hero, **all six category tiles**, and 8 products. Each image is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
+**تم ✅** — الهيرو، **كل الأقسام الستة**، و10 منتجات: كنب زاوية، كنب ثلاثي، كرسي مفرد، طقم طاولات مجلس، غرفة ملابس، مطبخ ألمنيوم، مطبخ خشب، تجليد جدار، بوفيه، باب داخلي. كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
+**Done ✅** — hero, **all six category tiles**, and 10 products. Each image is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
 
 **الناقص / Still needed:**
-- **10 منتجات** بلا صور بعد: مجلس عربي، جلسة أرضية مودرن، غرفة نوم كاملة، خزانة سحب، جزيرة مطبخ، باب داخلي، باب مدخل، سفرة كاملة، طاولة طعام، بوفيه. ضع `<id>-a.jpg` في `assets/products/` — القواعد في `assets/products/README.md`.
-- **الأولوية:** «سفرة كاملة» و«باب مدخل» يظهران في الصفحة الرئيسية ضمن القطع المختارة، فصورتاهما الأكثر أثرًا.
-- **صور إضافية للمنتجات الثمانية:** كل منتج الآن بصورة واحدة. أضف `-b` و `-c` وسيظهر شريط الصور المصغّرة تلقائيًا.
+- **8 منتجات** بلا صور بعد: مجلس عربي، جلسة أرضية مودرن، غرفة نوم كاملة، خزانة سحب، جزيرة مطبخ، باب مدخل، سفرة كاملة، طاولة طعام. ضع `<id>-a.jpg` في `assets/products/` — القواعد في `assets/products/README.md`.
+- **الأولوية:** «سفرة كاملة»، «باب مدخل»، «مجلس عربي» و«غرفة نوم كاملة» تظهر في الصفحة الرئيسية ضمن القطع المختارة، فصورها الأكثر أثرًا.
+- **صور إضافية للمنتجات العشرة:** كل منتج الآن بصورة واحدة. أضف `-b` و `-c` وسيظهر شريط الصور المصغّرة تلقائيًا.
 - **صفحة عن يسر:** `site.json → about.image.src`
 - **أعمالنا:** صور القطع المسلّمة فعليًا في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json`. **استخدم هنا صور تركيب حقيقية فقط** — القسم يقول «قطع سلّمناها لبيوت حقيقية».
-- Ten products still need a photo; **dining set** and **entrance door** matter most, since both appear in the home page's featured row.
+- Eight products still need a photo; **dining set**, **entrance door**, **Arabic majlis** and **full bedroom** matter most — all four appear in the home page's featured row.
 - إلى أن تصل الصور يعرض الموقع رسمًا توضيحيًا بألوان العلامة — بدون أيقونات مكسورة.
 
 ## 6. الأسعار الحقيقية / Real prices
