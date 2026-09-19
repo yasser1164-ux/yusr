@@ -96,9 +96,7 @@
     "priceNote": { "ar": "السعر للطقم كاملًا حسب الخشب", "en": "Price for the full set, depending on the wood" },
     "leadTimeDays": 10,
     "images": [
-      { "src": "assets/products/majlis-tables-01-a.jpg", "alt": { "ar": "طقم طاولات مجلس خشب", "en": "Wooden majlis table set" } },
-      { "src": "assets/products/majlis-tables-01-b.jpg", "alt": { "ar": "طاولة الوسط", "en": "The centre table" } },
-      { "src": "assets/products/majlis-tables-01-c.jpg", "alt": { "ar": "تفاصيل السطح الخشبي", "en": "Wood top detail" } }
+      { "src": "assets/products/majlis-tables-01-a.jpg", "webp": "assets/products/majlis-tables-01-a.webp", "alt": { "ar": "طقم طاولات متداخلة بخشب جوزي وأرجل نحاسية", "en": "Nesting table set in walnut with brass legs" } }
     ],
     "specs": {
       "dimensions": { "ar": "100 × 60 × 35 سم + 2 × (45 × 45 × 35 سم)", "en": "100 × 60 × 35 cm + 2 × (45 × 45 × 35 cm)" },
@@ -135,9 +133,7 @@
     "priceNote": { "ar": "السعر حسب الطول والقماش", "en": "Price depends on length and fabric" },
     "leadTimeDays": 12,
     "images": [
-      { "src": "assets/products/sofa-corner-01-a.jpg", "alt": { "ar": "كنب زاوية بيج", "en": "Beige corner sofa" } },
-      { "src": "assets/products/sofa-corner-01-b.jpg", "alt": { "ar": "زاوية الكنب", "en": "Sofa corner detail" } },
-      { "src": "assets/products/sofa-corner-01-c.jpg", "alt": { "ar": "قماش الكنب عن قرب", "en": "Fabric close-up" } }
+      { "src": "assets/products/sofa-corner-01-a.jpg", "webp": "assets/products/sofa-corner-01-a.webp", "alt": { "ar": "كنب زاوية رمادي أمام نافذة مقوّسة", "en": "Grey corner sofa in front of an arched window" } }
     ],
     "specs": {
       "dimensions": { "ar": "280 × 180 × 85 سم", "en": "280 × 180 × 85 cm" },
@@ -173,9 +169,7 @@
     "priceNote": { "ar": "السعر حسب القماش ونوع الخشب", "en": "Price depends on fabric and wood" },
     "leadTimeDays": 10,
     "images": [
-      { "src": "assets/products/sofa-3seat-01-a.jpg", "alt": { "ar": "كنب ثلاثي أخضر بأرجل خشب", "en": "Green three-seater on wooden legs" } },
-      { "src": "assets/products/sofa-3seat-01-b.jpg", "alt": { "ar": "الأرجل الخشبية", "en": "The wooden legs" } },
-      { "src": "assets/products/sofa-3seat-01-c.jpg", "alt": { "ar": "الكنب من الجانب", "en": "Side view" } }
+      { "src": "assets/products/sofa-3seat-01-a.jpg", "webp": "assets/products/sofa-3seat-01-a.webp", "alt": { "ar": "كنب ثلاثي أخضر زيتي بقاعدة خشب", "en": "Olive three-seat sofa on a wooden base" } }
     ],
     "specs": {
       "dimensions": { "ar": "220 × 90 × 88 سم", "en": "220 × 90 × 88 cm" },
@@ -211,9 +205,7 @@
     "priceNote": { "ar": "السعر للكرسي الواحد", "en": "Price per chair" },
     "leadTimeDays": 8,
     "images": [
-      { "src": "assets/products/armchair-01-a.jpg", "alt": { "ar": "كرسي مفرد بيج", "en": "Beige armchair" } },
-      { "src": "assets/products/armchair-01-b.jpg", "alt": { "ar": "الكرسي من الخلف", "en": "Back view" } },
-      { "src": "assets/products/armchair-01-c.jpg", "alt": { "ar": "تفاصيل مسند الذراع", "en": "Armrest detail" } }
+      { "src": "assets/products/armchair-01-a.jpg", "webp": "assets/products/armchair-01-a.webp", "alt": { "ar": "كرسي مفرد بقماش بوكليه كريمي", "en": "Cream bouclé armchair" } }
     ],
     "specs": {
       "dimensions": { "ar": "80 × 85 × 85 سم", "en": "80 × 85 × 85 cm" },
@@ -326,9 +318,7 @@
     "priceNote": { "ar": "السعر حسب الأمتار الطولية والإضاءة", "en": "Price depends on linear metres and lighting" },
     "leadTimeDays": 18,
     "images": [
-      { "src": "assets/products/dressing-room-01-a.jpg", "alt": { "ar": "غرفة ملابس بإضاءة مدمجة", "en": "Dressing room with integrated lighting" } },
-      { "src": "assets/products/dressing-room-01-b.jpg", "alt": { "ar": "الجزيرة الوسطية", "en": "The central island" } },
-      { "src": "assets/products/dressing-room-01-c.jpg", "alt": { "ar": "علاقات بارتفاعين", "en": "Rails at two heights" } }
+      { "src": "assets/products/dressing-room-01-a.jpg", "webp": "assets/products/dressing-room-01-a.webp", "alt": { "ar": "غرفة ملابس بأبواب زجاجية وإضاءة مدمجة وجزيرة وسطية", "en": "Dressing room with glass doors, integrated lighting and a central island" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب الغرفة — من 8 إلى 20 متر طولي", "en": "Room-dependent — 8 to 20 linear metres" },

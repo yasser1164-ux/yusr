@@ -101,7 +101,7 @@ async function renderFeatured(l) {
       ${sectionHead({ eyebrow: t('home.featured.eyebrow', l), title: t('home.featured.title', l), text: t('home.featured.text', l) })}
       ${chips}
       <div class="grid grid--3">
-        ${list.map((p, i) => productCard(p, { lang: l, badges: site.badges, categoryName: catNames[p.category], eager: i < 3, priority: i === 0 })).join('')}
+        ${list.map(p => productCard(p, { lang: l, badges: site.badges, categoryName: catNames[p.category] })).join('')}
       </div>
       <p class="btn-row btn-row--center reveal">
         <a class="btn btn--primary" href="products.html">${esc(t('common.viewAll', l))}${ICON.arrow}</a>

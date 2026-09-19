@@ -26,12 +26,13 @@ The site is technically complete but shows **no invented data**. Each item below
 
 ## 5. الصور الحقيقية / Real photography
 
-**تم ✅** — الهيرو و4 أقسام (مجالس، كنب، غرف نوم، مطابخ). كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
-**Done ✅** — hero and 4 category tiles (majlis, living, bedrooms, kitchens). Each is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
+**تم ✅** — الهيرو، 4 أقسام (مجالس، كنب، غرف نوم، مطابخ)، و5 منتجات: كنب زاوية، كنب ثلاثي، كرسي مفرد، طقم طاولات مجلس، غرفة ملابس. كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
+**Done ✅** — hero, 4 category tiles (majlis, living, bedrooms, kitchens) and 5 products (corner sofa, three-seater, armchair, majlis table set, dressing room). Each is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
 
 **الناقص / Still needed:**
 - **قسمان:** `assets/categories/doors.jpg` و `dining.jpg` (مقاس 900 × 675، نسبة 4:3) — حتى تصل، يظهر رسم توضيحي مكانهما.
-- **المنتجات:** 18 منتجًا × 3 صور في `assets/products/` بالأسماء المذكورة في `data/products.json` (`<id>-a.jpg` و `-b.jpg` و `-c.jpg`). القواعد في `assets/products/README.md`.
+- **13 منتجًا** بلا صور بعد: مجلس عربي، جلسة أرضية مودرن، غرفة نوم كاملة، خزانة سحب، مطبخ خشب، مطبخ ألمنيوم، جزيرة مطبخ، باب داخلي، باب مدخل، تجليد جدار، سفرة كاملة، طاولة طعام، بوفيه. ضع `<id>-a.jpg` في `assets/products/` — القواعد في `assets/products/README.md`.
+- **صور إضافية للمنتجات الخمسة:** كل منتج الآن بصورة واحدة. أضف `-b` و `-c` وسيظهر شريط الصور المصغّرة تلقائيًا.
 - **صفحة عن يسر:** `site.json → about.image.src`
 - **أعمالنا:** صور القطع المسلّمة فعليًا في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json`. **استخدم هنا صور تركيب حقيقية فقط** — القسم يقول «قطع سلّمناها لبيوت حقيقية».
 - Two categories (`doors`, `dining`), the 18 × 3 product photos, the About image, and the "Our work" gallery — which should hold **real installation photos only**, since that section says "pieces delivered to real homes".
