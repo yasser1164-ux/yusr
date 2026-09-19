@@ -20,9 +20,7 @@
     "priceNote": { "ar": "السعر حسب الطول الإجمالي ونوع القماش", "en": "Price depends on total length and fabric" },
     "leadTimeDays": 15,
     "images": [
-      { "src": "assets/products/majlis-arabic-01-a.jpg", "alt": { "ar": "مجلس عربي أرضي بلون بيج", "en": "Beige Arabic floor majlis" } },
-      { "src": "assets/products/majlis-arabic-01-b.jpg", "alt": { "ar": "تفاصيل المساند والمخدات", "en": "Back rest and cushion detail" } },
-      { "src": "assets/products/majlis-arabic-01-c.jpg", "alt": { "ar": "المجلس مركّبًا في غرفة", "en": "The majlis installed in a room" } }
+      { "src": "assets/products/majlis-arabic-01-a.jpg", "webp": "assets/products/majlis-arabic-01-a.webp", "alt": { "ar": "مجلس عربي أرضي على شكل U بمساند ومخدات زيتية", "en": "U-shaped Arabic floor majlis with olive bolster cushions" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب الغرفة — من 6 إلى 14 متر طولي", "en": "Room-dependent — 6 to 14 linear metres" },
@@ -242,9 +240,7 @@
     "priceNote": { "ar": "السعر حسب مقاس الخزانة والخامات", "en": "Price depends on wardrobe size and materials" },
     "leadTimeDays": 21,
     "images": [
-      { "src": "assets/products/bedroom-full-01-a.jpg", "alt": { "ar": "غرفة نوم كاملة بلون بلوط فاتح", "en": "Full bedroom in light oak" } },
-      { "src": "assets/products/bedroom-full-01-b.jpg", "alt": { "ar": "التسريحة والمرآة", "en": "Vanity and mirror" } },
-      { "src": "assets/products/bedroom-full-01-c.jpg", "alt": { "ar": "الخزانة المدمجة", "en": "The built-in wardrobe" } }
+      { "src": "assets/products/bedroom-full-01-a.jpg", "webp": "assets/products/bedroom-full-01-a.webp", "alt": { "ar": "غرفة نوم كاملة بخشب بلوط فاتح وخزانة من الأرض للسقف", "en": "Full bedroom in light oak with a floor-to-ceiling wardrobe" } }
     ],
     "specs": {
       "dimensions": { "ar": "سرير 200 × 180 سم · خزانة حسب الجدار", "en": "Bed 200 × 180 cm · wardrobe to wall width" },
@@ -280,9 +276,7 @@
     "priceNote": { "ar": "السعر حسب العرض والتقسيم الداخلي", "en": "Price depends on width and interior layout" },
     "leadTimeDays": 15,
     "images": [
-      { "src": "assets/products/wardrobe-slide-01-a.jpg", "alt": { "ar": "خزانة أبواب سحب بلون أبيض", "en": "White sliding-door wardrobe" } },
-      { "src": "assets/products/wardrobe-slide-01-b.jpg", "alt": { "ar": "التقسيم الداخلي", "en": "Interior layout" } },
-      { "src": "assets/products/wardrobe-slide-01-c.jpg", "alt": { "ar": "مجرى الأبواب", "en": "Door runner detail" } }
+      { "src": "assets/products/wardrobe-slide-01-a.jpg", "webp": "assets/products/wardrobe-slide-01-a.webp", "alt": { "ar": "خزانة بأبواب سحب بيضاء وأحدها مفتوح يكشف التقسيم الداخلي", "en": "Sliding-door wardrobe with one panel open showing the interior" } }
     ],
     "specs": {
       "dimensions": { "ar": "240 × 60 × 270 سم", "en": "240 × 60 × 270 cm" },
@@ -502,9 +496,7 @@
     "priceNote": { "ar": "السعر حسب المقاس والقفل", "en": "Price depends on size and lock" },
     "leadTimeDays": 14,
     "images": [
-      { "src": "assets/products/door-entry-01-a.jpg", "alt": { "ar": "باب مدخل مصفح بني", "en": "Brown armoured entrance door" } },
-      { "src": "assets/products/door-entry-01-b.jpg", "alt": { "ar": "القفل متعدد النقاط", "en": "Multi-point lock" } },
-      { "src": "assets/products/door-entry-01-c.jpg", "alt": { "ar": "الباب من الداخل", "en": "Inside face" } }
+      { "src": "assets/products/door-entry-01-a.jpg", "webp": "assets/products/door-entry-01-a.webp", "alt": { "ar": "باب مدخل بقشرة جوزية ومقبض نحاسي طويل", "en": "Entrance door in walnut veneer with a long brass handle" } }
     ],
     "specs": {
       "dimensions": { "ar": "100 × 7 × 220 سم", "en": "100 × 7 × 220 cm" },
@@ -615,9 +607,7 @@
     "priceNote": { "ar": "السعر حسب الطول ونوع الخشب", "en": "Price depends on length and wood" },
     "leadTimeDays": 14,
     "images": [
-      { "src": "assets/products/dining-table-01-a.jpg", "alt": { "ar": "طاولة طعام خشب بقاعدة حديد", "en": "Wood dining table on a steel base" } },
-      { "src": "assets/products/dining-table-01-b.jpg", "alt": { "ar": "القاعدة المعدنية", "en": "The steel base" } },
-      { "src": "assets/products/dining-table-01-c.jpg", "alt": { "ar": "عروق الخشب", "en": "Wood grain" } }
+      { "src": "assets/products/dining-table-01-a.jpg", "webp": "assets/products/dining-table-01-a.webp", "alt": { "ar": "طاولة طعام بلوط بسطح سميك وقاعدة حديد أسود", "en": "Oak dining table with a thick top on a black steel base" } }
     ],
     "specs": {
       "dimensions": { "ar": "200 × 95 × 76 سم", "en": "200 × 95 × 76 cm" },
