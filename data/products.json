@@ -355,9 +355,7 @@
     "priceNote": { "ar": "السعر حسب الأمتار الطولية، بدون سطح الرخام", "en": "Price by linear metre, countertop not included" },
     "leadTimeDays": 21,
     "images": [
-      { "src": "assets/products/kitchen-wood-01-a.jpg", "alt": { "ar": "مطبخ خشب بقشرة بلوط", "en": "Oak veneer kitchen" } },
-      { "src": "assets/products/kitchen-wood-01-b.jpg", "alt": { "ar": "الأدراج من الداخل", "en": "Drawer interiors" } },
-      { "src": "assets/products/kitchen-wood-01-c.jpg", "alt": { "ar": "الوحدات العلوية", "en": "Upper units" } }
+      { "src": "assets/products/kitchen-wood-01-a.jpg", "webp": "assets/products/kitchen-wood-01-a.webp", "alt": { "ar": "مطبخ بقشرة بلوط وجزيرة رخامية", "en": "Oak veneer kitchen with a marble island" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب المطبخ — من 4 إلى 12 متر طولي", "en": "Kitchen-dependent — 4 to 12 linear metres" },
@@ -393,9 +391,7 @@
     "priceNote": { "ar": "السعر حسب الأمتار الطولية، بدون سطح الرخام", "en": "Price by linear metre, countertop not included" },
     "leadTimeDays": 20,
     "images": [
-      { "src": "assets/products/kitchen-alum-01-a.jpg", "alt": { "ar": "مطبخ ألمنيوم أبيض", "en": "White aluminium kitchen" } },
-      { "src": "assets/products/kitchen-alum-01-b.jpg", "alt": { "ar": "الأبواب والمفصلات", "en": "Doors and hinges" } },
-      { "src": "assets/products/kitchen-alum-01-c.jpg", "alt": { "ar": "الوحدات السفلية", "en": "Lower units" } }
+      { "src": "assets/products/kitchen-alum-01-a.jpg", "webp": "assets/products/kitchen-alum-01-a.webp", "alt": { "ar": "مطبخ ألمنيوم أبيض بجزيرة وكراسي بار", "en": "White aluminium kitchen with an island and bar stools" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب المطبخ — من 4 إلى 12 متر طولي", "en": "Kitchen-dependent — 4 to 12 linear metres" },
@@ -546,9 +542,7 @@
     "priceNote": { "ar": "السعر لكل متر مربع، شامل التركيب", "en": "Price per square metre, installation included" },
     "leadTimeDays": 12,
     "images": [
-      { "src": "assets/products/wall-cladding-01-a.jpg", "alt": { "ar": "تجليد جدار بشرائح خشب", "en": "Slatted wood wall cladding" } },
-      { "src": "assets/products/wall-cladding-01-b.jpg", "alt": { "ar": "الإضاءة الخلفية", "en": "Back lighting" } },
-      { "src": "assets/products/wall-cladding-01-c.jpg", "alt": { "ar": "الرف العائم", "en": "The floating shelf" } }
+      { "src": "assets/products/wall-cladding-01-a.jpg", "webp": "assets/products/wall-cladding-01-a.webp", "alt": { "ar": "تجليد جدار بشرائح خشب مع إضاءة خلفية ورف معلق", "en": "Slatted wood wall cladding with back lighting and a floating console" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب الجدار — يُحسب بالمتر المربع", "en": "Wall-dependent — priced per square metre" },

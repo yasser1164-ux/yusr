@@ -66,7 +66,7 @@
     "icon": "door",
     "name": { "ar": "أبواب وأعمال خشبية", "en": "Doors & woodwork" },
     "blurb": { "ar": "أبواب داخلية ورئيسية، تجليد جدران ورفوف بخشب صلب وتشطيب نظيف.", "en": "Interior and entrance doors, wall cladding and shelving in solid wood with a clean finish." },
-    "image": { "src": "assets/categories/doors.jpg", "alt": { "ar": "باب خشب صلب", "en": "Solid wood door" } },
+    "image": { "src": "assets/categories/doors.jpg", "webp": "assets/categories/doors.webp", "alt": { "ar": "باب مدخل خشبي بإضاءة ليلية", "en": "Wooden entrance door lit at dusk" } },
     "subtypes": [
       { "id": "interior-doors", "name": { "ar": "أبواب داخلية", "en": "Interior doors" } },
       { "id": "entrance-doors", "name": { "ar": "أبواب رئيسية", "en": "Entrance doors" } },
@@ -81,7 +81,7 @@
     "icon": "dining",
     "name": { "ar": "سفرات وطاولات", "en": "Dining" },
     "blurb": { "ar": "سفرات كاملة وطاولات طعام وبوفيهات وكراسي بخشب صلب.", "en": "Full dining sets, tables, buffets and chairs in solid wood." },
-    "image": { "src": "assets/categories/dining.jpg", "alt": { "ar": "طاولة طعام خشب صلب", "en": "Solid wood dining table" } },
+    "image": { "src": "assets/categories/dining.jpg", "webp": "assets/categories/dining.webp", "alt": { "ar": "طاولة طعام خشب بستة كراسي مبطنة", "en": "Wooden dining table with six upholstered chairs" } },
     "subtypes": [
       { "id": "dining-set",    "name": { "ar": "سفرة", "en": "Dining set" } },
       { "id": "dining-table",  "name": { "ar": "طاولة طعام", "en": "Dining table" } },
