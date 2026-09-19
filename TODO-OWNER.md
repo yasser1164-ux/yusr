@@ -25,12 +25,17 @@ The site is technically complete but shows **no invented data**. Each item below
 - تظهر في أسفل الفوتر فقط عندما تكون معبأة. **لا تضع رقمًا غير حقيقي.**
 
 ## 5. الصور الحقيقية / Real photography
-- **المنتجات:** 18 منتجًا × 3 صور في `assets/products/` بالأسماء المذكورة في `data/products.json` (كل منتج يشير الآن إلى `<id>-a.jpg` و `-b.jpg` و `-c.jpg`). القواعد في `assets/products/README.md`.
-- **الأقسام:** 6 صور في `assets/categories/`: `majlis.jpg` `living.jpg` `bedrooms.jpg` `kitchens.jpg` `doors.jpg` `dining.jpg`
-- **الهيرو:** صورة واحدة عريضة، ضع مسارها في `site.json → hero.image.src`
+
+**تم ✅** — الهيرو و4 أقسام (مجالس، كنب، غرف نوم، مطابخ). كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
+**Done ✅** — hero and 4 category tiles (majlis, living, bedrooms, kitchens). Each is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
+
+**الناقص / Still needed:**
+- **قسمان:** `assets/categories/doors.jpg` و `dining.jpg` (مقاس 900 × 675، نسبة 4:3) — حتى تصل، يظهر رسم توضيحي مكانهما.
+- **المنتجات:** 18 منتجًا × 3 صور في `assets/products/` بالأسماء المذكورة في `data/products.json` (`<id>-a.jpg` و `-b.jpg` و `-c.jpg`). القواعد في `assets/products/README.md`.
 - **صفحة عن يسر:** `site.json → about.image.src`
-- **أعمالنا:** صور القطع المسلّمة في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json` (القسم مخفي حتى تُضاف)
-- إلى أن تصل الصور يعرض الموقع صورة بديلة بألوان العلامة — بدون أيقونات مكسورة.
+- **أعمالنا:** صور القطع المسلّمة فعليًا في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json`. **استخدم هنا صور تركيب حقيقية فقط** — القسم يقول «قطع سلّمناها لبيوت حقيقية».
+- Two categories (`doors`, `dining`), the 18 × 3 product photos, the About image, and the "Our work" gallery — which should hold **real installation photos only**, since that section says "pieces delivered to real homes".
+- إلى أن تصل الصور يعرض الموقع رسمًا توضيحيًا بألوان العلامة — بدون أيقونات مكسورة.
 
 ## 6. الأسعار الحقيقية / Real prices
 - كل منتج في `data/products.json` يحمل `"_todo": "confirm price"`. راجع `priceFrom` و `priceTo` و `leadTimeDays` ثم احذف سطر `_todo`.

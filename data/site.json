@@ -7,7 +7,7 @@
   },
 
   "hero": {
-    "image": { "src": "", "alt": { "ar": "مجلس مفصّل من تنفيذ يسر", "en": "A made-to-measure majlis by Yusr" } },
+    "image": { "src": "assets/hero.jpg", "webp": "assets/hero.webp", "alt": { "ar": "مجلس واسع بإضاءة طبيعية وإطلالة على النخيل", "en": "A spacious majlis in natural light with a palm view" } },
     "eyebrow": { "ar": "صُنع في السعودية · على مقاسك", "en": "Made in Saudi Arabia · built to your size" },
     "title": { "ar": "أثاث بيتك، على مقاسك بالضبط", "en": "Furniture built to your exact measurements" },
     "subtitle": { "ar": "مجالس وكنب وغرف نوم ومطابخ وأبواب، تُصنع بعد طلبك في ورش سعودية وتُركّب في بيتك.", "en": "Majlis, sofas, bedrooms, kitchens and doors — built after you order in Saudi workshops and installed in your home." }

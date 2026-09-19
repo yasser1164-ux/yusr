@@ -6,7 +6,7 @@
     "icon": "majlis",
     "name": { "ar": "مجالس وجلسات عربية", "en": "Majlis & Arabic seating" },
     "blurb": { "ar": "مجالس عربية وجلسات أرضية بمساند وطاولات على مقاس غرفتك.", "en": "Arabic majlis and floor seating with backs and tables, sized to your room." },
-    "image": { "src": "assets/categories/majlis.jpg", "alt": { "ar": "مجلس عربي أرضي", "en": "Arabic floor majlis" } },
+    "image": { "src": "assets/categories/majlis.jpg", "webp": "assets/categories/majlis.webp", "alt": { "ar": "مجلس عربي أرضي", "en": "Arabic floor majlis" } },
     "subtypes": [
       { "id": "majlis-arabic",  "name": { "ar": "مجلس عربي", "en": "Arabic majlis" } },
       { "id": "floor-seating",  "name": { "ar": "جلسة أرضية", "en": "Floor seating" } },
@@ -21,7 +21,7 @@
     "icon": "sofa",
     "name": { "ar": "كنب وأثاث معيشة", "en": "Sofas & living" },
     "blurb": { "ar": "كنب زاوية وثلاثي وكراسي مفردة وطاولات قهوة بقماش يتحمل الاستخدام اليومي.", "en": "Corner and three-seat sofas, armchairs and coffee tables in fabric that takes daily use." },
-    "image": { "src": "assets/categories/living.jpg", "alt": { "ar": "كنب زاوية قماش", "en": "L-shaped fabric sofa" } },
+    "image": { "src": "assets/categories/living.jpg", "webp": "assets/categories/living.webp", "alt": { "ar": "كنب زاوية قماش", "en": "L-shaped fabric sofa" } },
     "subtypes": [
       { "id": "corner-sofa",    "name": { "ar": "كنب زاوية", "en": "Corner sofa" } },
       { "id": "three-seater",   "name": { "ar": "كنب ثلاثي", "en": "Three-seater" } },
@@ -36,7 +36,7 @@
     "icon": "bed",
     "name": { "ar": "غرف نوم وخزائن", "en": "Bedrooms & wardrobes" },
     "blurb": { "ar": "غرف نوم كاملة وخزائن ودريسنج وتسريحات تستغل كل سنتيمتر.", "en": "Full bedrooms, wardrobes, dressing rooms and vanities that use every centimetre." },
-    "image": { "src": "assets/categories/bedrooms.jpg", "alt": { "ar": "غرفة نوم بخزانة مدمجة", "en": "Bedroom with a built-in wardrobe" } },
+    "image": { "src": "assets/categories/bedrooms.jpg", "webp": "assets/categories/bedrooms.webp", "alt": { "ar": "غرفة نوم بخزانة مدمجة", "en": "Bedroom with a built-in wardrobe" } },
     "subtypes": [
       { "id": "full-bedroom",   "name": { "ar": "غرفة نوم كاملة", "en": "Full bedroom" } },
       { "id": "wardrobe",       "name": { "ar": "خزانة ملابس", "en": "Wardrobe" } },
@@ -51,7 +51,7 @@
     "icon": "kitchen",
     "name": { "ar": "مطابخ", "en": "Kitchens" },
     "blurb": { "ar": "مطابخ خشب وألمنيوم وجزر وأسطح، مصممة لمطبخك بالمليمتر.", "en": "Wood and aluminium kitchens, islands and countertops, designed for your kitchen to the millimetre." },
-    "image": { "src": "assets/categories/kitchens.jpg", "alt": { "ar": "مطبخ خشب بقشرة طبيعية", "en": "Wood veneer kitchen" } },
+    "image": { "src": "assets/categories/kitchens.jpg", "webp": "assets/categories/kitchens.webp", "alt": { "ar": "مطبخ خشب بقشرة طبيعية", "en": "Wood veneer kitchen" } },
     "subtypes": [
       { "id": "wood-kitchen",      "name": { "ar": "مطبخ خشب", "en": "Wood kitchen" } },
       { "id": "aluminium-kitchen", "name": { "ar": "مطبخ ألمنيوم", "en": "Aluminium kitchen" } },
