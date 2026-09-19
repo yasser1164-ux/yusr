@@ -26,17 +26,16 @@ The site is technically complete but shows **no invented data**. Each item below
 
 ## 5. الصور الحقيقية / Real photography
 
-**تم ✅** — الهيرو، **كل الأقسام الستة**، و**15 منتجًا من 18**: مجلس عربي، طقم طاولات مجلس، كنب زاوية، كنب ثلاثي، كرسي مفرد، غرفة نوم كاملة، خزانة أبواب سحب، غرفة ملابس، مطبخ خشب، مطبخ ألمنيوم، باب مدخل، باب داخلي، تجليد جدار، طاولة طعام، بوفيه. كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
-**Done ✅** — hero, **all six category tiles**, and **15 of the 18 products**. Each image is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
+**تم ✅** — الهيرو، **كل الأقسام الستة**، و**17 منتجًا من 18**: مجلس عربي، جلسة أرضية مودرن، طقم طاولات مجلس، كنب زاوية، كنب ثلاثي، كرسي مفرد، غرفة نوم كاملة، خزانة أبواب سحب، غرفة ملابس، مطبخ خشب، مطبخ ألمنيوم، باب مدخل، باب داخلي، تجليد جدار، سفرة كاملة، طاولة طعام، بوفيه. كل صورة محفوظة بصيغتين: `.jpg` و `.webp` (المتصفح يختار الأخف تلقائيًا).
+**Done ✅** — hero, **all six category tiles**, and **17 of the 18 products**. Each image is stored twice, `.jpg` + `.webp`; the browser picks the lighter one.
 
 **الناقص / Still needed:**
-- **3 منتجات** بلا صور بعد: **سفرة كاملة** (`dining-set-01`)، **جزيرة مطبخ** (`kitchen-island-01`)، **جلسة أرضية مودرن** (`majlis-floor-modern-01`). ضع `<id>-a.jpg` في `assets/products/` — القواعد في `assets/products/README.md`.
-- **الأولوية:** «سفرة كاملة» هي الوحيدة من الثلاثة التي تظهر في الصفحة الرئيسية ضمن القطع المختارة، فصورتها الأكثر أثرًا.
+- **منتج واحد فقط** بلا صورة: **جزيرة مطبخ بتخزين** (`kitchen-island-01`). ضع `kitchen-island-01-a.jpg` في `assets/products/` — القواعد في `assets/products/README.md`. هذا المنتج لا يظهر في الصفحة الرئيسية، فلا يوجد إلحاح.
 - **صور إضافية للمنتجات المصوّرة:** كل منتج الآن بصورة واحدة. أضف `-b` و `-c` وسيظهر شريط الصور المصغّرة تلقائيًا.
 - **صفحة عن يسر:** `site.json → about.image.src`
 - **أعمالنا:** صور القطع المسلّمة فعليًا في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json`. **استخدم هنا صور تركيب حقيقية فقط** — القسم يقول «قطع سلّمناها لبيوت حقيقية»، وصور المنتجات الحالية تصاميم وليست تركيبات فعلية.
-- Three products still need a photo — **dining set**, **kitchen island**, **modern floor seating**; the dining set matters most, as it is the only one of the three in the home page's featured row.
-- إلى أن تصل الصور يعرض الموقع رسمًا توضيحيًا بألوان العلامة — بدون أيقونات مكسورة.
+- Only one product still needs a photo — **kitchen island with storage** (`kitchen-island-01`); it doesn't appear on the home page, so there's no urgency.
+- إلى أن تصل الصورة يعرض الموقع رسمًا توضيحيًا بألوان العلامة — بدون أيقونات مكسورة.
 
 ## 6. الأسعار الحقيقية / Real prices
 - كل منتج في `data/products.json` يحمل `"_todo": "confirm price"`. راجع `priceFrom` و `priceTo` و `leadTimeDays` ثم احذف سطر `_todo`.

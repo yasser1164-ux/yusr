@@ -56,9 +56,7 @@
     "priceNote": { "ar": "السعر حسب الطول الإجمالي والقماش", "en": "Price depends on total length and fabric" },
     "leadTimeDays": 12,
     "images": [
-      { "src": "assets/products/majlis-floor-modern-01-a.jpg", "alt": { "ar": "جلسة أرضية مودرن رمادية", "en": "Grey modern floor seating" } },
-      { "src": "assets/products/majlis-floor-modern-01-b.jpg", "alt": { "ar": "زاوية الجلسة", "en": "Corner of the seating" } },
-      { "src": "assets/products/majlis-floor-modern-01-c.jpg", "alt": { "ar": "قماش الجلسة عن قرب", "en": "Fabric close-up" } }
+      { "src": "assets/products/majlis-floor-modern-01-a.jpg", "webp": "assets/products/majlis-floor-modern-01-a.webp", "alt": { "ar": "جلسة أرضية طويلة رمادية بمساند منخفضة أمام طاولة حجرية", "en": "Long grey low-back floor seating in front of a stone coffee table" } }
     ],
     "specs": {
       "dimensions": { "ar": "حسب الغرفة — من 4 إلى 10 متر طولي", "en": "Room-dependent — 4 to 10 linear metres" },
@@ -569,9 +567,7 @@
     "priceNote": { "ar": "السعر للطقم كاملًا حسب الخشب والقماش", "en": "Price for the full set, depending on wood and fabric" },
     "leadTimeDays": 16,
     "images": [
-      { "src": "assets/products/dining-set-01-a.jpg", "alt": { "ar": "سفرة خشب سنديان بستة كراسي", "en": "Oak dining set with six chairs" } },
-      { "src": "assets/products/dining-set-01-b.jpg", "alt": { "ar": "الكرسي المبطن", "en": "Upholstered chair" } },
-      { "src": "assets/products/dining-set-01-c.jpg", "alt": { "ar": "سطح الطاولة", "en": "Table top" } }
+      { "src": "assets/products/dining-set-01-a.jpg", "webp": "assets/products/dining-set-01-a.webp", "alt": { "ar": "سفرة جوزية بستة كراسي مبطنة بمقعد كريمي", "en": "Walnut dining set with six chairs in cream upholstery" } }
     ],
     "specs": {
       "dimensions": { "ar": "طاولة 200 × 95 × 76 سم · كرسي 45 × 52 × 92 سم", "en": "Table 200 × 95 × 76 cm · chair 45 × 52 × 92 cm" },
