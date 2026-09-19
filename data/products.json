@@ -419,9 +419,7 @@
     "priceNote": { "ar": "السعر حسب الطول ونوع السطح", "en": "Price depends on length and top material" },
     "leadTimeDays": 14,
     "images": [
-      { "src": "assets/products/kitchen-island-01-a.jpg", "alt": { "ar": "جزيرة مطبخ بسطح كوارتز", "en": "Kitchen island with a quartz top" } },
-      { "src": "assets/products/kitchen-island-01-b.jpg", "alt": { "ar": "جهة الأدراج", "en": "Drawer side" } },
-      { "src": "assets/products/kitchen-island-01-c.jpg", "alt": { "ar": "بار الإفطار", "en": "Breakfast bar" } }
+      { "src": "assets/products/kitchen-island-01-a.jpg", "webp": "assets/products/kitchen-island-01-a.webp", "alt": { "ar": "جزيرة مطبخ خضراء داكنة بأدراج نحاسية وسطح رخامي وكرسيّي بار خشبيين", "en": "Dark green kitchen island with brass-handled drawers, a marble top and two wooden bar stools" } }
     ],
     "specs": {
       "dimensions": { "ar": "180 × 90 × 90 سم", "en": "180 × 90 × 90 cm" },
