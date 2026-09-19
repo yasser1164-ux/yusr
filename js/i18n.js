@@ -124,7 +124,10 @@ export const DICT = {
         d: { t: 'توصيل وتركيب', d: 'نوصل ونركّب في المدن الرئيسية ونشحن للبقية.' }
       },
       featured: { eyebrow: 'مختارات', title: 'قطع يطلبها عملاؤنا كثيرًا', text: 'ابدأ من هنا، وغيّر المقاس والخامة كما تحب.' },
-      gallery: { eyebrow: 'أعمالنا', title: 'قطع سلّمناها لبيوت حقيقية', text: 'صور من التركيب في بيوت عملائنا.' },
+      /* Wording note: these are illustrative design visuals, not photos of delivered jobs.
+         Once real installation photos replace assets/gallery/*, this can go back to
+         'قطع سلّمناها لبيوت حقيقية' / 'صور من التركيب في بيوت عملائنا.' */
+      gallery: { eyebrow: 'أعمالنا', title: 'نماذج من التصاميم التي ننفّذها', text: 'صور توضيحية للأنماط والتشطيبات المتاحة.' },
       testimonials: { eyebrow: 'آراء العملاء', title: 'ماذا يقول من طلب قبلك' },
       process: {
         eyebrow: 'كيف نعمل',
@@ -423,7 +426,10 @@ export const DICT = {
         d: { t: 'Delivery and installation', d: 'We deliver and install in major cities, and ship elsewhere.' }
       },
       featured: { eyebrow: 'Selected', title: 'Pieces our customers order most', text: 'Start here, then change the size and material as you like.' },
-      gallery: { eyebrow: 'Our work', title: 'Pieces delivered to real homes', text: 'Installation photos from our customers’ homes.' },
+      /* Wording note: see the Arabic side — illustrative design visuals, not delivered jobs.
+         Restore 'Pieces delivered to real homes' / 'Installation photos from our customers’ homes.'
+         once assets/gallery/* holds genuine installation photos. */
+      gallery: { eyebrow: 'Our work', title: 'Examples of what we build', text: 'Illustrative images of the styles and finishes available.' },
       testimonials: { eyebrow: 'Reviews', title: 'What customers say' },
       process: {
         eyebrow: 'How it works',

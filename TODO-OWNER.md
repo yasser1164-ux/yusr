@@ -32,8 +32,9 @@ The site is technically complete but shows **no invented data**. Each item below
 **الناقص / Still nice-to-have:**
 - **صور إضافية للمنتجات:** كل منتج الآن بصورة واحدة. أضف `-b` و `-c` بنفس المعرّف (مثل `sofa-corner-01-b.jpg`) وسيظهر شريط الصور المصغّرة تلقائيًا — راجع `assets/products/README.md`.
 - **صفحة عن يسر:** `site.json → about.image.src`
-- **أعمالنا:** صور القطع المسلّمة فعليًا في `assets/gallery/` + عنصر لكل صورة في `data/gallery.json`. **استخدم هنا صور تركيب حقيقية فقط** — القسم يقول «قطع سلّمناها لبيوت حقيقية»، وصور المنتجات الحالية تصاميم وليست تركيبات فعلية.
-- All that's left is optional — extra angles per product, the About page image, and real installation photos for the "our work" gallery (that section must only ever hold genuine delivered pieces, never the product renders above).
+- **أعمالنا — مهم:** القسم يعرض الآن ٥ صور توضيحية (غير حقيقية) في `assets/gallery/`، ولهذا غُيّر عنوانه إلى «نماذج من التصاميم التي ننفّذها» بدل «قطع سلّمناها لبيوت حقيقية» — لأن الثاني ادّعاء بأنها تركيبات فعلية عند عملاء.
+  **عندما تصوّر تركيبات حقيقية:** استبدل ملفات `assets/gallery/` بصورك، وعدّل التعليقات في `data/gallery.json`، ثم أعد العنوان الأقوى من `js/i18n.js` (الصيغة الأصلية مكتوبة في تعليق فوق السطر مباشرة، عربي وإنجليزي).
+- The "our work" gallery currently holds 5 illustrative (not real) images, so its heading was changed to "Examples of what we build". When you have genuine installation photos, swap the files, update the captions, and restore the stronger heading — the original wording is kept in a comment right above the line in `js/i18n.js`.
 - إذا احتجت استبدال أي صورة لاحقًا، فقط استبدل الملف بنفس الاسم — لا حاجة لتعديل أي كود.
 
 ## 6. الأسعار الحقيقية / Real prices

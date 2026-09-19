@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "visible": true,
+    "sort": 1,
+    "category": "majlis",
+    "image": {
+      "src": "assets/gallery/majlis-01.jpg",
+      "webp": "assets/gallery/majlis-01.webp",
+      "alt": { "ar": "مجلس عربي أرضي بمساند ومخدات بيج وطاولة خشبية منخفضة", "en": "Arabic floor majlis with beige bolsters and a low wooden table" }
+    },
+    "caption": { "ar": "مجلس عربي أرضي على شكل U بقماش بيج", "en": "U-shaped Arabic floor majlis in beige fabric" }
+  },
+  {
+    "visible": true,
+    "sort": 2,
+    "category": "living",
+    "image": {
+      "src": "assets/gallery/living-01.jpg",
+      "webp": "assets/gallery/living-01.webp",
+      "alt": { "ar": "كنب زاوية بيج بشيزلونج أمام ستائر وشرفة", "en": "Beige corner sofa with a chaise end in front of curtains and a balcony" }
+    },
+    "caption": { "ar": "كنب زاوية بقماش بيج مع شيزلونج", "en": "Beige corner sofa with a chaise end" }
+  },
+  {
+    "visible": true,
+    "sort": 3,
+    "category": "bedrooms",
+    "image": {
+      "src": "assets/gallery/bedroom-01.jpg",
+      "webp": "assets/gallery/bedroom-01.webp",
+      "alt": { "ar": "خزانة ملابس بخمسة أبواب وأحدها مفتوح يكشف الأرفف والأدراج", "en": "Five-door wardrobe with one door open showing the shelves and drawers" }
+    },
+    "caption": { "ar": "خزانة ملابس من الأرض للسقف بخشب بلوط فاتح", "en": "Floor-to-ceiling wardrobe in light oak" }
+  },
+  {
+    "visible": true,
+    "sort": 4,
+    "category": "kitchens",
+    "image": {
+      "src": "assets/gallery/kitchen-01.jpg",
+      "webp": "assets/gallery/kitchen-01.webp",
+      "alt": { "ar": "مطبخ بخزائن جوزية وواجهات علوية كريمية وسطح رخامي", "en": "Kitchen with walnut cabinets, cream upper fronts and a marble top" }
+    },
+    "caption": { "ar": "مطبخ خشب جوزي بواجهات كريمية وجزيرة", "en": "Walnut kitchen with cream upper fronts and an island" }
+  },
+  {
+    "visible": true,
+    "sort": 5,
+    "category": "dining",
+    "image": {
+      "src": "assets/gallery/dining-01.jpg",
+      "webp": "assets/gallery/dining-01.webp",
+      "alt": { "ar": "طاولة طعام جوزية بستة كراسي أمام بوفيه مضلّع", "en": "Walnut dining table and six chairs in front of a fluted buffet" }
+    },
+    "caption": { "ar": "طاولة طعام جوزية بستة كراسي وبوفيه مضلّع", "en": "Walnut dining table with six chairs and a fluted buffet" }
+  }
+]
