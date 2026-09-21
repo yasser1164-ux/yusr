@@ -53,5 +53,16 @@
       "alt": { "ar": "طاولة طعام جوزية بستة كراسي أمام بوفيه مضلّع", "en": "Walnut dining table and six chairs in front of a fluted buffet" }
     },
     "caption": { "ar": "طاولة طعام جوزية بستة كراسي وبوفيه مضلّع", "en": "Walnut dining table with six chairs and a fluted buffet" }
+  },
+  {
+    "visible": true,
+    "sort": 6,
+    "category": "doors",
+    "image": {
+      "src": "assets/gallery/door-01.jpg",
+      "webp": "assets/gallery/door-01.webp",
+      "alt": { "ar": "باب مدخل خشبي بحشوتين ومقبض أسود طويل داخل إطار خشبي", "en": "Two-panel wooden entrance door with a long black pull handle in a wooden frame" }
+    },
+    "caption": { "ar": "باب مدخل خشبي بحشوتين ومقبض أسود", "en": "Two-panel wooden entrance door with a black pull handle" }
   }
 ]
